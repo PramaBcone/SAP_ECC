@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="SAP ECC Invoices Data" max_length="40" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" create_access="true" read_access="true" update_access="true" delete_access="true" type="collection">
+        <element label="HEADERLIST.COMP_CODE" mandatory="true" max_length="40" name="headerlist_comp_code" type="string"/>
+        <element label="HEADERLIST.CURRENCY" mandatory="true" max_length="40" name="headerlist_currency" type="string"/>
+        <element label="HEADERLIST.CURRENCY_ISO" mandatory="true" max_length="40" name="headerlist_currency_iso" type="string"/>
+        <element label="HEADERLIST.DIFF_INV" mandatory="true" max_length="40" name="headerlist_diff_inv" type="string"/>
+        <element label="HEADERLIST.DOC_DATE" mandatory="true" max_length="40" name="headerlist_doc_date" type="string"/>
+        <element label="HEADERLIST.ENTRY_DATE" mandatory="true" max_length="40" name="headerlist_entry_date" type="string"/>
+        <element label="HEADERLIST.ENTRY_TIME" mandatory="true" max_length="40" name="headerlist_entry_time" type="string"/>
+        <element label="HEADERLIST.FISC_YEAR" mandatory="true" max_length="40" name="headerlist_fisc_year" type="string"/>
+        <element label="HEADERLIST.GROSS_AMNT" mandatory="true" max_length="40" name="headerlist_gross_amnt" type="decimal"/>
+        <element label="HEADERLIST.HEADER_TXT" mandatory="true" max_length="40" name="headerlist_header_txt" type="string"/>
+        <element label="HEADERLIST.INVOICE_STATUS" mandatory="true" max_length="40" name="headerlist_invoice_status" type="string"/>
+        <element label="HEADERLIST.INV_DOC_NO" mandatory="true" max_length="40" name="headerlist_inv_doc_no" type="string"/>
+        <element label="HEADERLIST.INV_TRAN_" mandatory="true" max_length="40" name="headerlist_inv_tran" type="string"/>
+        <element label="HEADERLIST.PERSON_EXT" mandatory="true" max_length="40" name="headerlist_person_ext" type="string"/>
+        <element label="HEADERLIST.PSTNG_DATE" mandatory="true" max_length="40" name="headerlist_pstng_date" type="string"/>
+        <element label="HEADERLIST.REF_DOC_NO" mandatory="true" max_length="40" name="headerlist_ref_doc_no" type="string"/>
+        <element label="HEADERLIST.REF_DOC_NO_LONG" mandatory="true" max_length="40" name="headerlist_ref_doc_no_long" type="string"/>
+        <element label="HEADERLIST.TM_DOCUMENT" mandatory="true" max_length="40" name="headerlist_tm_document" type="string"/>
+    </element>
+</database>

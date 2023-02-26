@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD74a77dd09dd16c1067018f1c74129cfb</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+        <serialized_content>{"FlowDesigner:FD74a77dd09dd16c1067018f1c74129cfb":{"REF_DOC_LOW":"String","REF_DOC_LOW.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"From document\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\"}"},"REF_DOC_HIGH":"String","REF_DOC_HIGH.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"To document\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"OPTION":"String","OPTION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"EQ\",\"label\":\"Selection operator [ OPTION ]\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Not equal to\":\"{\\\"label\\\":\\\"Not equal to\\\",\\\"value\\\":\\\"NE\\\",\\\"order\\\":2}\",\"Does not contain the pattern\":\"{\\\"label\\\":\\\"Does not contain the pattern\\\",\\\"value\\\":\\\"NP\\\",\\\"order\\\":6}\",\"Less than\":\"{\\\"label\\\":\\\"Less than\\\",\\\"value\\\":\\\"LT\\\",\\\"order\\\":7}\",\"Less Than or Equal To\":\"{\\\"label\\\":\\\"Less Than or Equal To\\\",\\\"value\\\":\\\"LE\\\",\\\"order\\\":8}\",\"Greater than\":\"{\\\"label\\\":\\\"Greater than\\\",\\\"value\\\":\\\"GT\\\",\\\"order\\\":9}\",\"Outside lower and upper value\":\"{\\\"label\\\":\\\"Outside lower and upper value\\\",\\\"value\\\":\\\"NB\\\",\\\"order\\\":4}\",\"Equal To\":\"{\\\"label\\\":\\\"Equal To\\\",\\\"value\\\":\\\"EQ\\\",\\\"order\\\":1}\",\"Between lower and upper value\":\"{\\\"label\\\":\\\"Between lower and upper value\\\",\\\"value\\\":\\\"BT\\\",\\\"order\\\":3}\",\"Contains the pattern\":\"{\\\"label\\\":\\\"Contains the pattern\\\",\\\"value\\\":\\\"CP\\\",\\\"order\\\":5}\",\"Greater Than or Equal To\":\"{\\\"label\\\":\\\"Greater Than or Equal To\\\",\\\"value\\\":\\\"GE\\\",\\\"order\\\":10}\"}}"},"SIGN":"String","SIGN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Choice\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"choice\",\"default_value\":\"I\",\"label\":\"Inclusive/exclusive\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}","SimpleChoiceFacet":"{\"complex_choice_map_key$\":{},\"choice_map_key$\":{\"Exclusive of defined values/range\":\"{\\\"label\\\":\\\"Exclusive of defined values/range\\\",\\\"value\\\":\\\"E\\\",\\\"order\\\":2}\",\"Inclusive of defined values/range\":\"{\\\"label\\\":\\\"Inclusive of defined values/range\\\",\\\"value\\\":\\\"I\\\",\\\"order\\\":1}\"}}"}},"FlowDesigner:FD74a77dd09dd16c1067018f1c74129cfb.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Range of documents\",\"mandatory\":\"false\",\"uiUniqueId\":\"a8f7f04e-b7d3-4bc6-87d2-0d14204fb541\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD74a77dd09dd16c1067018f1c74129cfb\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-12-21 10:00:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>38a77dd01bd16c10d2cf7669cc4bcbfb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FD74a77dd09dd16c1067018f1c74129cfb</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_complex_object_38a77dd01bd16c10d2cf7669cc4bcbfb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-08 23:19:48</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

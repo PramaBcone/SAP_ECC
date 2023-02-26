@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDe7e13f0bee4d21101c385a6afc4aa9d0</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+        <serialized_content>{"FlowDesigner:FDe7e13f0bee4d21101c385a6afc4aa9d0":{"$COCollectionField":[{"Item":{"NET_VALUE":"String","NET_VALUE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Net Value of Item\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\"}"},"QUANTITY":"String","QUANTITY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Quantity with Sign\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"SERIAL_NO":"String","SERIAL_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Sequential Number of Account Assignment\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"SERNO_LINE":"String","SERNO_LINE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Seq. Number of Acc. Assignment Specification: Service Line\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"PCKG_NO":"String","PCKG_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Package number\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"LINE_NO":"String","LINE_NO.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Line Number\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"PERCENTAGE":"String","PERCENTAGE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Percentage for Account Assignment Value Distribution\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Service Lines Account Assignment Distribution\",\"mandatory\":\"false\",\"child_name\":\"Item\",\"uiUniqueId\":\"a266e63e-16cb-4da0-a8a3-95118c2da355\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDe7e13f0bee4d21101c385a6afc4aa9d0\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"12\",\"max_length\":\"0\",\"child_uiUniqueId\":\"b7f040f7-a032-4414-a155-3adb6a63c28c\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDe7e13f0bee4d21101c385a6afc4aa9d0.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Service Lines Account Assignment Distribution\",\"mandatory\":\"false\",\"child_name\":\"Item\",\"uiUniqueId\":\"a266e63e-16cb-4da0-a8a3-95118c2da355\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDe7e13f0bee4d21101c385a6afc4aa9d0\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"12\",\"max_length\":\"0\",\"child_uiUniqueId\":\"b7f040f7-a032-4414-a155-3adb6a63c28c\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>akash</sys_created_by>
+        <sys_created_on>2023-02-21 06:26:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abe13f0b474d2110e07dc4f3836d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDe7e13f0bee4d21101c385a6afc4aa9d0</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_complex_object_abe13f0b474d2110e07dc4f3836d43d0</sys_update_name>
+        <sys_updated_by>akash</sys_updated_by>
+        <sys_updated_on>2023-02-21 06:26:56</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

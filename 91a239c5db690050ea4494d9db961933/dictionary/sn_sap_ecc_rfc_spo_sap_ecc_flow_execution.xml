@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="SAP ECC Flow Execution" max_length="40" name="sn_sap_ecc_rfc_spo_sap_ecc_flow_execution" create_access="true" read_access="true" update_access="true" delete_access="true"   type="collection">
+        <element display="true" label="Last Succesful Execution" mandatory="true" max_length="40" name="last_succesful_execution" type="glide_date"/>
+    </element>
+</database>

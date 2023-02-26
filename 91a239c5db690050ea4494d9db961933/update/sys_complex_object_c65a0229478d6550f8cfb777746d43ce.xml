@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD065a0229cc8d6550df0ad35e3de79fce</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+        <serialized_content>{"FlowDesigner:FD065a0229cc8d6550df0ad35e3de79fce":{"$COCollectionField":[{"ITEM":{"MATDOC_ITEM":"String","MATDOC_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item in Material Document\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Material Document Item\",\"mandatory\":\"false\",\"child_name\":\"ITEM\",\"uiUniqueId\":\"ffee8e59-613e-4594-b7da-5a476b1ccb91\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD065a0229cc8d6550df0ad35e3de79fce\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"11\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cc6df530-a62a-44e4-bfa7-b8a274bb30ef\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD065a0229cc8d6550df0ad35e3de79fce.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Material Document Item\",\"mandatory\":\"false\",\"child_name\":\"ITEM\",\"uiUniqueId\":\"ffee8e59-613e-4594-b7da-5a476b1ccb91\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD065a0229cc8d6550df0ad35e3de79fce\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"11\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cc6df530-a62a-44e4-bfa7-b8a274bb30ef\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>akash</sys_created_by>
+        <sys_created_on>2023-02-16 07:03:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c65a0229478d6550f8cfb777746d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD065a0229cc8d6550df0ad35e3de79fce</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_complex_object_c65a0229478d6550f8cfb777746d43ce</sys_update_name>
+        <sys_updated_by>akash</sys_updated_by>
+        <sys_updated_on>2023-02-16 07:03:30</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

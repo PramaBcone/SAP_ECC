@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+  <sys_hub_flow action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <acls/>
+    <active>false</active>
+    <annotation/>
+    <callable_by_client_api>false</callable_by_client_api>
+    <category/>
+    <compiler_build/>
+    <copied_from/>
+    <copied_from_name/>
+    <description/>
+    <internal_name>get_users_by_role</internal_name>
+    <label_cache>[{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.COL_FLAG","label":"2➛Assignment of roles to users [ USERS ]_child0➛Assgmt Comes From Composite Role","type":"string","base_type":"string"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.ORG_FLAG","label":"2➛Assignment of roles to users [ USERS ]_child0➛HR Organization Management","type":"string","base_type":"string"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_TST","label":"2➛Assignment of roles to users [ USERS ]_child0➛UTC Time Stamp in Short Form (YYYYMMDDhhmmss)","type":"string","base_type":"string"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_TIM","label":"2➛Assignment of roles to users [ USERS ]_child0➛Time","type":"datetime","base_type":"datetime"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_DAT","label":"2➛Assignment of roles to users [ USERS ]_child0➛Date","type":"date","base_type":"date"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.EXCLUDE","label":"2➛Assignment of roles to users [ USERS ]_child0➛Exclusive","type":"string","base_type":"string"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.TO_DAT","label":"2➛Assignment of roles to users [ USERS ]_child0➛End date","type":"date","base_type":"date"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.FROM_DAT","label":"2➛Assignment of roles to users [ USERS ]_child0➛Start date","type":"date","base_type":"date"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.MANDT","label":"2➛Assignment of roles to users [ USERS ]_child0➛Client ID","type":"string","base_type":"string"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.AGR_NAME","label":"2➛Assignment of roles to users [ USERS ]_child0➛Role","type":"string","base_type":"string"},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item.UNAME","label":"2➛Assignment of roles to users [ USERS ]_child0➛User","type":"string","base_type":"string"},{"name":"f71e8bd0-72d9-428a-b059-88b010b91ccf.error_message","label":"2.1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"f71e8bd0-72d9-428a-b059-88b010b91ccf.status","label":"2.1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"f71e8bd0-72d9-428a-b059-88b010b91ccf.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"f71e8bd0-72d9-428a-b059-88b010b91ccf.record","label":"2.1➛Record","reference":"sys_hub_action_input","reference_display":"Action Inputs","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"bd59076b-aafc-4767-a6ee-c4b1464257df.item","label":"2➛Assignment of roles to users [ USERS ]_child0","reference_display":"Assignment of roles to users [ USERS ]_child0","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"4b1d1c9a-5552-4613-9720-1515092cdae8.output.USERS","label":"1➛Response➛Assignment of roles to users [ USERS ]","type":"array.object","base_type":"array.object","attributes":{"child_type":"object"}},{"name":"4b1d1c9a-5552-4613-9720-1515092cdae8.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8489fc00-e0d4-409d-ad6e-865982705aec"}},{"name":"4b1d1c9a-5552-4613-9720-1515092cdae8.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"b6e0722d-72f2-4cd1-b494-25ff6fdc8f1f"}},{"name":"4b1d1c9a-5552-4613-9720-1515092cdae8.output","label":"1➛Response","reference_display":"Response","type":"object","base_type":"object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"7747471d-5c31-482f-b155-81fe4fa65b34"}}]</label_cache>
+    <latest_snapshot/>
+    <master_snapshot/>
+    <name>Retrieve Users By role</name>
+    <natlang/>
+    <outputs/>
+    <remote_trigger_id/>
+    <run_as>system</run_as>
+    <sc_callable>false</sc_callable>
+    <show_draft_actions>false</show_draft_actions>
+    <show_triggered_flows>false</show_triggered_flows>
+    <status>draft</status>
+    <sys_class_name>sys_hub_flow</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:27:58</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>f8ca63900fa11010adbf483f68767e49</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_name>Retrieve Users By role</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_update_name>sys_hub_flow_f8ca63900fa11010adbf483f68767e49</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:59</sys_updated_on>
+    <type>flow</type>
+  </sys_hub_flow>
+  <sys_translated_text action="delete_multiple" query="documentkey=f8ca63900fa11010adbf483f68767e49"/>
+  <sys_variable_value action="delete_multiple" query="document_key=f8ca63900fa11010adbf483f68767e49"/>
+  <sys_hub_flow_component action="delete_multiple" query="flow=f8ca63900fa11010adbf483f68767e49^sys_idNOT IN18eba3d00fa11010adbf483f68767eab,54eba3d00fa11010adbf483f68767eb4,58eba3d00fa11010adbf483f68767eb1"/>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_type display_value="Execute RFC">40f1663a1bb28810243764abbc4bcbd1</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Users By role">f8ca63900fa11010adbf483f68767e49</flow>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>18eba3d00fa11010adbf483f68767eab</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:58</sys_updated_on>
+    <ui_id>4b1d1c9a-5552-4613-9720-1515092cdae8</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=18eba3d00fa11010adbf483f68767eab"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>18eba3d00fa11010adbf483f68767eab</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>18eba3d00fa11010adbf483f68767eae</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <value>d0578871dbad8010ea4494d9db9619d9</value>
+    <variable display_value="">5f6a67081bc3cc101793319acd4bcb89</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>18eba3d00fa11010adbf483f68767eab</document_key>
+    <order>4</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>54eba3d00fa11010adbf483f68767eae</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:22</sys_updated_on>
+    <value>{"children":[{"children":[{"name":"MANDT","label":"Client ID","type":"string"},{"name":"AGR_NAME","label":"Role","type":"string"},{"name":"UNAME","label":"User","type":"string"},{"name":"FROM_DAT","label":"Start date","type":"date"},{"name":"TO_DAT","label":"End date","type":"date"},{"name":"EXCLUDE","label":"Exclusive","type":"string"},{"name":"CHANGE_DAT","label":"Date","type":"date"},{"name":"CHANGE_TIM","label":"Time","type":"datetime"},{"name":"CHANGE_TST","label":"UTC Time Stamp in Short Form (YYYYMMDDhhmmss)","type":"string"},{"name":"ORG_FLAG","label":"HR Organization Management","type":"string"},{"name":"COL_FLAG","label":"Assgmt Comes From Composite Role","type":"string"}],"name":"USERS","attributes":{"child_type":"object"},"label":"Assignment of roles to users [ USERS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7747471d-5c31-482f-b155-81fe4fa65b34"}}</value>
+    <variable display_value="">126c65651b8bc0501793319acd4bcbf4</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>18eba3d00fa11010adbf483f68767eab</document_key>
+    <order>2</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>d8eba3d00fa11010adbf483f68767eae</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <value>5b4e279fdb3098100fbb3764e2961973</value>
+    <variable display_value="">703924031b5344901793319acd4bcbd2</variable>
+  </sys_variable_value>
+  <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    <block display_value="">98eba3d00fa11010adbf483f68767eb3</block>
+    <comment/>
+    <connected_to/>
+    <decision_table/>
+    <decision_table_inputs/>
+    <display_text/>
+    <extended_inputs/>
+    <flow display_value="Retrieve Users By role">f8ca63900fa11010adbf483f68767e49</flow>
+    <inputs/>
+    <inputs/>
+    <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+    <order>2</order>
+    <outputs_assigned/>
+    <outputs_to_assign/>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_flow_logic</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>54eba3d00fa11010adbf483f68767eb4</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:59</sys_updated_on>
+    <ui_id>bd59076b-aafc-4767-a6ee-c4b1464257df</ui_id>
+    <workflow_inputs/>
+    <workflow_reference/>
+  </sys_hub_flow_logic>
+  <sys_variable_value action="delete_multiple" query="document_key=54eba3d00fa11010adbf483f68767eb4"/>
+  <sys_element_mapping action="delete_multiple" query="id=54eba3d00fa11010adbf483f68767eb4"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>items</field>
+    <id>54eba3d00fa11010adbf483f68767eb4</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>54eba3d00fa11010adbf483f68767eb7</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+    <value>{{4b1d1c9a-5552-4613-9720-1515092cdae8.output.USERS}}</value>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Users By role">f8ca63900fa11010adbf483f68767e49</flow>
+    <order>2.1</order>
+    <parent_ui_id>bd59076b-aafc-4767-a6ee-c4b1464257df</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>58eba3d00fa11010adbf483f68767eb1</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:58</sys_updated_on>
+    <ui_id>f71e8bd0-72d9-428a-b059-88b010b91ccf</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=58eba3d00fa11010adbf483f68767eb1"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>58eba3d00fa11010adbf483f68767eb1</document_key>
+    <order>0</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>14eba3d00fa11010adbf483f68767eb3</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <value>sn_sap_ecc_rfc_spo_sap_ecc_users</value>
+    <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=58eba3d00fa11010adbf483f68767eb1"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>fields</field>
+    <id>58eba3d00fa11010adbf483f68767eb1</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>dceba3d00fa11010adbf483f68767eb2</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+    <value>user={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.UNAME}}^role={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.AGR_NAME}}^client_id={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.MANDT}}^start_date={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.FROM_DAT}}^end_date={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.TO_DAT}}^exclusive={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.EXCLUDE}}^date={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_DAT}}^time={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_TIM}}^time_stamp_in_utc={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_TST}}^hr_organisation_management={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.ORG_FLAG}}^assignment_from_composite_role={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.COL_FLAG}}^coalesce_fields=user,role</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>table_name</field>
+    <id>58eba3d00fa11010adbf483f68767eb1</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>90eba3d00fa11010adbf483f68767eb3</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_hub_trigger_instance action="delete_multiple" query="flow=f8ca63900fa11010adbf483f68767e49^sys_idNOT IN18eb63d00fa11010adbf483f68767eaa"/>
+  <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+    <comment/>
+    <display_text/>
+    <flow display_value="Retrieve Users By role">f8ca63900fa11010adbf483f68767e49</flow>
+    <name>Daily</name>
+    <remote_sys_id/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:50</sys_created_on>
+    <sys_id>18eb63d00fa11010adbf483f68767eaa</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_scope/>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:58</sys_updated_on>
+    <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+    <trigger_inputs/>
+    <trigger_outputs/>
+    <trigger_type>daily</trigger_type>
+  </sys_hub_trigger_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=18eb63d00fa11010adbf483f68767eaa"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_trigger_instance</document>
+    <document_key>18eb63d00fa11010adbf483f68767eaa</document_key>
+    <order>100</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:50</sys_created_on>
+    <sys_id>18eb63d00fa11010adbf483f68767eab</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:50</sys_updated_on>
+    <value>1970-01-01 14:00:00</value>
+    <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+  </sys_variable_value>
+  <sys_flow_cat_variable_model action="delete_multiple" query="id=f8ca63900fa11010adbf483f68767e49^sys_idNOT INb0ca63900fa11010adbf483f68767e4c"/>
+  <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+    <id>f8ca63900fa11010adbf483f68767e49</id>
+    <name>Get Users By role</name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:27:58</sys_created_on>
+    <sys_id>b0ca63900fa11010adbf483f68767e4c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_scope/>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:27:58</sys_updated_on>
+  </sys_flow_cat_variable_model>
+  <sys_hub_action_instance action="delete_multiple" query="flow=f8ca63900fa11010adbf483f68767e49^sys_idNOT IN18eba3d00fa11010adbf483f68767eab,58eba3d00fa11010adbf483f68767eb1"/>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_type display_value="Execute RFC">40f1663a1bb28810243764abbc4bcbd1</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Users By role">f8ca63900fa11010adbf483f68767e49</flow>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>18eba3d00fa11010adbf483f68767eab</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:58</sys_updated_on>
+    <ui_id>4b1d1c9a-5552-4613-9720-1515092cdae8</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=18eba3d00fa11010adbf483f68767eab"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>18eba3d00fa11010adbf483f68767eab</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>18eba3d00fa11010adbf483f68767eae</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <value>d0578871dbad8010ea4494d9db9619d9</value>
+    <variable display_value="">5f6a67081bc3cc101793319acd4bcb89</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>18eba3d00fa11010adbf483f68767eab</document_key>
+    <order>4</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>54eba3d00fa11010adbf483f68767eae</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:22</sys_updated_on>
+    <value>{"children":[{"children":[{"name":"MANDT","label":"Client ID","type":"string"},{"name":"AGR_NAME","label":"Role","type":"string"},{"name":"UNAME","label":"User","type":"string"},{"name":"FROM_DAT","label":"Start date","type":"date"},{"name":"TO_DAT","label":"End date","type":"date"},{"name":"EXCLUDE","label":"Exclusive","type":"string"},{"name":"CHANGE_DAT","label":"Date","type":"date"},{"name":"CHANGE_TIM","label":"Time","type":"datetime"},{"name":"CHANGE_TST","label":"UTC Time Stamp in Short Form (YYYYMMDDhhmmss)","type":"string"},{"name":"ORG_FLAG","label":"HR Organization Management","type":"string"},{"name":"COL_FLAG","label":"Assgmt Comes From Composite Role","type":"string"}],"name":"USERS","attributes":{"child_type":"object"},"label":"Assignment of roles to users [ USERS ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7747471d-5c31-482f-b155-81fe4fa65b34"}}</value>
+    <variable display_value="">126c65651b8bc0501793319acd4bcbf4</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>18eba3d00fa11010adbf483f68767eab</document_key>
+    <order>2</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>d8eba3d00fa11010adbf483f68767eae</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <value>5b4e279fdb3098100fbb3764e2961973</value>
+    <variable display_value="">703924031b5344901793319acd4bcbd2</variable>
+  </sys_variable_value>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Users By role">f8ca63900fa11010adbf483f68767e49</flow>
+    <order>2.1</order>
+    <parent_ui_id>bd59076b-aafc-4767-a6ee-c4b1464257df</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>58eba3d00fa11010adbf483f68767eb1</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:58</sys_updated_on>
+    <ui_id>f71e8bd0-72d9-428a-b059-88b010b91ccf</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=58eba3d00fa11010adbf483f68767eb1"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>58eba3d00fa11010adbf483f68767eb1</document_key>
+    <order>0</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>14eba3d00fa11010adbf483f68767eb3</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <value>sn_sap_ecc_rfc_spo_sap_ecc_users</value>
+    <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=58eba3d00fa11010adbf483f68767eb1"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>fields</field>
+    <id>58eba3d00fa11010adbf483f68767eb1</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>dceba3d00fa11010adbf483f68767eb2</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+    <value>user={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.UNAME}}^role={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.AGR_NAME}}^client_id={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.MANDT}}^start_date={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.FROM_DAT}}^end_date={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.TO_DAT}}^exclusive={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.EXCLUDE}}^date={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_DAT}}^time={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_TIM}}^time_stamp_in_utc={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.CHANGE_TST}}^hr_organisation_management={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.ORG_FLAG}}^assignment_from_composite_role={{bd59076b-aafc-4767-a6ee-c4b1464257df.item.COL_FLAG}}^coalesce_fields=user,role</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>table_name</field>
+    <id>58eba3d00fa11010adbf483f68767eb1</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>90eba3d00fa11010adbf483f68767eb3</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_hub_flow_logic action="delete_multiple" query="flow=f8ca63900fa11010adbf483f68767e49^sys_idNOT IN54eba3d00fa11010adbf483f68767eb4"/>
+  <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    <block display_value="">98eba3d00fa11010adbf483f68767eb3</block>
+    <comment/>
+    <connected_to/>
+    <decision_table/>
+    <decision_table_inputs/>
+    <display_text/>
+    <extended_inputs/>
+    <flow display_value="Retrieve Users By role">f8ca63900fa11010adbf483f68767e49</flow>
+    <inputs/>
+    <inputs/>
+    <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+    <order>2</order>
+    <outputs_assigned/>
+    <outputs_to_assign/>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_flow_logic</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>54eba3d00fa11010adbf483f68767eb4</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:58:59</sys_updated_on>
+    <ui_id>bd59076b-aafc-4767-a6ee-c4b1464257df</ui_id>
+    <workflow_inputs/>
+    <workflow_reference/>
+  </sys_hub_flow_logic>
+  <sys_variable_value action="delete_multiple" query="document_key=54eba3d00fa11010adbf483f68767eb4"/>
+  <sys_element_mapping action="delete_multiple" query="id=54eba3d00fa11010adbf483f68767eb4"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>items</field>
+    <id>54eba3d00fa11010adbf483f68767eb4</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 08:32:51</sys_created_on>
+    <sys_id>54eba3d00fa11010adbf483f68767eb7</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 08:32:51</sys_updated_on>
+    <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+    <value>{{4b1d1c9a-5552-4613-9720-1515092cdae8.output.USERS}}</value>
+  </sys_element_mapping>
+</record_update>

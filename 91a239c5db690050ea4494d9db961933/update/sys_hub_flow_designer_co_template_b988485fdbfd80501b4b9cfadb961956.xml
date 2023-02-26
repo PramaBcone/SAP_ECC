@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_designer_co_template">
+    <sys_hub_flow_designer_co_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <complex_definition>FDa988485f2afd80500f695e7892503754</complex_definition>
+        <sys_class_name>sys_hub_flow_designer_co_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-23 13:45:51</sys_created_on>
+        <sys_id>b988485fdbfd80501b4b9cfadb961956</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SAP_BAPI_Return</sys_name>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_hub_flow_designer_co_template_b988485fdbfd80501b4b9cfadb961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-23 13:45:51</sys_updated_on>
+        <template_label>SAP_BAPI_Return</template_label>
+        <template_name>sap_bapi_return</template_name>
+    </sys_hub_flow_designer_co_template>
+</record_update>

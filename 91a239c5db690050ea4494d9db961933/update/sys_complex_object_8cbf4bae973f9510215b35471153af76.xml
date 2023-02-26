@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDc8bf4bae833f951055b58ef576288f76</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+        <serialized_content>{"FlowDesigner:FDc8bf4bae833f951055b58ef576288f76":{},"FlowDesigner:FDc8bf4bae833f951055b58ef576288f76.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDc8bf4bae833f951055b58ef576288f76\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Posting Date\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"ea8f4ccd-d55b-4e4b-9baf-c2e17bb3a893\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>akash</sys_created_by>
+        <sys_created_on>2022-12-19 11:21:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8cbf4bae973f9510215b35471153af76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDc8bf4bae833f951055b58ef576288f76</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_complex_object_8cbf4bae973f9510215b35471153af76</sys_update_name>
+        <sys_updated_by>akash</sys_updated_by>
+        <sys_updated_on>2022-12-19 11:21:54</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

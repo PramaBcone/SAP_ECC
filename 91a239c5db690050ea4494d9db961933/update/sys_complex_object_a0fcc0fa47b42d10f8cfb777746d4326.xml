@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDecfcc0fad3b42d101f86940fadf12425</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+        <serialized_content>{"FlowDesigner:FDecfcc0fad3b42d101f86940fadf12425":{"$COCollectionField":[{"Object":{}}],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDecfcc0fad3b42d101f86940fadf12425.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Adoption of Price from Last Document\",\"mandatory\":\"false\",\"child_name\":\"adoption_of_price_from_last_document_child0\",\"uiUniqueId\":\"54304811-9f13-4a2b-aa31-d613c69ee4cd\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDecfcc0fad3b42d101f86940fadf12425\",\"child_label\":\"Adoption of Price from Last Document_child0\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"13\",\"max_length\":\"0\",\"child_uiUniqueId\":\"824cbce6-2f80-45e0-b26d-9736f5fa60ac\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>akash</sys_created_by>
+        <sys_created_on>2023-02-07 08:52:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a0fcc0fa47b42d10f8cfb777746d4326</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDecfcc0fad3b42d101f86940fadf12425</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_complex_object_a0fcc0fa47b42d10f8cfb777746d4326</sys_update_name>
+        <sys_updated_by>akash</sys_updated_by>
+        <sys_updated_on>2023-02-07 08:52:19</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

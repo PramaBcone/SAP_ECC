@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDae81840973bb5110f43661c91e0cc79d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+        <serialized_content>{"FlowDesigner:FDae81840973bb5110f43661c91e0cc79d":{"$COCollectionField":["Integer"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDae81840973bb5110f43661c91e0cc79d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"ET_TOTAL_ROWS\",\"mandatory\":\"false\",\"child_name\":\"et_total_rows_child0\",\"uiUniqueId\":\"95a10090-df20-40bf-9443-533cb973fdad\",\"uiTypeLabel\":\"Array.Integer\",\"co_type_name\":\"FDae81840973bb5110f43661c91e0cc79d\",\"child_label\":\"ET_TOTAL_ROWS_child0\",\"child_type_label\":\"Integer\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.integer\",\"child_type\":\"integer\",\"order\":\"4\",\"max_length\":\"0\",\"child_uiUniqueId\":\"2daeca49-b4fe-48f1-bd70-79a7465ce5f4\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>prama</sys_created_by>
+        <sys_created_on>2022-12-14 04:30:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6281840997bb5110215b35471153af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDae81840973bb5110f43661c91e0cc79d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_complex_object_6281840997bb5110215b35471153af9e</sys_update_name>
+        <sys_updated_by>prama</sys_updated_by>
+        <sys_updated_on>2022-12-14 04:30:20</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

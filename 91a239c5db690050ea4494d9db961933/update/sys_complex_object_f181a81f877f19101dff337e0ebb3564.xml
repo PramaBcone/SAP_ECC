@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD3181a81fa27f191079614b22a5766f64</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+        <serialized_content>{"FlowDesigner:FD3181a81fa27f191079614b22a5766f64":{"$COCollectionField":[{"item":{"PLANT_LOW":"String","PLANT_LOW.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"From Plant [ PLANT_LOW ]\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"OPTION":"String","OPTION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Selection Operator [ OPTION ]\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"SIGN":"String","SIGN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Inclusive/Exclusive [ SIGN ]\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"PLANT_HIGH":"String","PLANT_HIGH.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"To Plant [ PLANT_HIGH ]\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Plant Range Criteria\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiUniqueId\":\"14e5b856-9088-4cb1-9e35-7bc1c8a28ed0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3181a81fa27f191079614b22a5766f64\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7b3ad67e-162f-497f-88af-2973447dcce5\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3181a81fa27f191079614b22a5766f64.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Plant Range Criteria\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiUniqueId\":\"14e5b856-9088-4cb1-9e35-7bc1c8a28ed0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD3181a81fa27f191079614b22a5766f64\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7b3ad67e-162f-497f-88af-2973447dcce5\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>mayank</sys_created_by>
+        <sys_created_on>2022-12-21 06:36:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f181a81f877f19101dff337e0ebb3564</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>FD3181a81fa27f191079614b22a5766f64</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_complex_object_f181a81f877f19101dff337e0ebb3564</sys_update_name>
+        <sys_updated_by>mayank</sys_updated_by>
+        <sys_updated_on>2023-02-01 08:26:20</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

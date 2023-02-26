@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2022-12-29 04:19:16">
+<sn_sap_ecc_rfc_spo_sap_rfc_list action="INSERT_OR_UPDATE">
+<application_component>MISC</application_component>
+<enabled>true</enabled>
+<name>ZSN_BAPI_GETMATERIALDATA</name>
+<operation_type>write</operation_type>
+<sys_created_by>Mayank</sys_created_by>
+<sys_created_on>2022-11-09 15:44:17</sys_created_on>
+<sys_id>fd2c0a39478f591086887562846d4360</sys_id>
+<sys_mod_count>2</sys_mod_count>
+<sys_updated_by>mayank</sys_updated_by>
+<sys_updated_on>2022-12-16 05:57:43</sys_updated_on>
+<ui_label>MISC - ZSN_BAPI_GETMATERIALDATA</ui_label>
+</sn_sap_ecc_rfc_spo_sap_rfc_list>
+</unload>

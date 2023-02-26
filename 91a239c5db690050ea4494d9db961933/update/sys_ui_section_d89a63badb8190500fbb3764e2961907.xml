@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="d89a63badb8190500fbb3764e2961907" sys_domain="global" table="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_inv_doc_no</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:45:46</sys_created_on>
+            <sys_id>bc1e7f76dbc190500fbb3764e29619bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:45:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_fisc_year</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:46:59</sys_created_on>
+            <sys_id>fe5eb3b6dbc190500fbb3764e29619c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:46:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_pstng_date</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:48:16</sys_created_on>
+            <sys_id>a9aef7b6dbc190500fbb3764e2961909</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:48:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_doc_date</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:48:50</sys_created_on>
+            <sys_id>f1ce3bb6dbc190500fbb3764e296198b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:48:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_entry_date</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:49:19</sys_created_on>
+            <sys_id>45ee3fb6dbc190500fbb3764e2961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:49:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_entry_time</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:49:48</sys_created_on>
+            <sys_id>040fbfb6dbc190500fbb3764e296194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:49:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_comp_code</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:50:25</sys_created_on>
+            <sys_id>8d2f33f6dbc190500fbb3764e29619d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:50:25</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_gross_amnt</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:51:04</sys_created_on>
+            <sys_id>d24fb3f6dbc190500fbb3764e296196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:51:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_currency</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:52:00</sys_created_on>
+            <sys_id>4c8fb7f6dbc190500fbb3764e2961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:52:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_currency_iso</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:52:29</sys_created_on>
+            <sys_id>979f3bf6dbc190500fbb3764e29619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:52:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_diff_inv</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:53:01</sys_created_on>
+            <sys_id>83bfbbf6dbc190500fbb3764e2961946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:53:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_ref_doc_no</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:53:32</sys_created_on>
+            <sys_id>2adf7ff6dbc190500fbb3764e2961905</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:53:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_header_txt</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:54:02</sys_created_on>
+            <sys_id>46ffbff6dbc190500fbb3764e296196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:54:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_person_ext</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:54:33</sys_created_on>
+            <sys_id>2910000bdbc190500fbb3764e2961940</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:54:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_invoice_status</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:54:59</sys_created_on>
+            <sys_id>8830800bdbc190500fbb3764e29619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:54:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_ref_doc_no_long</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:55:30</sys_created_on>
+            <sys_id>ab40440bdbc190500fbb3764e2961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:55:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_tm_document</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:56:02</sys_created_on>
+            <sys_id>9760c40bdbc190500fbb3764e296197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:56:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>headerlist_inv_tran</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:56:30</sys_created_on>
+            <sys_id>0e80880bdbc190500fbb3764e2961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:56:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_type</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:58:27</sys_created_on>
+            <sys_id>eaf0c80bdbc190500fbb3764e2961954</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:58:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_number</element>
+            <position>20</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 07:59:21</sys_created_on>
+            <sys_id>7f21804bdbc190500fbb3764e29619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 07:59:21</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_id</element>
+            <position>21</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:01:33</sys_created_on>
+            <sys_id>c4b1444bdbc190500fbb3764e2961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:01:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_message</element>
+            <position>22</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:03:53</sys_created_on>
+            <sys_id>1632cc4bdbc190500fbb3764e2961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:03:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_log_no</element>
+            <position>23</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:04:47</sys_created_on>
+            <sys_id>ef62808bdbc190500fbb3764e2961988</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:04:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_log_msg_no</element>
+            <position>24</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:05:43</sys_created_on>
+            <sys_id>11a2448bdbc190500fbb3764e2961973</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:05:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_message_v1</element>
+            <position>25</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:06:39</sys_created_on>
+            <sys_id>bad2088bdbc190500fbb3764e2961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:06:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_message_v2</element>
+            <position>26</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:07:45</sys_created_on>
+            <sys_id>3613888bdbc190500fbb3764e2961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:07:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_message_v3</element>
+            <position>27</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:08:44</sys_created_on>
+            <sys_id>d9538c8bdbc190500fbb3764e29619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:08:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_message_v4</element>
+            <position>28</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:09:26</sys_created_on>
+            <sys_id>af7300cbdbc190500fbb3764e296195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:09:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_parameter</element>
+            <position>29</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:10:12</sys_created_on>
+            <sys_id>3aa380cbdbc190500fbb3764e29619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:10:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_row</element>
+            <position>30</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:11:01</sys_created_on>
+            <sys_id>b2d384cbdbc190500fbb3764e2961930</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:11:01</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_field</element>
+            <position>31</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:11:53</sys_created_on>
+            <sys_id>a70488cbdbc190500fbb3764e2961925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:11:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>return_system</element>
+            <position>32</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 08:12:46</sys_created_on>
+            <sys_id>d844c8cbdbc190500fbb3764e29619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_sap_ecc_rfc_spo_sap_ecc_invoices_data" sys_domain="global" view="Default view">d89a63badb8190500fbb3764e2961907</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 08:12:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sn_sap_ecc_rfc_spo_sap_ecc_invoices_data</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 06:20:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d89a63badb8190500fbb3764e2961907</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_sap_ecc_rfc_spo_sap_ecc_invoices_data</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+            <sys_update_name>sys_ui_section_d89a63badb8190500fbb3764e2961907</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 06:20:32</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

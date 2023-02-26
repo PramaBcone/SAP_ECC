@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+  <sys_hub_flow action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <acls/>
+    <active>false</active>
+    <annotation/>
+    <callable_by_client_api>false</callable_by_client_api>
+    <category/>
+    <compiler_build/>
+    <copied_from/>
+    <copied_from_name/>
+    <description/>
+    <internal_name>retrieve_incoming_invoice</internal_name>
+    <label_cache>[{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.TM_DOCUMENT","label":"3.1➛Item➛TM_DOCUMENT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.REF_DOC_NO_LONG","label":"3.1➛Item➛REF_DOC_NO_LONG","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.REF_DOC_NO","label":"3.1➛Item➛REF_DOC_NO","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.PSTNG_DATE","label":"3.1➛Item➛PSTNG_DATE","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.PERSON_EXT","label":"3.1➛Item➛PERSON_EXT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INV_TRAN_","label":"3.1➛Item➛INV_TRAN_","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INV_DOC_NO","label":"3.1➛Item➛INV_DOC_NO","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INVOICE_STATUS","label":"3.1➛Item➛INVOICE_STATUS","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.HEADER_TXT","label":"3.1➛Item➛HEADER_TXT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.GROSS_AMNT","label":"3.1➛Item➛GROSS_AMNT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.FISC_YEAR","label":"3.1➛Item➛FISC_YEAR","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.ENTRY_TIME","label":"3.1➛Item➛ENTRY_TIME","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.ENTRY_DATE","label":"3.1➛Item➛ENTRY_DATE","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.DOC_DATE","label":"3.1➛Item➛DOC_DATE","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.DIFF_INV","label":"3.1➛Item➛DIFF_INV","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.CURRENCY_ISO","label":"3.1➛Item➛CURRENCY_ISO","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.CURRENCY","label":"3.1➛Item➛CURRENCY","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.COMP_CODE","label":"3.1➛Item➛COMP_CODE","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.TM_DOCUMENT","label":"2➛Invoice Data➛HEADERLIST➛Item➛TM_DOCUMENT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.PSTNG_DATE","label":"2➛Invoice Data➛HEADERLIST➛Item➛PSTNG_DATE","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.PERSON_EXT","label":"2➛Invoice Data➛HEADERLIST➛Item➛PERSON_EXT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.INV_TRAN_","label":"2➛Invoice Data➛HEADERLIST➛Item➛INV_TRAN_","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.INV_DOC_NO","label":"2➛Invoice Data➛HEADERLIST➛Item➛INV_DOC_NO","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.INVOICE_STATUS","label":"2➛Invoice Data➛HEADERLIST➛Item➛INVOICE_STATUS","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.HEADER_TXT","label":"2➛Invoice Data➛HEADERLIST➛Item➛HEADER_TXT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.GROSS_AMNT","label":"2➛Invoice Data➛HEADERLIST➛Item➛GROSS_AMNT","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.CURRENCY_ISO","label":"2➛Invoice Data➛HEADERLIST➛Item➛CURRENCY_ISO","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.CURRENCY","label":"2➛Invoice Data➛HEADERLIST➛Item➛CURRENCY","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.COMP_CODE","label":"2➛Invoice Data➛HEADERLIST➛Item➛COMP_CODE","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"f0edfc22-de9d-41f9-9e62-5a9141ec9e5b.table_name","label":"3.2➛SAP ECC Flow Execution Table","reference":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","reference_display":"SAP ECC Flow Execution Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0edfc22-de9d-41f9-9e62-5a9141ec9e5b.record","label":"3.2➛SAP ECC Flow Execution Record","reference":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","reference_display":"SAP ECC Flow Execution Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f91e105e-096d-40f0-8ffa-48826808ec60.table_name","label":"3.1.1➛SAP ECC Flow Execution Table","reference":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","reference_display":"SAP ECC Flow Execution","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f91e105e-096d-40f0-8ffa-48826808ec60.record","label":"3.1.1➛SAP ECC Flow Execution Record","reference":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","reference_display":"SAP ECC Flow Execution","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f42bd91-5983-4ddf-be88-41fe799b7098.Record.sys_id","label":"3.1➛SAP ECC Flow Execution Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","column_name":"sys_id"},{"name":"5f42bd91-5983-4ddf-be88-41fe799b7098.Table","label":"3.1➛SAP ECC Flow Execution Table","reference":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","reference_display":"SAP ECC Flow Execution","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5f42bd91-5983-4ddf-be88-41fe799b7098.Record","label":"3.1➛SAP ECC Flow Execution Record","reference":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","reference_display":"SAP ECC Flow Execution","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a5413f5-317e-4c0e-beb3-d8f18daa8f39.table_name","label":"3.2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4a5413f5-317e-4c0e-beb3-d8f18daa8f39.record","label":"3.2.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e739c3cc-470e-4889-80ab-10caf981f5b3.error_message","label":"2.2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"e739c3cc-470e-4889-80ab-10caf981f5b3.status","label":"2.2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"e739c3cc-470e-4889-80ab-10caf981f5b3.table_name","label":"2.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"e739c3cc-470e-4889-80ab-10caf981f5b3.record","label":"2.2➛Record","reference":"sys_hub_action_input","reference_display":"Action Inputs","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"c2324202-934a-41e4-ba5d-fd0380a188dc.error_message","label":"2.1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2324202-934a-41e4-ba5d-fd0380a188dc.status","label":"2.1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2324202-934a-41e4-ba5d-fd0380a188dc.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2324202-934a-41e4-ba5d-fd0380a188dc.record","label":"2.1➛Record","reference":"sys_hub_action_input","reference_display":"Action Inputs","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cdc25cfe-bdf6-425f-b385-6420f959c684.error_message","label":"2.1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cdc25cfe-bdf6-425f-b385-6420f959c684.status","label":"2.1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cdc25cfe-bdf6-425f-b385-6420f959c684.table_name","label":"2.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cdc25cfe-bdf6-425f-b385-6420f959c684.record","label":"2.1➛Record","reference":"sys_hub_action_input","reference_display":"Action Inputs","type":"document_id","base_type":"document_id","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1f959067-560e-4ab9-a13f-8f101419e176.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"fb2dcafd-42ca-4c33-98e3-3055689201ab"}},{"name":"1f959067-560e-4ab9-a13f-8f101419e176.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2ebf0343-81f9-4211-ad19-cd78e83495d0"}},{"name":"1f959067-560e-4ab9-a13f-8f101419e176.response","label":"1➛Invoice Data","reference_display":"Invoice Data","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDcd39ccaf9170981034e34f5d7802125a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"3e4a6c2b-569e-45ba-8d38-f9bd9d5b0596"}},{"name":"639b426c-35fd-4e1a-a5f8-c06f126e51e7.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"fb2dcafd-42ca-4c33-98e3-3055689201ab"}},{"name":"639b426c-35fd-4e1a-a5f8-c06f126e51e7.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2ebf0343-81f9-4211-ad19-cd78e83495d0"}},{"name":"639b426c-35fd-4e1a-a5f8-c06f126e51e7.response","label":"1➛Invoice Data","reference_display":"Invoice Data","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDcd39ccaf9170981034e34f5d7802125a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"3e4a6c2b-569e-45ba-8d38-f9bd9d5b0596"}},{"name":"Daily_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"test_input_hidden":"true"}},{"name":"b5b188e9-2f70-49ed-8f88-bb3e5125d8d7.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8489fc00-e0d4-409d-ad6e-865982705aec"}},{"name":"b5b188e9-2f70-49ed-8f88-bb3e5125d8d7.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"b6e0722d-72f2-4cd1-b494-25ff6fdc8f1f"}},{"name":"b5b188e9-2f70-49ed-8f88-bb3e5125d8d7.output","label":"1➛Response","reference_display":"Response","type":"object","base_type":"object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"7747471d-5c31-482f-b155-81fe4fa65b34"}},{"name":"aeccf04a-7e4b-45ef-acbc-68bcb910def1.response","label":"1➛Invoice Data","reference_display":"Invoice Data","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDcd39ccaf9170981034e34f5d7802125a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"3e4a6c2b-569e-45ba-8d38-f9bd9d5b0596"}},{"name":"aeccf04a-7e4b-45ef-acbc-68bcb910def1.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2ebf0343-81f9-4211-ad19-cd78e83495d0"}},{"name":"aeccf04a-7e4b-45ef-acbc-68bcb910def1.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"fb2dcafd-42ca-4c33-98e3-3055689201ab"}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response","label":"2➛Invoice Data","reference_display":"Invoice Data","type":"object","base_type":"object","attributes":{"sourceId":"ee5a552a-9a15-4b07-855b-d9a4b5e0297a","uiTypeLabel":"Object","co_type_name":"FDcd39ccaf9170981034e34f5d7802125a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"05c68db7-f5f8-4190-a42d-406149f28f39","uiType":"object","uiUniqueId":"3e4a6c2b-569e-45ba-8d38-f9bd9d5b0596"}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2ebf0343-81f9-4211-ad19-cd78e83495d0"}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.err","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fb2dcafd-42ca-4c33-98e3-3055689201ab"}},{"name":"a69337f9-5424-4c62-81ac-8d8dfb5ed8a6.Record","label":"1➛SAP ECC Flow Execution Record","reference":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","reference_display":"SAP ECC Flow Execution Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a69337f9-5424-4c62-81ac-8d8dfb5ed8a6.Table","label":"1➛SAP ECC Flow Execution Table","reference":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","reference_display":"SAP ECC Flow Execution Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a69337f9-5424-4c62-81ac-8d8dfb5ed8a6.Record.sys_id","label":"1➛SAP ECC Flow Execution Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","column_name":"sys_id"},{"name":"a69337f9-5424-4c62-81ac-8d8dfb5ed8a6.Record.last_succesful_execution","label":"1➛SAP ECC Flow Execution Record➛Last Succesful Execution","reference":"","reference_display":"Last Succesful Execution","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"sn_sap_ecc_rfc_spo_sap_ecc_flow_execution","column_name":"last_succesful_execution"},{"name":"d0289fd1-3466-4fe4-93e2-066f9b75066e.record","label":"3.1.1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d0289fd1-3466-4fe4-93e2-066f9b75066e.table_name","label":"3.1.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST","label":"2➛Invoice Data➛HEADERLIST","reference":"","reference_display":"","type":"array.object","base_type":"array.object","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.DIFF_INV","label":"2➛Invoice Data➛HEADERLIST➛Item➛DIFF_INV","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.DOC_DATE","label":"2➛Invoice Data➛HEADERLIST➛Item➛DOC_DATE","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.ENTRY_DATE","label":"2➛Invoice Data➛HEADERLIST➛Item➛ENTRY_DATE","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.ENTRY_TIME","label":"2➛Invoice Data➛HEADERLIST➛Item➛ENTRY_TIME","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.FISC_YEAR","label":"2➛Invoice Data➛HEADERLIST➛Item➛FISC_YEAR","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.REF_DOC_NO","label":"2➛Invoice Data➛HEADERLIST➛Item➛REF_DOC_NO","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST.item.REF_DOC_NO_LONG","label":"2➛Invoice Data➛HEADERLIST➛Item➛REF_DOC_NO_LONG","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item","label":"3.1➛Item","reference_display":"Item","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"ec5b7c99-bcd3-408f-9239-3f57edd77190.record","label":"3.1.1➛Record","reference":"sys_hub_action_input","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"ec5b7c99-bcd3-408f-9239-3f57edd77190.table_name","label":"3.1.1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"ec5b7c99-bcd3-408f-9239-3f57edd77190.status","label":"3.1.1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"ec5b7c99-bcd3-408f-9239-3f57edd77190.error_message","label":"3.1.1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}}]</label_cache>
+    <latest_snapshot/>
+    <master_snapshot/>
+    <name>Retrieve Incoming Invoice</name>
+    <natlang/>
+    <outputs/>
+    <remote_trigger_id/>
+    <run_as>system</run_as>
+    <sc_callable>false</sc_callable>
+    <show_draft_actions>false</show_draft_actions>
+    <show_triggered_flows>false</show_triggered_flows>
+    <status>draft</status>
+    <sys_class_name>sys_hub_flow</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-21 10:18:24</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>2587ffd3db7098100fbb3764e29619db</sys_id>
+    <sys_mod_count>28</sys_mod_count>
+    <sys_name>Retrieve Incoming Invoice</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_update_name>sys_hub_flow_2587ffd3db7098100fbb3764e29619db</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <type>flow</type>
+  </sys_hub_flow>
+  <sys_translated_text action="delete_multiple" query="documentkey=2587ffd3db7098100fbb3764e29619db"/>
+  <sys_variable_value action="delete_multiple" query="document_key=2587ffd3db7098100fbb3764e29619db"/>
+  <sys_hub_flow_component action="delete_multiple" query="flow=2587ffd3db7098100fbb3764e29619db^sys_idNOT IN19f6a906dbc110500fbb3764e29619d0,20986946dbc110500fbb3764e296191d,57ce150f1b89d410d2cf7669cc4bcb0f,5add78efdbf098100fbb3764e2961995,5cb648a80fe11010adbf483f68767e0e,91f6a906dbc110500fbb3764e29619ce,bda77be7dbb898100fbb3764e29619ac,f11d95cb1b89d410d2cf7669cc4bcbb7"/>
+  <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    <block display_value="">5cb648a80fe11010adbf483f68767e2d</block>
+    <comment/>
+    <connected_to>c1984e9b-ba1c-413b-8a76-c8ddc1d41d5b</connected_to>
+    <decision_table/>
+    <decision_table_inputs/>
+    <display_text/>
+    <extended_inputs/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <inputs/>
+    <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+    <order>4</order>
+    <outputs_assigned/>
+    <outputs_to_assign/>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_flow_logic</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>19f6a906dbc110500fbb3764e29619d0</sys_id>
+    <sys_mod_count>23</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>103cfa24-7ad1-4ff3-87d7-27231235efe2</ui_id>
+    <workflow_inputs/>
+    <workflow_reference/>
+  </sys_hub_flow_logic>
+  <sys_variable_value action="delete_multiple" query="document_key=19f6a906dbc110500fbb3764e29619d0"/>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:57:08</sys_created_on>
+    <sys_id>20986946dbc110500fbb3764e296191d</sys_id>
+    <sys_mod_count>36</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <ui_id>a69337f9-5424-4c62-81ac-8d8dfb5ed8a6</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=20986946dbc110500fbb3764e296191d"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>20986946dbc110500fbb3764e296191d</document_key>
+    <order>2</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 07:14:17</sys_created_on>
+    <sys_id>a9e917140f611010adbf483f68767e71</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 07:14:17</sys_updated_on>
+    <value>last_succesful_execution</value>
+    <variable display_value="">1d09f99587003300663ca1bb36cb0bad</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>20986946dbc110500fbb3764e296191d</document_key>
+    <order>0</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:57:08</sys_created_on>
+    <sys_id>e4986946dbc110500fbb3764e296191e</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 12:57:08</sys_updated_on>
+    <value>sn_sap_ecc_rfc_spo_sap_ecc_flow_execution</value>
+    <variable display_value="">d909f99587003300663ca1bb36cb0ba4</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>20986946dbc110500fbb3764e296191d</document_key>
+    <order>3</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 07:14:17</sys_created_on>
+    <sys_id>e5e917140f611010adbf483f68767e71</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 07:14:17</sys_updated_on>
+    <value>sort_desc</value>
+    <variable display_value="">5d09f99587003300663ca1bb36cb0bb1</variable>
+  </sys_variable_value>
+  <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    <block display_value="">94b648a80fe11010adbf483f68767e14</block>
+    <comment/>
+    <connected_to/>
+    <decision_table/>
+    <decision_table_inputs/>
+    <display_text/>
+    <extended_inputs/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <inputs/>
+    <inputs/>
+    <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+    <order>3.1</order>
+    <outputs_assigned/>
+    <outputs_to_assign/>
+    <parent_ui_id>c1984e9b-ba1c-413b-8a76-c8ddc1d41d5b</parent_ui_id>
+    <sys_class_name>sys_hub_flow_logic</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:48:21</sys_created_on>
+    <sys_id>57ce150f1b89d410d2cf7669cc4bcb0f</sys_id>
+    <sys_mod_count>17</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>9196b191-b000-4d64-ae1e-d2bcd8ed5e6f</ui_id>
+    <workflow_inputs/>
+    <workflow_reference/>
+  </sys_hub_flow_logic>
+  <sys_variable_value action="delete_multiple" query="document_key=57ce150f1b89d410d2cf7669cc4bcb0f"/>
+  <sys_element_mapping action="delete_multiple" query="id=57ce150f1b89d410d2cf7669cc4bcb0f"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>items</field>
+    <id>57ce150f1b89d410d2cf7669cc4bcb0f</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:48:22</sys_created_on>
+    <sys_id>dbce150f1b89d410d2cf7669cc4bcb11</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:48:22</sys_updated_on>
+    <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+    <value>{{69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST}}</value>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Look up Invoices By Date">f3de3b1bdb7098100fbb3764e2961903</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>2</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-21 15:25:39</sys_created_on>
+    <sys_id>5add78efdbf098100fbb3764e2961995</sys_id>
+    <sys_mod_count>48</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <ui_id>69a1acb2-af4a-4497-9f59-9b2429164bd0</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=5add78efdbf098100fbb3764e2961995"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5add78efdbf098100fbb3764e2961995</document_key>
+    <order>5</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 09:15:43</sys_created_on>
+    <sys_id>15e53c86db4110500fbb3764e2961952</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 09:15:43</sys_updated_on>
+    <value/>
+    <variable display_value="">ea9a306fdbf098100fbb3764e29619ee</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5add78efdbf098100fbb3764e2961995</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-21 15:25:40</sys_created_on>
+    <sys_id>5edd78efdbf098100fbb3764e2961998</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-21 15:25:40</sys_updated_on>
+    <value>d0578871dbad8010ea4494d9db9619d9</value>
+    <variable display_value="">77de3b1bdb7098100fbb3764e296190e</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5add78efdbf098100fbb3764e2961995</document_key>
+    <order>3</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 09:15:43</sys_created_on>
+    <sys_id>d5e53c86db4110500fbb3764e2961952</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-02 09:39:09</sys_updated_on>
+    <value>BT</value>
+    <variable display_value="">5f9f60a7dbf098100fbb3764e2961957</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5add78efdbf098100fbb3764e2961995</document_key>
+    <order>4</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 13:49:57</sys_created_on>
+    <sys_id>e2a4390edbc110500fbb3764e29619c2</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 13:49:57</sys_updated_on>
+    <value/>
+    <variable display_value="">1e9a306fdbf098100fbb3764e29619df</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=5add78efdbf098100fbb3764e2961995"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>conn_alias</field>
+    <id>5add78efdbf098100fbb3764e2961995</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-21 15:25:40</sys_created_on>
+    <sys_id>d6dd78efdbf098100fbb3764e2961998</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-21 15:25:40</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f3de3b1bdb7098100fbb3764e2961903</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>HIGH</field>
+    <id>5add78efdbf098100fbb3764e2961995</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 09:15:43</sys_created_on>
+    <sys_id>dde53c86db4110500fbb3764e2961951</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 09:15:43</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f3de3b1bdb7098100fbb3764e2961903</table>
+    <value>{{Daily_1.run_start_time}}</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>LOW</field>
+    <id>5add78efdbf098100fbb3764e2961995</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 13:49:57</sys_created_on>
+    <sys_id>62a4390edbc110500fbb3764e29619c2</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 13:49:57</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f3de3b1bdb7098100fbb3764e2961903</table>
+    <value>{{a69337f9-5424-4c62-81ac-8d8dfb5ed8a6.Record.last_succesful_execution}}</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>OPTION</field>
+    <id>5add78efdbf098100fbb3764e2961995</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 09:15:43</sys_created_on>
+    <sys_id>91e53c86db4110500fbb3764e2961952</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 09:15:43</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f3de3b1bdb7098100fbb3764e2961903</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>3.1.1</order>
+    <parent_ui_id>9196b191-b000-4d64-ae1e-d2bcd8ed5e6f</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 10:29:59</sys_created_on>
+    <sys_id>5cb648a80fe11010adbf483f68767e0e</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <ui_id>ec5b7c99-bcd3-408f-9239-3f57edd77190</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=5cb648a80fe11010adbf483f68767e0e"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5cb648a80fe11010adbf483f68767e0e</document_key>
+    <order>0</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 10:29:59</sys_created_on>
+    <sys_id>50b648a80fe11010adbf483f68767e11</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <value>sn_sap_ecc_rfc_spo_sap_ecc_invoices_data</value>
+    <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=5cb648a80fe11010adbf483f68767e0e"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>fields</field>
+    <id>5cb648a80fe11010adbf483f68767e0e</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 10:29:59</sys_created_on>
+    <sys_id>94b648a80fe11010adbf483f68767e10</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+    <value>headerlist_comp_code={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.COMP_CODE}}^headerlist_currency={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.CURRENCY}}^headerlist_currency_iso={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.CURRENCY_ISO}}^headerlist_diff_inv={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.DIFF_INV}}^headerlist_doc_date={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.DOC_DATE}}^headerlist_entry_date={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.ENTRY_DATE}}^headerlist_entry_time={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.ENTRY_TIME}}^headerlist_fisc_year={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.FISC_YEAR}}^headerlist_gross_amnt={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.GROSS_AMNT}}^headerlist_header_txt={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.HEADER_TXT}}^headerlist_invoice_status={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INVOICE_STATUS}}^headerlist_inv_doc_no={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INV_DOC_NO}}^headerlist_inv_tran={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INV_TRAN_}}^headerlist_person_ext={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.PERSON_EXT}}^headerlist_pstng_date={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.PSTNG_DATE}}^headerlist_ref_doc_no={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.REF_DOC_NO}}^headerlist_ref_doc_no_long={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.REF_DOC_NO_LONG}}^headerlist_tm_document={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.TM_DOCUMENT}}^coalesce_fields=headerlist_inv_doc_no</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>table_name</field>
+    <id>5cb648a80fe11010adbf483f68767e0e</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 10:29:59</sys_created_on>
+    <sys_id>dcb648a80fe11010adbf483f68767e10</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>4.1</order>
+    <parent_ui_id>103cfa24-7ad1-4ff3-87d7-27231235efe2</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>91f6a906dbc110500fbb3764e29619ce</sys_id>
+    <sys_mod_count>38</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>07b4e55a-eaa7-4aaa-8ba3-e02987035da4</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=91f6a906dbc110500fbb3764e29619ce"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>91f6a906dbc110500fbb3764e29619ce</document_key>
+    <order>0</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>d9f6a906dbc110500fbb3764e29619cf</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 12:50:05</sys_updated_on>
+    <value>error</value>
+    <variable display_value="">5bc1bcc6531003003bf1d9109ec587d7</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=91f6a906dbc110500fbb3764e29619ce"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>log_level</field>
+    <id>91f6a906dbc110500fbb3764e29619ce</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>95f6a906dbc110500fbb3764e29619cf</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 12:50:05</sys_updated_on>
+    <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>log_message</field>
+    <id>91f6a906dbc110500fbb3764e29619ce</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>59f6a906dbc110500fbb3764e29619cf</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-02 06:20:06</sys_updated_on>
+    <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+    <value>Flow execution at {{Daily_1.run_start_time}}, could not retrieve invoices due to - {{69a1acb2-af4a-4497-9f59-9b2429164bd0.err}}</value>
+  </sys_element_mapping>
+  <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    <block display_value="">d8b648a80fe11010adbf483f68767e28</block>
+    <comment/>
+    <connected_to/>
+    <decision_table/>
+    <decision_table_inputs/>
+    <display_text/>
+    <extended_inputs/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <inputs/>
+    <inputs/>
+    <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+    <order>3</order>
+    <outputs_assigned/>
+    <outputs_to_assign/>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_flow_logic</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 04:57:27</sys_created_on>
+    <sys_id>bda77be7dbb898100fbb3764e29619ac</sys_id>
+    <sys_mod_count>27</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>c1984e9b-ba1c-413b-8a76-c8ddc1d41d5b</ui_id>
+    <workflow_inputs/>
+    <workflow_reference/>
+  </sys_hub_flow_logic>
+  <sys_variable_value action="delete_multiple" query="document_key=bda77be7dbb898100fbb3764e29619ac"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_flow_logic</document>
+    <document_key>bda77be7dbb898100fbb3764e29619ac</document_key>
+    <order>10</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 04:57:27</sys_created_on>
+    <sys_id>b5a77be7dbb898100fbb3764e29619d6</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-02 06:20:06</sys_updated_on>
+    <value>Get Invoices is Success</value>
+    <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=bda77be7dbb898100fbb3764e29619ac"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>condition</field>
+    <id>bda77be7dbb898100fbb3764e29619ac</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 04:57:27</sys_created_on>
+    <sys_id>35a77be7dbb898100fbb3764e29619d6</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-22 04:57:27</sys_updated_on>
+    <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+    <value>{{69a1acb2-af4a-4497-9f59-9b2429164bd0.status}}=success</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>condition_name</field>
+    <id>bda77be7dbb898100fbb3764e29619ac</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 04:57:27</sys_created_on>
+    <sys_id>7da77be7dbb898100fbb3764e29619d5</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-22 04:57:27</sys_updated_on>
+    <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>3.2</order>
+    <parent_ui_id>c1984e9b-ba1c-413b-8a76-c8ddc1d41d5b</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>f11d95cb1b89d410d2cf7669cc4bcbb7</sys_id>
+    <sys_mod_count>30</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>f0edfc22-de9d-41f9-9e62-5a9141ec9e5b</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=f11d95cb1b89d410d2cf7669cc4bcbb7"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>f11d95cb1b89d410d2cf7669cc4bcbb7</document_key>
+    <order>50</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>b11d95cb1b89d410d2cf7669cc4bcbb9</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:40:53</sys_updated_on>
+    <value>sn_sap_ecc_rfc_spo_sap_ecc_flow_execution</value>
+    <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=f11d95cb1b89d410d2cf7669cc4bcbb7"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>record</field>
+    <id>f11d95cb1b89d410d2cf7669cc4bcbb7</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>7d1d95cb1b89d410d2cf7669cc4bcbb8</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:40:53</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+    <value>{{a69337f9-5424-4c62-81ac-8d8dfb5ed8a6.Record}}</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>table_name</field>
+    <id>f11d95cb1b89d410d2cf7669cc4bcbb7</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>b91d95cb1b89d410d2cf7669cc4bcbb8</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:40:53</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>values</field>
+    <id>f11d95cb1b89d410d2cf7669cc4bcbb7</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>311d95cb1b89d410d2cf7669cc4bcbb9</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:40:53</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+    <value>last_succesful_execution={{Daily_1.run_start_time}}</value>
+  </sys_element_mapping>
+  <sys_hub_trigger_instance action="delete_multiple" query="flow=2587ffd3db7098100fbb3764e29619db^sys_idNOT IN3489bb2bdbb898100fbb3764e296198a"/>
+  <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+    <comment/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <name>Daily</name>
+    <remote_sys_id/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 05:05:34</sys_created_on>
+    <sys_id>3489bb2bdbb898100fbb3764e296198a</sys_id>
+    <sys_mod_count>22</sys_mod_count>
+    <sys_scope/>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+    <trigger_inputs/>
+    <trigger_outputs/>
+    <trigger_type>daily</trigger_type>
+  </sys_hub_trigger_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=3489bb2bdbb898100fbb3764e296198a"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_trigger_instance</document>
+    <document_key>3489bb2bdbb898100fbb3764e296198a</document_key>
+    <order>100</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 05:05:34</sys_created_on>
+    <sys_id>fc89bb2bdbb898100fbb3764e296198a</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-22 05:05:34</sys_updated_on>
+    <value>1970-01-01 11:00:00</value>
+    <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+  </sys_variable_value>
+  <sys_flow_cat_variable_model action="delete_multiple" query="id=2587ffd3db7098100fbb3764e29619db^sys_idNOT IN6987ffd3db7098100fbb3764e29619dc"/>
+  <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+    <id>2587ffd3db7098100fbb3764e29619db</id>
+    <name>test_polling _flow</name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-21 10:18:24</sys_created_on>
+    <sys_id>6987ffd3db7098100fbb3764e29619dc</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_scope/>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-21 10:18:24</sys_updated_on>
+  </sys_flow_cat_variable_model>
+  <sys_hub_action_instance action="delete_multiple" query="flow=2587ffd3db7098100fbb3764e29619db^sys_idNOT IN20986946dbc110500fbb3764e296191d,5add78efdbf098100fbb3764e2961995,5cb648a80fe11010adbf483f68767e0e,91f6a906dbc110500fbb3764e29619ce,f11d95cb1b89d410d2cf7669cc4bcbb7"/>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:57:08</sys_created_on>
+    <sys_id>20986946dbc110500fbb3764e296191d</sys_id>
+    <sys_mod_count>36</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <ui_id>a69337f9-5424-4c62-81ac-8d8dfb5ed8a6</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=20986946dbc110500fbb3764e296191d"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>20986946dbc110500fbb3764e296191d</document_key>
+    <order>2</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 07:14:17</sys_created_on>
+    <sys_id>a9e917140f611010adbf483f68767e71</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 07:14:17</sys_updated_on>
+    <value>last_succesful_execution</value>
+    <variable display_value="">1d09f99587003300663ca1bb36cb0bad</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>20986946dbc110500fbb3764e296191d</document_key>
+    <order>0</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:57:08</sys_created_on>
+    <sys_id>e4986946dbc110500fbb3764e296191e</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 12:57:08</sys_updated_on>
+    <value>sn_sap_ecc_rfc_spo_sap_ecc_flow_execution</value>
+    <variable display_value="">d909f99587003300663ca1bb36cb0ba4</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>20986946dbc110500fbb3764e296191d</document_key>
+    <order>3</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 07:14:17</sys_created_on>
+    <sys_id>e5e917140f611010adbf483f68767e71</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 07:14:17</sys_updated_on>
+    <value>sort_desc</value>
+    <variable display_value="">5d09f99587003300663ca1bb36cb0bb1</variable>
+  </sys_variable_value>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Look up Invoices By Date">f3de3b1bdb7098100fbb3764e2961903</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>2</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-21 15:25:39</sys_created_on>
+    <sys_id>5add78efdbf098100fbb3764e2961995</sys_id>
+    <sys_mod_count>48</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <ui_id>69a1acb2-af4a-4497-9f59-9b2429164bd0</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=5add78efdbf098100fbb3764e2961995"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5add78efdbf098100fbb3764e2961995</document_key>
+    <order>5</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 09:15:43</sys_created_on>
+    <sys_id>15e53c86db4110500fbb3764e2961952</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 09:15:43</sys_updated_on>
+    <value/>
+    <variable display_value="">ea9a306fdbf098100fbb3764e29619ee</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5add78efdbf098100fbb3764e2961995</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-21 15:25:40</sys_created_on>
+    <sys_id>5edd78efdbf098100fbb3764e2961998</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-21 15:25:40</sys_updated_on>
+    <value>d0578871dbad8010ea4494d9db9619d9</value>
+    <variable display_value="">77de3b1bdb7098100fbb3764e296190e</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5add78efdbf098100fbb3764e2961995</document_key>
+    <order>3</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 09:15:43</sys_created_on>
+    <sys_id>d5e53c86db4110500fbb3764e2961952</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-02 09:39:09</sys_updated_on>
+    <value>BT</value>
+    <variable display_value="">5f9f60a7dbf098100fbb3764e2961957</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5add78efdbf098100fbb3764e2961995</document_key>
+    <order>4</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 13:49:57</sys_created_on>
+    <sys_id>e2a4390edbc110500fbb3764e29619c2</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 13:49:57</sys_updated_on>
+    <value/>
+    <variable display_value="">1e9a306fdbf098100fbb3764e29619df</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=5add78efdbf098100fbb3764e2961995"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>conn_alias</field>
+    <id>5add78efdbf098100fbb3764e2961995</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-21 15:25:40</sys_created_on>
+    <sys_id>d6dd78efdbf098100fbb3764e2961998</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-21 15:25:40</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f3de3b1bdb7098100fbb3764e2961903</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>HIGH</field>
+    <id>5add78efdbf098100fbb3764e2961995</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 09:15:43</sys_created_on>
+    <sys_id>dde53c86db4110500fbb3764e2961951</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 09:15:43</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f3de3b1bdb7098100fbb3764e2961903</table>
+    <value>{{Daily_1.run_start_time}}</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>LOW</field>
+    <id>5add78efdbf098100fbb3764e2961995</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 13:49:57</sys_created_on>
+    <sys_id>62a4390edbc110500fbb3764e29619c2</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 13:49:57</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f3de3b1bdb7098100fbb3764e2961903</table>
+    <value>{{a69337f9-5424-4c62-81ac-8d8dfb5ed8a6.Record.last_succesful_execution}}</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>OPTION</field>
+    <id>5add78efdbf098100fbb3764e2961995</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 09:15:43</sys_created_on>
+    <sys_id>91e53c86db4110500fbb3764e2961952</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 09:15:43</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f3de3b1bdb7098100fbb3764e2961903</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_hub_input_scripts action="delete_multiple" query="instance=5add78efdbf098100fbb3764e2961995^sys_idNOT IN64986946dbc110500fbb3764e2961920,f22d02d31b051810d2cf7669cc4bcb81"/>
+  <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+    <active>false</active>
+    <input_name>LOW</input_name>
+    <instance>5add78efdbf098100fbb3764e2961995</instance>
+    <referenced_table>sys_hub_action_instance</referenced_table>
+    <script>{"LOW":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n"}}</script>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:57:08</sys_created_on>
+    <sys_id>64986946dbc110500fbb3764e2961920</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-02 12:49:26</sys_updated_on>
+  </sys_hub_input_scripts>
+  <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+    <active>false</active>
+    <input_name>OPTION</input_name>
+    <instance>5add78efdbf098100fbb3764e2961995</instance>
+    <referenced_table>sys_hub_action_instance</referenced_table>
+    <script>{"OPTION":{"scriptActive":false}}</script>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-02 12:49:26</sys_created_on>
+    <sys_id>f22d02d31b051810d2cf7669cc4bcb81</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-02 12:49:26</sys_updated_on>
+  </sys_hub_input_scripts>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>3.1.1</order>
+    <parent_ui_id>9196b191-b000-4d64-ae1e-d2bcd8ed5e6f</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 10:29:59</sys_created_on>
+    <sys_id>5cb648a80fe11010adbf483f68767e0e</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <ui_id>ec5b7c99-bcd3-408f-9239-3f57edd77190</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=5cb648a80fe11010adbf483f68767e0e"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>5cb648a80fe11010adbf483f68767e0e</document_key>
+    <order>0</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 10:29:59</sys_created_on>
+    <sys_id>50b648a80fe11010adbf483f68767e11</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <value>sn_sap_ecc_rfc_spo_sap_ecc_invoices_data</value>
+    <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=5cb648a80fe11010adbf483f68767e0e"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>fields</field>
+    <id>5cb648a80fe11010adbf483f68767e0e</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 10:29:59</sys_created_on>
+    <sys_id>94b648a80fe11010adbf483f68767e10</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+    <value>headerlist_comp_code={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.COMP_CODE}}^headerlist_currency={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.CURRENCY}}^headerlist_currency_iso={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.CURRENCY_ISO}}^headerlist_diff_inv={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.DIFF_INV}}^headerlist_doc_date={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.DOC_DATE}}^headerlist_entry_date={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.ENTRY_DATE}}^headerlist_entry_time={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.ENTRY_TIME}}^headerlist_fisc_year={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.FISC_YEAR}}^headerlist_gross_amnt={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.GROSS_AMNT}}^headerlist_header_txt={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.HEADER_TXT}}^headerlist_invoice_status={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INVOICE_STATUS}}^headerlist_inv_doc_no={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INV_DOC_NO}}^headerlist_inv_tran={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.INV_TRAN_}}^headerlist_person_ext={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.PERSON_EXT}}^headerlist_pstng_date={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.PSTNG_DATE}}^headerlist_ref_doc_no={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.REF_DOC_NO}}^headerlist_ref_doc_no_long={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.REF_DOC_NO_LONG}}^headerlist_tm_document={{9196b191-b000-4d64-ae1e-d2bcd8ed5e6f.item.TM_DOCUMENT}}^coalesce_fields=headerlist_inv_doc_no</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>table_name</field>
+    <id>5cb648a80fe11010adbf483f68767e0e</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-18 10:29:59</sys_created_on>
+    <sys_id>dcb648a80fe11010adbf483f68767e10</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:29:59</sys_updated_on>
+    <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>4.1</order>
+    <parent_ui_id>103cfa24-7ad1-4ff3-87d7-27231235efe2</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>91f6a906dbc110500fbb3764e29619ce</sys_id>
+    <sys_mod_count>38</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>07b4e55a-eaa7-4aaa-8ba3-e02987035da4</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=91f6a906dbc110500fbb3764e29619ce"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>91f6a906dbc110500fbb3764e29619ce</document_key>
+    <order>0</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>d9f6a906dbc110500fbb3764e29619cf</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 12:50:05</sys_updated_on>
+    <value>error</value>
+    <variable display_value="">5bc1bcc6531003003bf1d9109ec587d7</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=91f6a906dbc110500fbb3764e29619ce"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>log_level</field>
+    <id>91f6a906dbc110500fbb3764e29619ce</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>95f6a906dbc110500fbb3764e29619cf</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-29 12:50:05</sys_updated_on>
+    <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>log_message</field>
+    <id>91f6a906dbc110500fbb3764e29619ce</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>59f6a906dbc110500fbb3764e29619cf</sys_id>
+    <sys_mod_count>1</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-02 06:20:06</sys_updated_on>
+    <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+    <value>Flow execution at {{Daily_1.run_start_time}}, could not retrieve invoices due to - {{69a1acb2-af4a-4497-9f59-9b2429164bd0.err}}</value>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <order>3.2</order>
+    <parent_ui_id>c1984e9b-ba1c-413b-8a76-c8ddc1d41d5b</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>f11d95cb1b89d410d2cf7669cc4bcbb7</sys_id>
+    <sys_mod_count>30</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>f0edfc22-de9d-41f9-9e62-5a9141ec9e5b</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=f11d95cb1b89d410d2cf7669cc4bcbb7"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>f11d95cb1b89d410d2cf7669cc4bcbb7</document_key>
+    <order>50</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>b11d95cb1b89d410d2cf7669cc4bcbb9</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:40:53</sys_updated_on>
+    <value>sn_sap_ecc_rfc_spo_sap_ecc_flow_execution</value>
+    <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=f11d95cb1b89d410d2cf7669cc4bcbb7"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>record</field>
+    <id>f11d95cb1b89d410d2cf7669cc4bcbb7</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>7d1d95cb1b89d410d2cf7669cc4bcbb8</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:40:53</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+    <value>{{a69337f9-5424-4c62-81ac-8d8dfb5ed8a6.Record}}</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>table_name</field>
+    <id>f11d95cb1b89d410d2cf7669cc4bcbb7</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>b91d95cb1b89d410d2cf7669cc4bcbb8</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:40:53</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>values</field>
+    <id>f11d95cb1b89d410d2cf7669cc4bcbb7</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:40:53</sys_created_on>
+    <sys_id>311d95cb1b89d410d2cf7669cc4bcbb9</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:40:53</sys_updated_on>
+    <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+    <value>last_succesful_execution={{Daily_1.run_start_time}}</value>
+  </sys_element_mapping>
+  <sys_hub_flow_logic action="delete_multiple" query="flow=2587ffd3db7098100fbb3764e29619db^sys_idNOT IN19f6a906dbc110500fbb3764e29619d0,57ce150f1b89d410d2cf7669cc4bcb0f,bda77be7dbb898100fbb3764e29619ac"/>
+  <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    <block display_value="">5cb648a80fe11010adbf483f68767e2d</block>
+    <comment/>
+    <connected_to>c1984e9b-ba1c-413b-8a76-c8ddc1d41d5b</connected_to>
+    <decision_table/>
+    <decision_table_inputs/>
+    <display_text/>
+    <extended_inputs/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <inputs/>
+    <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+    <order>4</order>
+    <outputs_assigned/>
+    <outputs_to_assign/>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_flow_logic</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-29 12:50:05</sys_created_on>
+    <sys_id>19f6a906dbc110500fbb3764e29619d0</sys_id>
+    <sys_mod_count>23</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>103cfa24-7ad1-4ff3-87d7-27231235efe2</ui_id>
+    <workflow_inputs/>
+    <workflow_reference/>
+  </sys_hub_flow_logic>
+  <sys_variable_value action="delete_multiple" query="document_key=19f6a906dbc110500fbb3764e29619d0"/>
+  <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    <block display_value="">94b648a80fe11010adbf483f68767e14</block>
+    <comment/>
+    <connected_to/>
+    <decision_table/>
+    <decision_table_inputs/>
+    <display_text/>
+    <extended_inputs/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <inputs/>
+    <inputs/>
+    <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+    <order>3.1</order>
+    <outputs_assigned/>
+    <outputs_to_assign/>
+    <parent_ui_id>c1984e9b-ba1c-413b-8a76-c8ddc1d41d5b</parent_ui_id>
+    <sys_class_name>sys_hub_flow_logic</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:48:21</sys_created_on>
+    <sys_id>57ce150f1b89d410d2cf7669cc4bcb0f</sys_id>
+    <sys_mod_count>17</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>9196b191-b000-4d64-ae1e-d2bcd8ed5e6f</ui_id>
+    <workflow_inputs/>
+    <workflow_reference/>
+  </sys_hub_flow_logic>
+  <sys_variable_value action="delete_multiple" query="document_key=57ce150f1b89d410d2cf7669cc4bcb0f"/>
+  <sys_element_mapping action="delete_multiple" query="id=57ce150f1b89d410d2cf7669cc4bcb0f"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>items</field>
+    <id>57ce150f1b89d410d2cf7669cc4bcb0f</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-01 14:48:22</sys_created_on>
+    <sys_id>dbce150f1b89d410d2cf7669cc4bcb11</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-01 14:48:22</sys_updated_on>
+    <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+    <value>{{69a1acb2-af4a-4497-9f59-9b2429164bd0.response.HEADERLIST}}</value>
+  </sys_element_mapping>
+  <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+    <block display_value="">d8b648a80fe11010adbf483f68767e28</block>
+    <comment/>
+    <connected_to/>
+    <decision_table/>
+    <decision_table_inputs/>
+    <display_text/>
+    <extended_inputs/>
+    <flow display_value="Retrieve Incoming Invoice">2587ffd3db7098100fbb3764e29619db</flow>
+    <inputs/>
+    <inputs/>
+    <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+    <order>3</order>
+    <outputs_assigned/>
+    <outputs_to_assign/>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_flow_logic</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 04:57:27</sys_created_on>
+    <sys_id>bda77be7dbb898100fbb3764e29619ac</sys_id>
+    <sys_mod_count>27</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-18 10:30:00</sys_updated_on>
+    <ui_id>c1984e9b-ba1c-413b-8a76-c8ddc1d41d5b</ui_id>
+    <workflow_inputs/>
+    <workflow_reference/>
+  </sys_hub_flow_logic>
+  <sys_variable_value action="delete_multiple" query="document_key=bda77be7dbb898100fbb3764e29619ac"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_flow_logic</document>
+    <document_key>bda77be7dbb898100fbb3764e29619ac</document_key>
+    <order>10</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 04:57:27</sys_created_on>
+    <sys_id>b5a77be7dbb898100fbb3764e29619d6</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-02 06:20:06</sys_updated_on>
+    <value>Get Invoices is Success</value>
+    <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=bda77be7dbb898100fbb3764e29619ac"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>condition</field>
+    <id>bda77be7dbb898100fbb3764e29619ac</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 04:57:27</sys_created_on>
+    <sys_id>35a77be7dbb898100fbb3764e29619d6</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-22 04:57:27</sys_updated_on>
+    <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+    <value>{{69a1acb2-af4a-4497-9f59-9b2429164bd0.status}}=success</value>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>condition_name</field>
+    <id>bda77be7dbb898100fbb3764e29619ac</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-05-22 04:57:27</sys_created_on>
+    <sys_id>7da77be7dbb898100fbb3764e29619d5</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-05-22 04:57:27</sys_updated_on>
+    <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+    <value/>
+  </sys_element_mapping>
+</record_update>

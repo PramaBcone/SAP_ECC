@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="SAP ECC Users" max_length="40" name="sn_sap_ecc_rfc_spo_sap_ecc_users" create_access="true" read_access="true" update_access="true" delete_access="true" type="collection">
+        <element label="User" max_length="40" name="user" type="string"/>
+        <element label="Role" max_length="255" name="role" type="string"/>
+        <element label="Client ID" max_length="255" name="client_id" type="string"/>
+        <element label="Start Date"  name="start_date" type="glide_date"/>
+        <element label="End Date"  name="end_date" type="glide_date"/>
+        <element label="Exclusive" max_length="255" name="exclusive" type="string"/>
+        <element label="Date"  name="date" type="glide_date"/>
+        <element label="Time"  name="time" type="glide_date_time"/>
+        <element label="Time Stamp in UTC " max_length="40" name="time_stamp_in_utc" type="string"/>
+        <element label="HR Organisation Management" max_length="255" name="hr_organisation_management" type="string"/>
+        <element label="Assignment from Composite Role" max_length="255" name="assignment_from_composite_role" type="string"/>
+    </element>
+</database>

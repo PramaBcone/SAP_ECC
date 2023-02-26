@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sap_ecc_rfc_spo.SapEccUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Utility functions to&#13;
+1. remove 'name$' field added in JSON representation of the object created from Inputs in an action.&#13;
+2. retrieve SAP connection parameters from 'SAP ECC Connection' table.&#13;
+3. retrieve Credentials associated with the Connection passed as input.&#13;
+4. flatten hierarchical Input schema for an RFC retrieved from SAP.&#13;
+5. create proper schema for output fields as per dynamic object requirement.&#13;
+6. check if mandatory fields passed as blank.&#13;
+7. de-flatten the input when passed into fields of dynamic template and create an appropriate hierarchical structure.&#13;
+8. check if response is not empty.&#13;
+9. identify and retrieve type 'E' (Error) and 'A' (Abort) messages from RETURN parameter of the RFC response.</description>
+        <name>SapEccUtil</name>
+        <script><![CDATA[var SapEccUtil = Class.create();
+
+SapEccUtil.removeMetaNameField = function(inObj) {
+    var strIn = JSON.stringify(inObj);
+    // replace "name$":"objName", with empty string, effectively removing this meta field from Json
+    strIn = strIn.replace(/"name\$":"\w+",/gm, "");
+    strIn = JSON.stringify(JSON.parse(strIn));
+    // return the replaced Json
+    return strIn;
+};
+
+SapEccUtil.getConnectionFromAlias = function(aliasId) {
+    if (JSUtil.nil(aliasId)) {
+        var errNilAlias = 'Connection Alias cannot be blank.';
+        gs.error(errNilAlias);
+        throw errNilAlias;
+    }
+
+    var prov = new sn_cc.ConnectionInfoProvider();
+    var info = prov.getConnectionInfo(aliasId);
+    if (JSUtil.notNil(info)) {
+        return info;
+    }
+
+    var errNilConn = 'No Connection record found for Alias ID - ' + aliasId + '.';
+    gs.error(errNilConn);
+    throw errNilConn;
+};
+
+SapEccUtil.getCredentialIdFromConnection = function(connId) {
+    //Instantiate the GlideRecord with 'sys_connection' table
+    var grConn = new GlideRecord("sys_connection");
+    if (grConn.get(connId)) {
+        var cred = grConn.getValue("credential");
+        if (JSUtil.nil(cred)) {
+            var errNilCred = 'No Credentials were found associated to Connection.';
+            gs.error(errNilCred);
+            throw errNilCred;
+        }
+        return cred;
+    }
+
+    var errNilConn = 'Error while retrieving Connection Record for Connection ID - ' + connId + '.';
+    gs.error(errNilConn);
+    throw errNilConn;
+};
+
+SapEccUtil.flattenSchema = function(input) {
+    var procData = new Array();
+    try {
+        if (JSUtil.notNil(input.data)) {
+            for (var i = 0; i < input.data.length; i++) {
+                var obj = input.data[i];
+                if (obj.type == 'object') {
+                    recurse(procData, obj.label, obj.name, obj.children);
+                } else {
+                    procData.push(obj);
+                }
+            }
+        }
+    } catch (e) {
+        var err = 'An error occurred while creating RFC input schema. ' + e.message;
+        gs.error(err);
+        throw err;
+    }
+
+    var flatSchema = {
+        data: procData
+    };
+
+    return flatSchema;
+
+    function recurse(procData, labelPrefix, namePrefix, children) {
+        for (var j = 0; j < children.length; j++) {
+            var childObj = children[j];
+            if (children[j].type == 'object') {
+                recurse(procData, (labelPrefix + ' > ' + childObj.label), (namePrefix + '.' + childObj.name), childObj.children);
+            } else {
+                childObj.label = labelPrefix + ' > ' + childObj.label;
+                childObj.name = namePrefix + '.' + childObj.name;
+                procData.push(childObj);
+            }
+        }
+    }
+};
+
+SapEccUtil.prepareOutSchema = function(input) {
+    var children = new Array();
+    try {
+        if (JSUtil.notNil(input.data)) {
+            for (var i = 0; i < input.data.length; i++) {
+                var obj = input.data[i];
+                var type = obj['type'];
+                switch (type) {
+                    case 'array.object':
+                        obj['attributes'] = {
+                            child_type: obj['child_type']
+                        };
+                        delete obj['child_type'];
+
+                        //No 'break' needed as recurse and push is required for array.object also
+                    case 'object':
+                        recurse(obj.children);
+                        children.push(obj);
+                        break;
+
+                    default:
+                        children.push(obj);
+                }
+            }
+        }
+    } catch (e) {
+        var err = 'An error occurred while creating RFC output schema. ' + e.message;
+        gs.error(err);
+        throw err;
+    }
+
+    var schema = {
+        data: {
+            type: "object",
+            children: children
+        }
+    };
+
+    return schema;
+
+    function recurse(objChildren) {
+        for (var j = 0; j < objChildren.length; j++) {
+            var childObj = objChildren[j];
+            if (childObj['type'] == 'number')
+                childObj['type'] = "string";
+            switch (childObj.type) {
+                case 'array.object':
+                    childObj['attributes'] = {
+                        child_type: childObj['child_type']
+                    };
+                    delete childObj['child_type'];
+
+                    //No 'break' needed as recurse is required for array.object also
+                case 'object':
+                    recurse(childObj.children);
+                    break;
+            }
+        }
+    }
+};
+
+SapEccUtil.checkMandatoryFields = function(mandatoryFieldsList) {
+    var emptyMandatoryFieldsList = [];
+    Object.keys(mandatoryFieldsList).forEach(function(key) {
+        if (JSUtil.nil(mandatoryFieldsList[key])) {
+            emptyMandatoryFieldsList.push(key);
+        }
+    });
+    emptyMandatoryFieldsList = emptyMandatoryFieldsList.join(", ");
+    return emptyMandatoryFieldsList;
+};
+
+SapEccUtil.unflattenPayload = function(input) {
+    var reqJson = new Object();
+    if (JSUtil.notNil(input)) {
+        try {
+            var fieldsArr = input.split(/\^/);
+            for (var i = 0; i < fieldsArr.length; i++) {
+                var keyValPair = fieldsArr[i].split(/=(.*)/);
+                if (JSUtil.notNil(keyValPair[0])) {
+                    if (keyValPair[0].contains('.')) {
+                        var keys = keyValPair[0].split(/\./);
+                        var hier = null,
+                            parent = null;
+                        for (var j = 0; j < keys.length - 1; j++) {
+                            if (j == 0 && !reqJson.hasOwnProperty(keys[j])) {
+                                reqJson[keys[j]] = new Object();
+                                hier = reqJson[keys[j]];
+                                parent = hier;
+                            } else if (j == 0) {
+                                hier = reqJson[keys[j]];
+                                parent = hier;
+                            } else if (j != 0 && !parent.hasOwnProperty(keys[j])) {
+                                parent[keys[j]] = new Object();
+                                parent = parent[keys[j]];
+                            } else if (j != 0) {
+                                parent = parent[keys[j]];
+                            }
+                        }
+                        parent[keys[keys.length - 1]] = keyValPair[1];
+                    } else {
+                        reqJson[keyValPair[0]] = keyValPair[1];
+                    }
+                }
+            }
+            return reqJson;
+        } catch (e) {
+            var err = 'An error occurred while creating payload JSON from input. ' + e.message;
+            gs.error(err);
+            throw err;
+        }
+    }
+    return reqJson;
+};
+
+SapEccUtil.unflattenPayloadWithTabularFields = function(input) {
+    var reqJson = new Object();
+    if (JSUtil.notNil(input)) {
+        try {
+            var fieldsArr = input.split(/\^/);
+            for (var i = 0; i < fieldsArr.length; i++) {
+                var keyValPair = fieldsArr[i].split(/^(.*?)=/);
+                try {
+                    keyValPair[2] = JSON.parse(keyValPair[2],function(key, value) { return value == null ? "" : value; });
+                } catch (e) {}
+                if (JSUtil.notNil(keyValPair[1])) {
+                    if (keyValPair[1].contains('.')) {
+                        var keys = keyValPair[1].split(/\./);
+                        var hier = null,
+                            parent = null;
+                        for (var j = 0; j < keys.length - 1; j++) {
+                            if (j == 0 && !reqJson.hasOwnProperty(keys[j])) {
+                                reqJson[keys[j]] = new Object();
+                                hier = reqJson[keys[j]];
+                                parent = hier;
+                            } else if (j == 0) {
+                                hier = reqJson[keys[j]];
+                                parent = hier;
+                            } else if (j != 0 && !parent.hasOwnProperty(keys[j])) {
+                                parent[keys[j]] = new Object();
+                                parent = parent[keys[j]];
+                            } else if (j != 0) {
+                                parent = parent[keys[j]];
+                            }
+                        }
+                        parent[keys[keys.length - 1]] = keyValPair[2];
+                    } else {
+                        reqJson[keyValPair[1]] = keyValPair[2];
+                    }
+                }
+            }
+            return reqJson;
+        } catch (e) {
+            var err = 'An error occurred while creating payload JSON from input. ' + e.message;
+            gs.error(err);
+            throw err;
+        }
+    }
+    return reqJson;
+};
+
+SapEccUtil.getGlideRecord = function(tableName, queryParams, groupByParams) {
+    var glideAgg = new GlideAggregate(tableName);
+
+    if (JSUtil.notNil(queryParams)) {
+        Object.keys(queryParams).forEach(function(key) {
+            glideAgg.addQuery(key.toString(), queryParams[key].toString());
+        });
+    }
+
+    if (JSUtil.notNil(groupByParams)) {
+        groupByParams.forEach(function(param) {
+            glideAgg.groupBy(param.toString());
+        });
+    }
+
+    glideAgg.query();
+
+    return glideAgg;
+};
+
+SapEccUtil.isResponseNotEmpty = function(obj) {
+    if (JSUtil.notNil(obj)) {
+        return checkNotEmpty(obj);
+    }
+
+    return false;
+
+    function checkNotEmpty(obj1) {
+        var isNotEmpty = false;
+        switch (JSUtil.typeOf(obj1)) {
+            case 'object':
+                var keys = Object.keys(obj1);
+                for (var idx = 0; idx < keys.length; idx++) {
+                    if (JSUtil.notNil(obj1[keys[idx]]) && checkNotEmpty(obj1[keys[idx]])) {
+                        isNotEmpty = true;
+                        return isNotEmpty;
+                    }
+                }
+                break;
+
+            case 'array':
+                for (var i = 0; i < obj1.length; i++) {
+                    if (JSUtil.notNil(obj1[i]) && checkNotEmpty(obj1[i])) {
+                        isNotEmpty = true;
+                        return isNotEmpty;
+                    }
+                }
+                break;
+
+            default:
+                isNotEmpty = true;
+                return isNotEmpty;
+        }
+
+        return isNotEmpty;
+    }
+};
+
+SapEccUtil.getReturnErrors = function(obj) {
+    var status = 'success',
+        errors = '';
+    if (JSUtil.notNil(obj) && obj.hasOwnProperty('RETURN') || obj.hasOwnProperty('ET_RETURN') || obj.hasOwnProperty('IT_RETURN')) {
+		var response;
+		if(obj.hasOwnProperty('RETURN'))
+			response = obj.RETURN;
+		else if(obj.hasOwnProperty('ET_RETURN'))
+			response = obj.ET_RETURN;
+		else
+			response = obj.IT_RETURN;
+        switch (JSUtil.typeOf(response)) {
+            case 'array':
+                for (var i = 0; i < response.length; i++) {
+                    if (getErrStatusRetObj(response[i]) == 'error') {
+                        status = 'error';
+                    }
+                }
+                break;
+
+            case 'object':
+                status = getErrStatusRetObj(response);
+                break;
+        }
+    }
+
+    var errStatusObj = {
+        status: status,
+        err: errors
+    };
+
+    if (errStatusObj.status == 'error' && (!errStatusObj.err || errStatusObj.err == ".\n"))
+        errStatusObj.err = "Unknown error from SAP. Check outputs for more details.";
+
+    return errStatusObj;
+
+    function getErrStatusRetObj(retObj) {
+        if (retObj.TYPE == 'E' || retObj.TYPE == 'A') {
+            errors += retObj.MESSAGE + ".\n";
+            return 'error';
+        }
+
+        return 'success';
+    }
+};
+
+SapEccUtil.getUnknownErr = function(e) {
+    var msg = 'Encountered an error. Check log for more details.';
+    gs.error(e);
+
+    var errStatusObj = {
+        status: 'error',
+        err: msg
+    };
+
+    return errStatusObj;
+};
+
+SapEccUtil.checkextrafields = function(field, segment) {
+    var extrafieldlist = new Array();
+    switch (segment) {
+        case 'BAPI_SALESORDER_CREATEFROMDAT2-ORDER_HEADER_INX':
+            extrafieldlist = ["REFOBJTYPE", "REFOBJKEY", "REFDOCTYPE", "CURR_ISO", "CREATED_BY", "H_CURR_ISO", "REF_DOC_L_LONG"];
+            break;
+
+        case 'BAPI_SALESORDER_CREATEFROMDAT2-ORDER_ITEMS_INX':
+            extrafieldlist = ["S_UNIT_ISO", "UNOF_WTISO", "VOLUNITISO", "CREATED_BY", "CURRENCY", "CURR_ISO", "FUNC_AREA_LONG", "COMPREAS"];
+            break;
+        case 'BAPI_SALESORDER_CHANGE-ORDER_HEADER_INX':
+            extrafieldlist = ['CURR_ISO', 'H_CURR_ISO', 'REF_DOC_L_LONG'];
+            break;
+        case 'BAPI_SALESORDER_CHANGE-ORDER_ITEM_INX':
+            extrafieldlist = ["S_UNIT_ISO", "UNOF_WTISO", "VOLUNITISO", "CREATED_BY", "CURRENCY", "CURR_ISO", "FUNC_AREA_LONG", "COMPREAS"];
+    }
+    for (var i = 0; i < extrafieldlist.length; i++) {
+        if (field == extrafieldlist[i]) {
+            return true;
+        }
+    }
+    return false;
+};
+
+SapEccUtil.masksensitiveinfo = function(str) {
+    if (gs.nil(str))
+        return "";
+    var trailingCharsIntactCount = 4;
+    str = str.toString();
+    var newstr = str;
+
+    if (str.length > 4) {
+        newstr = str.substring(0, str.length - trailingCharsIntactCount);
+        newstr = newstr.replace(/./g, 'x') + str.slice(-trailingCharsIntactCount);
+
+    }
+    return newstr;
+};
+
+SapEccUtil.trimInputs = function(inputs) {
+	for (var key in inputs) {
+		if (typeof inputs[key] == 'string')
+			inputs[key] = inputs[key].trim();
+	}
+	return inputs;
+};
+
+SapEccUtil.getInitialLoad = function(initial_load){
+	var inp_load = '';
+	if (initial_load == true) {
+		inp_load = 'X';
+	} else {
+		inp_load = '';
+	}
+	return inp_load;
+};
+
+SapEccUtil.getLoadComplete = function(loadComplete, row_skip, row_count){
+	if(loadComplete == true){
+		if(row_skip > 0 || row_count > 0){
+			throw "Load complete cannot be set true if either the row count or row skip is more than 0";
+		} else {
+			return 'X';
+		}
+	} else {
+		return '';
+	}
+};
+
+SapEccUtil.filterArrayObjects = function(inputArr){
+	var filteredArr = [];
+	if(inputArr.length != 0){
+		for(var i=0; i<inputArr.length; i++){
+			var empty = SapEccUtil.checkEmptyProperties(inputArr[i]);
+			if(!empty){
+				var obj = {};
+				for (var key in inputArr[i]){
+					if (typeof inputArr[i][key] == 'string')
+						obj[key] = inputArr[i][key].trim();
+					else
+						obj[key] = inputArr[i][key];
+				}
+				filteredArr.push(obj);
+			}
+		}
+		return filteredArr;
+	} else {
+		return inputArr;
+	}
+};
+
+SapEccUtil.checkEmptyProperties = function(obj) {
+	for (var key in obj) {
+		if (!gs.nil(obj[key]))
+			return false;
+	}
+	return true;
+};
+
+SapEccUtil.getVendorErrors = function(resp){
+	var statusObj = {};
+	var et_success = "";
+	var arr = resp.ET_RETURN;
+	for (var i = 0; i < arr.length; i++) {
+		for (var k in arr[i]) {
+			if (arr[i][k] == "S") {
+				et_success = "S";
+				statusObj.response = arr[i]['MESSAGE_V1'];
+				statusObj.status = "Success";
+				statusObj.err = "";
+			}
+		}
+	}
+	if (!et_success) {
+		var errStatusObj = SapEccUtil.getReturnErrors(resp);
+		statusObj.status = errStatusObj.status;
+		statusObj.err = errStatusObj.err;
+		statusObj.response = "";
+	}
+	return statusObj;
+};
+
+
+SapEccUtil.vendorPayload = function(obj) {
+        Object.keys(obj).forEach(function(key) {
+            if (obj[key] && typeof obj[key] === 'object') {
+                SapEccUtil.vendorPayload(obj[key]);
+                if (Object.keys(obj[key]).length === 0) {
+                    delete obj[key];
+                }
+            } else if (gs.nil(obj[key]) || key === 'name$') {
+                delete obj[key];
+            }
+        });
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-13 07:52:23</sys_created_on>
+        <sys_id>2d609733dbad80501b4b9cfadb961995</sys_id>
+        <sys_mod_count>167</sys_mod_count>
+        <sys_name>SapEccUtil</sys_name>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_script_include_2d609733dbad80501b4b9cfadb961995</sys_update_name>
+        <sys_updated_by>prama</sys_updated_by>
+        <sys_updated_on>2023-01-04 08:09:05</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="SAP ECC RFC" max_length="40" name="sn_sap_ecc_rfc_spo_sap_rfc_list" create_access="true" read_access="true" update_access="true" delete_access="true" type="collection">
+        <element choice="3" default="MISC" label="Application Component" mandatory="true" max_length="40" name="application_component" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cross-Application" sequence="1" value="Cross-Application"/>
+                <element inactive_on_update="false" label="Asset Accounting" sequence="2" value="Asset Accounting"/>
+                <element inactive_on_update="false" label="Business Information Warehouse" sequence="3" value="Business Information Warehouse"/>
+                <element inactive_on_update="false" label="PPC" sequence="4" value="PPC"/>
+                <element inactive_on_update="false" label="DASS (control station)" sequence="5" value="DASS (control station)"/>
+                <element inactive_on_update="false" label="RIVA" sequence="6" value="RIVA"/>
+                <element inactive_on_update="false" label="Financial accounting" sequence="7" value="Financial accounting"/>
+                <element inactive_on_update="false" label="General ledger" sequence="8" value="General ledger"/>
+                <element inactive_on_update="false" label="Human Resources Planning" sequence="9" value="Human Resources Planning"/>
+                <element inactive_on_update="false" label="Plant maintenance" sequence="10" value="Plant maintenance"/>
+                <element inactive_on_update="false" label="Publishing" sequence="11" value="Publishing"/>
+                <element inactive_on_update="false" label="Cost Accounting" sequence="12" value="Cost Accounting"/>
+                <element inactive_on_update="false" label="Warehouse Management" sequence="13" value="Warehouse Management"/>
+                <element inactive_on_update="false" label="Materials management" sequence="14" value="Materials management"/>
+                <element inactive_on_update="false" label="Hospital" sequence="15" value="Hospital"/>
+                <element inactive_on_update="false" label="Human resources" sequence="16" value="Human resources"/>
+                <element inactive_on_update="false" label="QSS (Quality assurance)" sequence="17" value="QSS (Quality assurance)"/>
+                <element inactive_on_update="false" label="Unknown application" sequence="18" value="Unknown application"/>
+                <element inactive_on_update="false" label="Basis" sequence="19" value="Basis"/>
+                <element inactive_on_update="false" label="Enterprise Data Model" sequence="20" value="Enterprise Data Model"/>
+                <element inactive_on_update="false" label="Sales" sequence="21" value="Sales"/>
+                <element inactive_on_update="false" label="MMS (Merchandise mgt. system)" sequence="22" value="MMS (Merchandise mgt. system)"/>
+                <element inactive_on_update="false" label="Customer Head Office" sequence="23" value="Customer Head Office"/>
+                <element inactive_on_update="false" label="Customer branch" sequence="24" value="Customer branch"/>
+                <element inactive_on_update="false" label="MISC" sequence="25" value="MISC"/>
+            </choice>
+        </element>
+        <element choice="3" default="read" label="Operation Type" mandatory="true" max_length="40" name="operation_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Read" sequence="1" value="read"/>
+                <element inactive_on_update="false" label="Write" sequence="2" value="write"/>
+            </choice>
+        </element>
+        <element default="true" label="Enabled" max_length="40" name="enabled" type="boolean"/>
+        <element label="Name" mandatory="true" max_length="50" name="name" type="string" unique="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#9;return current.application_component + ' - ' + current.name;&#10;})(current);" display="true" label="UI Label" mandatory="true" max_length="100" name="ui_label" read_only="true" type="string" virtual="true"/>
+        <index name="index">
+            <element name="name"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+    </element>
+</database>

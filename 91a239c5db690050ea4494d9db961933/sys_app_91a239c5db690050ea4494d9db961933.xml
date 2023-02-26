@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <can_edit_in_studio>false</can_edit_in_studio>
+        <enforce_license>log</enforce_license>
+        <guided_setup_guid/>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_category>none</license_category>
+        <license_model>none</license_model>
+        <logo>4245d0140f611010adbf483f68767e21</logo>
+        <menu/>
+        <name>SAP ECC RFC Spoke</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>sn_sap_ecc_rfc_spo</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description>The SAP ECC RFC Spoke for IntegrationHub provides actions that a process analyst can use to retrieve, create and update data in SAP ECC via RFCs.</short_description>
+        <source>sn_sap_ecc_rfc_spo</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-12-04 11:27:27</sys_created_on>
+        <sys_id>91a239c5db690050ea4494d9db961933</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-12-04 11:39:27</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+    <sys_attachment action="INSERT_OR_UPDATE">
+    <average_image_color/>
+    <chunk_size_bytes>700000</chunk_size_bytes>
+    <compressed>true</compressed>
+    <content_type>image/svg+xml</content_type>
+    <file_name>logo</file_name>
+    <hash>bff70be83d1d639f4f68f6466f99569268b18cd0c9d09b96729a97cc2487f5d8</hash>
+    <image_height/>
+    <image_width/>
+    <size_bytes>1835</size_bytes>
+    <size_compressed>944</size_compressed>
+    <state>pending</state>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-17 16:55:15</sys_created_on>
+    <sys_id>4245d0140f611010adbf483f68767e21</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-17 16:55:15</sys_updated_on>
+    <table_name>ZZ_YYsys_app</table_name>
+    <table_sys_id>91a239c5db690050ea4494d9db961933</table_sys_id>
+  </sys_attachment>
+  <sys_attachment_doc action="INSERT_OR_UPDATE">
+    <data>H4sIAAAAAAAAAA==</data>
+    <length>16</length>
+    <position>0</position>
+    <sys_attachment display_value="logo" sys_id="4245d0140f611010adbf483f68767e21">4245d0140f611010adbf483f68767e21</sys_attachment>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-17 16:55:15</sys_created_on>
+    <sys_id>8245d0140f611010adbf483f68767e21</sys_id>
+  </sys_attachment_doc>
+  <sys_attachment_doc action="INSERT_OR_UPDATE">
+    <data>jVXvT+M4EP0Mf4U3fFmk2LUdJ2kK3dXSZVkk0J20t3xFITVNtCapkvQXq/vf741TuEMq0iHascfz3sybseH88/bJsbVtu6qpp4ESMmC2Lpp5VS+mwap/5OPg86fj8w+csytb2zbvm3bCvsybB8uunVt1vXcxbYQUUch+3F2xy+2yaXv2p1st+HXNhHfeDTkmLBFSsotV5eZMnjLGOei79eK/RaiAVfNpcJPvbHuvA4Ya624alH2/nIxGm81GbCLRtIuRllKOAN6HTLauqn8dClRZlo38KUKngVxuA7Yb7PER21TzvpwGiSF3aatF2b/s1pXdXDQEYZIlBr8B6/qds9PA1vmDs/whL34t2mZVzye13bDXuDNf1KRb5gWCl63tbLu2AaklPOt3S/h7u+1HRdfBfyS6Xv5+rJzj7crZiV3bupnPzwpXLd96KGayat3HE3T2+uu9uj89+9vj1f/Hn3zzP3ug9sBJ3dQWnvORrxG1omU2b6/afF7ZuvdjeckZsMXe/bOuesxnBYU/SO4f9c/OQr6aBhHGt4M1McYeo3lbvXfCai2yzCT/Ev3V5nX32LRP0+Ap79tq+1H5hnIySXJKXUL7miVjzeNjZzEm+ToP8vOicbigJ1J+ubz8FowOxAut9DuYLP06O4yJVfYOJp3N4sOYNHsvTzK7GB/CqPfik4uI4s9Hb8cBzzLvS1a4vOsIhGZgQLeZGIcmKtHe2GnNtf4Oz50ZON4i1ICIYpGFOham5EYYJ0OF1+x4JMacViWtbrQUSRiZgsPDtQCxSHhEABzHBVdwSWw0PlJk3iqRHB8VEvs4REu4CikmK/AJkUWk8KowEho2c0rEQKVERRQpeI2njem7lHQAHLkRn1BqcCRUUbqnx5aSDGmxi0JKrWFBjkRqSA0lGh6kxrcplC/AII5s6i35ZUhaqUSwkG46LfYLOhgTjMoli5TcM/nu4KahUFTj/DnpUr4LY580Cg1WsI4Sy+EMUWPqYeg7L3ThU1OP9kUQLQjlvmER6XZeuUhJse+DDodExuuWpIMK9b0hGu1Lx5gRBZxLBhZUm5Wk2rc3jL2w1Fsj0pnRBE3obnmSmMp8uTfP+DN6iwW0GZQ9zJv7qvfD1E55IlNKWkG9mWnKDIDnjTw0fCW5eV09s9sowVGEckqu1nTdSgW5frwvIvdDTmfRmCZNZ1FKNZKIV/yBN6BfXg3uiSpNvNYazyC+0+p5eHX4D/Pp+B/Pg4rGKwcAAA==</data>
+    <length>1248</length>
+    <position>1</position>
+    <sys_attachment display_value="logo" sys_id="4245d0140f611010adbf483f68767e21">4245d0140f611010adbf483f68767e21</sys_attachment>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-17 16:55:15</sys_created_on>
+    <sys_id>0645d0140f611010adbf483f68767e21</sys_id>
+  </sys_attachment_doc>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD9d18d7e6d97f9510d6ac8ccefbb34866</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+        <serialized_content>{"FlowDesigner:FD9d18d7e6d97f9510d6ac8ccefbb34866":{"$COCollectionField":[{"ITEM":{"MATDOC_ITEM":"String","MATDOC_ITEM.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Item in Material Document\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Item\",\"mandatory\":\"false\",\"child_name\":\"ITEM\",\"uiUniqueId\":\"ffee8e59-613e-4594-b7da-5a476b1ccb91\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD9d18d7e6d97f9510d6ac8ccefbb34866\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"10\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cc6df530-a62a-44e4-bfa7-b8a274bb30ef\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD9d18d7e6d97f9510d6ac8ccefbb34866.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Material Document Item\",\"mandatory\":\"false\",\"child_name\":\"ITEM\",\"uiUniqueId\":\"ffee8e59-613e-4594-b7da-5a476b1ccb91\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD9d18d7e6d97f9510d6ac8ccefbb34866\",\"child_label\":\"Item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"10\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cc6df530-a62a-44e4-bfa7-b8a274bb30ef\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>akash</sys_created_by>
+        <sys_created_on>2022-12-19 11:58:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5118d7e6977f9510215b35471153af67</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FD9d18d7e6d97f9510d6ac8ccefbb34866</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_complex_object_5118d7e6977f9510215b35471153af67</sys_update_name>
+        <sys_updated_by>akash</sys_updated_by>
+        <sys_updated_on>2023-02-20 11:44:42</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

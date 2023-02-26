@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+  <sys_hub_flow action="INSERT_OR_UPDATE">
+    <access>public</access>
+    <acls/>
+    <active>false</active>
+    <annotation/>
+    <callable_by_client_api>false</callable_by_client_api>
+    <category/>
+    <compiler_build/>
+    <copied_from/>
+    <copied_from_name/>
+    <description>This flow is to demonstrate the usage of Execute RFC action for create operation.</description>
+    <internal_name>create_cost_center</internal_name>
+    <label_cache>[{"name":"1edfa524-6c9d-4bed-a03a-87370ce05bd7.output","label":"1➛Response","reference_display":"Response","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cd17bd7f-4ce9-4860-b892-3b02d5f2a7f4"}},{"name":"1edfa524-6c9d-4bed-a03a-87370ce05bd7.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9b396775-6a40-4c2a-acfb-9daccb119f85"}},{"name":"1edfa524-6c9d-4bed-a03a-87370ce05bd7.err","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"815f87fd-a7e3-4008-a0fe-2f4aeb02633f"}},{"name":"d4aba388-de4a-4610-bc47-c362f2a037d9.output","label":"2➛Response","reference_display":"Response","type":"dynamic_object","base_type":"dynamic_object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}},{"name":"d4aba388-de4a-4610-bc47-c362f2a037d9.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"be013fc8-8a66-424c-a986-bc6c2270b27c"}},{"name":"d4aba388-de4a-4610-bc47-c362f2a037d9.err","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"8fb55a2b-1b65-43aa-b9d2-242ee67e399c"}},{"name":"1edfa524-6c9d-4bed-a03a-87370ce05bd7.output.COSTCENTERLIST","label":"1➛Response➛List of Cost Centers to be Created [ COSTCENTERLIST ]","type":"array.object","base_type":"array.object","attributes":{"child_type":"object"}}]</label_cache>
+    <latest_snapshot/>
+    <master_snapshot/>
+    <name>Create Cost Center</name>
+    <natlang/>
+    <outputs/>
+    <remote_trigger_id/>
+    <run_as>user</run_as>
+    <run_with_roles/>
+    <sc_callable>false</sc_callable>
+    <show_draft_actions>false</show_draft_actions>
+    <show_triggered_flows>false</show_triggered_flows>
+    <status>draft</status>
+    <sys_class_name>sys_hub_flow</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-05-31 16:00:26</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>37f150d4c7a07010678d208c95c260bb</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_name>Create Cost Center</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_update_name>sys_hub_flow_37f150d4c7a07010678d208c95c260bb</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <type>flow</type>
+  </sys_hub_flow>
+  <sys_translated_text action="delete_multiple" query="documentkey=37f150d4c7a07010678d208c95c260bb"/>
+  <sys_variable_value action="delete_multiple" query="document_key=37f150d4c7a07010678d208c95c260bb"/>
+  <sys_hub_flow_component action="delete_multiple" query="flow=37f150d4c7a07010678d208c95c260bb^sys_idNOT INc5108354c7e07010678d208c95c26019,ccde7214c7e07010678d208c95c26075"/>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Execute RFC">878053f3c7043010678d208c95c26025</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Create Cost Center">37f150d4c7a07010678d208c95c260bb</flow>
+    <order>2</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:00</sys_created_on>
+    <sys_id>c5108354c7e07010678d208c95c26019</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:00</sys_updated_on>
+    <ui_id>d4aba388-de4a-4610-bc47-c362f2a037d9</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=c5108354c7e07010678d208c95c26019"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>c5108354c7e07010678d208c95c26019</document_key>
+    <order>2</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>19108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <value>0822d8d4c7a07010678d208c95c26083</value>
+    <variable display_value="">478053f3c7043010678d208c95c2602f</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>c5108354c7e07010678d208c95c26019</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>55108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <value>d0578871dbad8010ea4494d9db9619d9</value>
+    <variable display_value="">4b8053f3c7043010678d208c95c26026</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>c5108354c7e07010678d208c95c26019</document_key>
+    <order>5</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>91108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <value>{"children":[{"children":[{"name":"COSTCENTER","label":"Cost Center","type":"string"},{"name":"VALID_FROM","label":"Valid From","type":"date"},{"name":"VALID_TO","label":"Valid To","type":"date"},{"name":"PERSON_IN_CHARGE","label":"Person Responsible","type":"string"},{"name":"DEPARTMENT","label":"Department","type":"string"},{"name":"COSTCENTER_TYPE","label":"Cost Center Category","type":"string"},{"name":"COSTCTR_HIER_GRP","label":"Hierarchy Area","type":"string"},{"name":"COMP_CODE","label":"Company Code","type":"string"},{"name":"BUS_AREA","label":"Business Area","type":"string"},{"name":"CURRENCY","label":"Currency","type":"string"},{"name":"CURRENCY_ISO","label":"ISO code currency","type":"string"},{"name":"PROFIT_CTR","label":"Profit Center","type":"string"},{"name":"RECORD_QUANTITY","label":"Record Quantity","type":"string"},{"name":"LOCK_IND_ACTUAL_PRIMARY_COSTS","label":"Actual primary costs","type":"string"},{"name":"LOCK_IND_PLAN_PRIMARY_COSTS","label":"Plan primary costs","type":"string"},{"name":"LOCK_IND_ACT_SECONDARY_COSTS","label":"Actual secondary costs","type":"string"},{"name":"LOCK_IND_PLAN_SECONDARY_COSTS","label":"Plan secondary costs","type":"string"},{"name":"LOCK_IND_ACTUAL_REVENUES","label":"Actual revenues","type":"string"},{"name":"LOCK_IND_PLAN_REVENUES","label":"Plan revenues","type":"string"},{"name":"LOCK_IND_COMMITMENT_UPDATE","label":"Commitment update","type":"string"},{"name":"CONDITION_TABLE_USAGE","label":"Usage","type":"string"},{"name":"APPLICATION","label":"Application","type":"string"},{"name":"CSTG_SHEET","label":"Costing Sheet","type":"string"},{"name":"ACTY_INDEP_TEMPLATE","label":"Acty-Indep FormPlng Temp","type":"string"},{"name":"ACTY_DEP_TEMPLATE","label":"Acty-Dep Form Plng Temp","type":"string"},{"name":"ADDR_TITLE","label":"Title","type":"string"},{"name":"ADDR_NAME1","label":"Name [ ADDR_NAME1 ]","type":"string"},{"name":"ADDR_NAME2","label":"Name 2","type":"string"},{"name":"ADDR_NAME3","label":"Name 3","type":"string"},{"name":"ADDR_NAME4","label":"Name 4","type":"string"},{"name":"ADDR_STREET","label":"Street","type":"string"},{"name":"ADDR_CITY","label":"City","type":"string"},{"name":"ADDR_DISTRICT","label":"District","type":"string"},{"name":"ADDR_COUNTRY","label":"Country Key","type":"string"},{"name":"ADDR_COUNTRY_ISO","label":"Country ISO","type":"string"},{"name":"ADDR_TAXJURCODE","label":"Tax Jurisdiction","type":"string"},{"name":"ADDR_PO_BOX","label":"PO Box","type":"string"},{"name":"ADDR_POSTL_CODE","label":"Postal Code","type":"string"},{"name":"ADDR_POBX_PCD","label":"P O Box Postal Code","type":"string"},{"name":"ADDR_REGION","label":"Region","type":"string"},{"name":"TELCO_LANGU","label":"Language Key","type":"string"},{"name":"TELCO_LANGU_ISO","label":"Lang (ISO 639)","type":"string"},{"name":"TELCO_TELEPHONE","label":"Telephone 1","type":"string"},{"name":"TELCO_TELEPHONE2","label":"Telephone 2","type":"string"},{"name":"TELCO_TELEBOX","label":"Telebox number","type":"string"},{"name":"TELCO_TELEX","label":"Telex number","type":"string"},{"name":"TELCO_FAX_NUMBER","label":"Fax Number","type":"string"},{"name":"TELCO_TELETEX","label":"Teletex number","type":"string"},{"name":"TELCO_PRINTER","label":"Printer destination","type":"string"},{"name":"TELCO_DATA_LINE","label":"Data line","type":"string"},{"name":"JV_VENTURE","label":"Joint venture","type":"string"},{"name":"JV_REC_IND","label":"Recovery Indicator","type":"string"},{"name":"JV_EQUITY_TYP","label":"Equity type","type":"string"},{"name":"JV_OTYPE","label":"Joint Venture Object Type","type":"string"},{"name":"JV_JIBCL","label":"JIB/JIBE Class","type":"string"},{"name":"JV_JIBSA","label":"JIB/JIBE Subclass A","type":"string"},{"name":"NAME","label":"Name [ NAME ]","type":"string"},{"name":"DESCRIPT","label":"Description","type":"string"},{"name":"FUNC_AREA","label":"Functional Area [ FUNC_AREA ]","type":"string"},{"name":"ACTY_DEP_TEMPLATE_ALLOC_CC","label":"Acty-Dep Alloc Template","type":"string"},{"name":"ACTY_INDEP_TEMPLATE_ALLOC_CC","label":"Acty-Indep Alloc Temp","type":"string"},{"name":"FUNC_AREA_LONG","label":"Functional Area [ FUNC_AREA_LONG ]","type":"string"},{"name":"PERSON_IN_CHARGE_USER","label":"User Responsible","type":"string"},{"name":"LOGSYSTEM","label":"Logical System","type":"string"},{"name":"ACTY_DEP_TEMPLATE_SK","label":"Templ : Act Stat Key Figure [ ACTY_DEP_TEMPLATE_SK ]","type":"string"},{"name":"ACTY_INDEP_TEMPLATE_SK","label":"Templ : Act Stat Key Figure [ ACTY_INDEP_TEMPLATE_SK ]","type":"string"}],"name":"COSTCENTERLIST","attributes":{"child_type":"object"},"label":"List of Cost Centers to be Created [ COSTCENTERLIST ]","type":"array.object"},{"children":[{"name":"STRUCTURE","label":"BAPI table extension struct","type":"string"},{"name":"VALUEPART1","label":"Data [ VALUEPART1 ]","type":"string"},{"name":"VALUEPART2","label":"Data [ VALUEPART2 ]","type":"string"},{"name":"VALUEPART3","label":"Data [ VALUEPART3 ]","type":"string"},{"name":"VALUEPART4","label":"Data [ VALUEPART4 ]","type":"string"}],"name":"EXTENSIONIN","attributes":{"child_type":"object"},"label":"Reference Structure for BAPI Parameters EXTENSIONIN/EXTENSIONOUT [ EXTENSIONIN ]","type":"array.object"},{"children":[{"name":"STRUCTURE","label":"BAPI table extension struct","type":"string"},{"name":"VALUEPART1","label":"Data [ VALUEPART1 ]","type":"string"},{"name":"VALUEPART2","label":"Data [ VALUEPART2 ]","type":"string"},{"name":"VALUEPART3","label":"Data [ VALUEPART3 ]","type":"string"},{"name":"VALUEPART4","label":"Data [ VALUEPART4 ]","type":"string"}],"name":"EXTENSIONOUT","attributes":{"child_type":"object"},"label":"Reference Structure for BAPI Parameters EXTENSIONIN/EXTENSIONOUT [ EXTENSIONOUT ]","type":"array.object"},{"children":[{"name":"TYPE","label":"Message type","type":"string"},{"name":"ID","label":"Message Class","type":"string"},{"name":"NUMBER","label":"Message number","type":"string"},{"name":"MESSAGE","label":"Message text","type":"string"},{"name":"LOG_NO","label":"Log number","type":"string"},{"name":"LOG_MSG_NO","label":"Message serial no","type":"string"},{"name":"MESSAGE_V1","label":"Message Variable [ MESSAGE_V1 ]","type":"string"},{"name":"MESSAGE_V2","label":"Message Variable [ MESSAGE_V2 ]","type":"string"},{"name":"MESSAGE_V3","label":"Message Variable [ MESSAGE_V3 ]","type":"string"},{"name":"MESSAGE_V4","label":"Message Variable [ MESSAGE_V4 ]","type":"string"},{"name":"PARAMETER","label":"Parameter Name","type":"string"},{"name":"ROW","label":"Lines in parameter","type":"integer"},{"name":"FIELD","label":"Field name","type":"string"},{"name":"SYSTEM","label":"Logical system (source of message)","type":"string"}],"name":"RETURN","attributes":{"child_type":"object"},"label":"Return Parameters, Especially Errors [ RETURN ]","type":"array.object"}],"type":"object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}}</value>
+    <variable display_value="">078053f3c7043010678d208c95c26045</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>c5108354c7e07010678d208c95c26019</document_key>
+    <order>3</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>d9108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <value>CONTROLLINGAREA=Sample Controlling Area</value>
+    <variable display_value="">878053f3c7043010678d208c95c26037</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=c5108354c7e07010678d208c95c26019"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>conn_alias</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>d5108354c7e07010678d208c95c2601b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>dynamic_hidden_input_output</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>15108354c7e07010678d208c95c2601b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>import_and_changing_tab_inputs</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>5d108354c7e07010678d208c95c2601b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>rfc</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>99108354c7e07010678d208c95c2601b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>tables_tab_inputs</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>11108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value>COSTCENTERLIST={{1edfa524-6c9d-4bed-a03a-87370ce05bd7.output.COSTCENTERLIST}}</value>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_type display_value="Create Table Field Object">b3971c0cc7943010678d208c95c260af</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Create Cost Center">37f150d4c7a07010678d208c95c260bb</flow>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>ccde7214c7e07010678d208c95c26075</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:40:58</sys_updated_on>
+    <ui_id>1edfa524-6c9d-4bed-a03a-87370ce05bd7</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=ccde7214c7e07010678d208c95c26075"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>5</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>0cde7214c7e07010678d208c95c26079</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:40:58</sys_updated_on>
+    <value>{"children":[{"children":[{"name":"COSTCENTER","label":"Cost Center","type":"string"},{"name":"VALID_FROM","label":"Valid From","type":"date"},{"name":"VALID_TO","label":"Valid To","type":"date"},{"name":"PERSON_IN_CHARGE","label":"Person Responsible","type":"string"},{"name":"DEPARTMENT","label":"Department","type":"string"},{"name":"COSTCENTER_TYPE","label":"Cost Center Category","type":"string"},{"name":"COSTCTR_HIER_GRP","label":"Hierarchy Area","type":"string"},{"name":"COMP_CODE","label":"Company Code","type":"string"},{"name":"BUS_AREA","label":"Business Area","type":"string"},{"name":"CURRENCY","label":"Currency","type":"string"},{"name":"CURRENCY_ISO","label":"ISO code currency","type":"string"},{"name":"PROFIT_CTR","label":"Profit Center","type":"string"},{"name":"RECORD_QUANTITY","label":"Record Quantity","type":"string"},{"name":"LOCK_IND_ACTUAL_PRIMARY_COSTS","label":"Actual primary costs","type":"string"},{"name":"LOCK_IND_PLAN_PRIMARY_COSTS","label":"Plan primary costs","type":"string"},{"name":"LOCK_IND_ACT_SECONDARY_COSTS","label":"Actual secondary costs","type":"string"},{"name":"LOCK_IND_PLAN_SECONDARY_COSTS","label":"Plan secondary costs","type":"string"},{"name":"LOCK_IND_ACTUAL_REVENUES","label":"Actual revenues","type":"string"},{"name":"LOCK_IND_PLAN_REVENUES","label":"Plan revenues","type":"string"},{"name":"LOCK_IND_COMMITMENT_UPDATE","label":"Commitment update","type":"string"},{"name":"CONDITION_TABLE_USAGE","label":"Usage","type":"string"},{"name":"APPLICATION","label":"Application","type":"string"},{"name":"CSTG_SHEET","label":"Costing Sheet","type":"string"},{"name":"ACTY_INDEP_TEMPLATE","label":"Acty-Indep FormPlng Temp","type":"string"},{"name":"ACTY_DEP_TEMPLATE","label":"Acty-Dep Form Plng Temp","type":"string"},{"name":"ADDR_TITLE","label":"Title","type":"string"},{"name":"ADDR_NAME1","label":"Name [ ADDR_NAME1 ]","type":"string"},{"name":"ADDR_NAME2","label":"Name 2","type":"string"},{"name":"ADDR_NAME3","label":"Name 3","type":"string"},{"name":"ADDR_NAME4","label":"Name 4","type":"string"},{"name":"ADDR_STREET","label":"Street","type":"string"},{"name":"ADDR_CITY","label":"City","type":"string"},{"name":"ADDR_DISTRICT","label":"District","type":"string"},{"name":"ADDR_COUNTRY","label":"Country Key","type":"string"},{"name":"ADDR_COUNTRY_ISO","label":"Country ISO","type":"string"},{"name":"ADDR_TAXJURCODE","label":"Tax Jurisdiction","type":"string"},{"name":"ADDR_PO_BOX","label":"PO Box","type":"string"},{"name":"ADDR_POSTL_CODE","label":"Postal Code","type":"string"},{"name":"ADDR_POBX_PCD","label":"P O Box Postal Code","type":"string"},{"name":"ADDR_REGION","label":"Region","type":"string"},{"name":"TELCO_LANGU","label":"Language Key","type":"string"},{"name":"TELCO_LANGU_ISO","label":"Lang (ISO 639)","type":"string"},{"name":"TELCO_TELEPHONE","label":"Telephone 1","type":"string"},{"name":"TELCO_TELEPHONE2","label":"Telephone 2","type":"string"},{"name":"TELCO_TELEBOX","label":"Telebox number","type":"string"},{"name":"TELCO_TELEX","label":"Telex number","type":"string"},{"name":"TELCO_FAX_NUMBER","label":"Fax Number","type":"string"},{"name":"TELCO_TELETEX","label":"Teletex number","type":"string"},{"name":"TELCO_PRINTER","label":"Printer destination","type":"string"},{"name":"TELCO_DATA_LINE","label":"Data line","type":"string"},{"name":"JV_VENTURE","label":"Joint venture","type":"string"},{"name":"JV_REC_IND","label":"Recovery Indicator","type":"string"},{"name":"JV_EQUITY_TYP","label":"Equity type","type":"string"},{"name":"JV_OTYPE","label":"Joint Venture Object Type","type":"string"},{"name":"JV_JIBCL","label":"JIB/JIBE Class","type":"string"},{"name":"JV_JIBSA","label":"JIB/JIBE Subclass A","type":"string"},{"name":"NAME","label":"Name [ NAME ]","type":"string"},{"name":"DESCRIPT","label":"Description","type":"string"},{"name":"FUNC_AREA","label":"Functional Area [ FUNC_AREA ]","type":"string"},{"name":"ACTY_DEP_TEMPLATE_ALLOC_CC","label":"Acty-Dep Alloc Template","type":"string"},{"name":"ACTY_INDEP_TEMPLATE_ALLOC_CC","label":"Acty-Indep Alloc Temp","type":"string"},{"name":"FUNC_AREA_LONG","label":"Functional Area [ FUNC_AREA_LONG ]","type":"string"},{"name":"PERSON_IN_CHARGE_USER","label":"User Responsible","type":"string"},{"name":"LOGSYSTEM","label":"Logical System","type":"string"},{"name":"ACTY_DEP_TEMPLATE_SK","label":"Templ : Act Stat Key Figure [ ACTY_DEP_TEMPLATE_SK ]","type":"string"},{"name":"ACTY_INDEP_TEMPLATE_SK","label":"Templ : Act Stat Key Figure [ ACTY_INDEP_TEMPLATE_SK ]","type":"string"}],"name":"COSTCENTERLIST","attributes":{"child_type":"object"},"label":"List of Cost Centers to be Created [ COSTCENTERLIST ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cd17bd7f-4ce9-4860-b892-3b02d5f2a7f4"}}</value>
+    <variable display_value="">48a71c0cc7943010678d208c95c260dc</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>2</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>0cde7214c7e07010678d208c95c26086</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>0822d8d4c7a07010678d208c95c26083</value>
+    <variable display_value="">b7971c0cc7943010678d208c95c260c5</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>4</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>48de7214c7e07010678d208c95c26086</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>COSTCENTER=Sample Cost Center Number^VALID_FROM=2021-05-31^VALID_TO=2021-06-08^PERSON_IN_CHARGE=Sample Incharge Name^DEPARTMENT=Sample Department Name^COSTCENTER_TYPE=Sample Cost Center Category^COSTCTR_HIER_GRP=Sample Cost Center Hierrarchy Area^COMP_CODE=Sample Company Code^CURRENCY=Sample Currency^CURRENCY_ISO=Sample Currency^PROFIT_CTR=Sample Profit Counter^NAME=Sample Name^DESCRIPT=Sample Description^FUNC_AREA=Sample Function Area^FUNC_AREA_LONG=Sample Function Area</value>
+    <variable display_value="">c0a71c0cc7943010678d208c95c260d5</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>ccde7214c7e07010678d208c95c26079</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>d0578871dbad8010ea4494d9db9619d9</value>
+    <variable display_value="">77971c0cc7943010678d208c95c260b0</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>3</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>ccde7214c7e07010678d208c95c26086</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>COSTCENTERLIST</value>
+    <variable display_value="">c4a71c0cc7943010678d208c95c260cd</variable>
+  </sys_variable_value>
+  <sys_hub_trigger_instance action="delete_multiple" query="flow=37f150d4c7a07010678d208c95c260bb^sys_idNOT IN73ce7214c7e07010678d208c95c26066"/>
+  <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+    <comment/>
+    <display_text/>
+    <flow display_value="Create Cost Center">37f150d4c7a07010678d208c95c260bb</flow>
+    <name>Run Once</name>
+    <remote_sys_id/>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>73ce7214c7e07010678d208c95c26066</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_scope/>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:40:57</sys_updated_on>
+    <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+    <trigger_inputs/>
+    <trigger_outputs/>
+    <trigger_type>run_once</trigger_type>
+  </sys_hub_trigger_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=73ce7214c7e07010678d208c95c26066"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_trigger_instance</document>
+    <document_key>73ce7214c7e07010678d208c95c26066</document_key>
+    <order>100</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>77ce7214c7e07010678d208c95c26067</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>2021-06-10 06:30:00</value>
+    <variable display_value="">92afcd94c32222002841b63b12d3aee8</variable>
+  </sys_variable_value>
+  <sys_flow_cat_variable_model action="delete_multiple" query="id=37f150d4c7a07010678d208c95c260bb^sys_idNOT IN73f118d4c7a07010678d208c95c26033"/>
+  <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+    <id>37f150d4c7a07010678d208c95c260bb</id>
+    <name>Create Cost Center</name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-05-31 16:00:26</sys_created_on>
+    <sys_id>73f118d4c7a07010678d208c95c26033</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_scope/>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-05-31 16:00:26</sys_updated_on>
+  </sys_flow_cat_variable_model>
+  <sys_hub_action_instance action="delete_multiple" query="flow=37f150d4c7a07010678d208c95c260bb^sys_idNOT INc5108354c7e07010678d208c95c26019,ccde7214c7e07010678d208c95c26075"/>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_inputs/>
+    <action_type display_value="Execute RFC">878053f3c7043010678d208c95c26025</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Create Cost Center">37f150d4c7a07010678d208c95c260bb</flow>
+    <order>2</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:00</sys_created_on>
+    <sys_id>c5108354c7e07010678d208c95c26019</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:00</sys_updated_on>
+    <ui_id>d4aba388-de4a-4610-bc47-c362f2a037d9</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=c5108354c7e07010678d208c95c26019"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>c5108354c7e07010678d208c95c26019</document_key>
+    <order>2</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>19108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <value>0822d8d4c7a07010678d208c95c26083</value>
+    <variable display_value="">478053f3c7043010678d208c95c2602f</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>c5108354c7e07010678d208c95c26019</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>55108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <value>d0578871dbad8010ea4494d9db9619d9</value>
+    <variable display_value="">4b8053f3c7043010678d208c95c26026</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>c5108354c7e07010678d208c95c26019</document_key>
+    <order>5</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>91108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <value>{"children":[{"children":[{"name":"COSTCENTER","label":"Cost Center","type":"string"},{"name":"VALID_FROM","label":"Valid From","type":"date"},{"name":"VALID_TO","label":"Valid To","type":"date"},{"name":"PERSON_IN_CHARGE","label":"Person Responsible","type":"string"},{"name":"DEPARTMENT","label":"Department","type":"string"},{"name":"COSTCENTER_TYPE","label":"Cost Center Category","type":"string"},{"name":"COSTCTR_HIER_GRP","label":"Hierarchy Area","type":"string"},{"name":"COMP_CODE","label":"Company Code","type":"string"},{"name":"BUS_AREA","label":"Business Area","type":"string"},{"name":"CURRENCY","label":"Currency","type":"string"},{"name":"CURRENCY_ISO","label":"ISO code currency","type":"string"},{"name":"PROFIT_CTR","label":"Profit Center","type":"string"},{"name":"RECORD_QUANTITY","label":"Record Quantity","type":"string"},{"name":"LOCK_IND_ACTUAL_PRIMARY_COSTS","label":"Actual primary costs","type":"string"},{"name":"LOCK_IND_PLAN_PRIMARY_COSTS","label":"Plan primary costs","type":"string"},{"name":"LOCK_IND_ACT_SECONDARY_COSTS","label":"Actual secondary costs","type":"string"},{"name":"LOCK_IND_PLAN_SECONDARY_COSTS","label":"Plan secondary costs","type":"string"},{"name":"LOCK_IND_ACTUAL_REVENUES","label":"Actual revenues","type":"string"},{"name":"LOCK_IND_PLAN_REVENUES","label":"Plan revenues","type":"string"},{"name":"LOCK_IND_COMMITMENT_UPDATE","label":"Commitment update","type":"string"},{"name":"CONDITION_TABLE_USAGE","label":"Usage","type":"string"},{"name":"APPLICATION","label":"Application","type":"string"},{"name":"CSTG_SHEET","label":"Costing Sheet","type":"string"},{"name":"ACTY_INDEP_TEMPLATE","label":"Acty-Indep FormPlng Temp","type":"string"},{"name":"ACTY_DEP_TEMPLATE","label":"Acty-Dep Form Plng Temp","type":"string"},{"name":"ADDR_TITLE","label":"Title","type":"string"},{"name":"ADDR_NAME1","label":"Name [ ADDR_NAME1 ]","type":"string"},{"name":"ADDR_NAME2","label":"Name 2","type":"string"},{"name":"ADDR_NAME3","label":"Name 3","type":"string"},{"name":"ADDR_NAME4","label":"Name 4","type":"string"},{"name":"ADDR_STREET","label":"Street","type":"string"},{"name":"ADDR_CITY","label":"City","type":"string"},{"name":"ADDR_DISTRICT","label":"District","type":"string"},{"name":"ADDR_COUNTRY","label":"Country Key","type":"string"},{"name":"ADDR_COUNTRY_ISO","label":"Country ISO","type":"string"},{"name":"ADDR_TAXJURCODE","label":"Tax Jurisdiction","type":"string"},{"name":"ADDR_PO_BOX","label":"PO Box","type":"string"},{"name":"ADDR_POSTL_CODE","label":"Postal Code","type":"string"},{"name":"ADDR_POBX_PCD","label":"P O Box Postal Code","type":"string"},{"name":"ADDR_REGION","label":"Region","type":"string"},{"name":"TELCO_LANGU","label":"Language Key","type":"string"},{"name":"TELCO_LANGU_ISO","label":"Lang (ISO 639)","type":"string"},{"name":"TELCO_TELEPHONE","label":"Telephone 1","type":"string"},{"name":"TELCO_TELEPHONE2","label":"Telephone 2","type":"string"},{"name":"TELCO_TELEBOX","label":"Telebox number","type":"string"},{"name":"TELCO_TELEX","label":"Telex number","type":"string"},{"name":"TELCO_FAX_NUMBER","label":"Fax Number","type":"string"},{"name":"TELCO_TELETEX","label":"Teletex number","type":"string"},{"name":"TELCO_PRINTER","label":"Printer destination","type":"string"},{"name":"TELCO_DATA_LINE","label":"Data line","type":"string"},{"name":"JV_VENTURE","label":"Joint venture","type":"string"},{"name":"JV_REC_IND","label":"Recovery Indicator","type":"string"},{"name":"JV_EQUITY_TYP","label":"Equity type","type":"string"},{"name":"JV_OTYPE","label":"Joint Venture Object Type","type":"string"},{"name":"JV_JIBCL","label":"JIB/JIBE Class","type":"string"},{"name":"JV_JIBSA","label":"JIB/JIBE Subclass A","type":"string"},{"name":"NAME","label":"Name [ NAME ]","type":"string"},{"name":"DESCRIPT","label":"Description","type":"string"},{"name":"FUNC_AREA","label":"Functional Area [ FUNC_AREA ]","type":"string"},{"name":"ACTY_DEP_TEMPLATE_ALLOC_CC","label":"Acty-Dep Alloc Template","type":"string"},{"name":"ACTY_INDEP_TEMPLATE_ALLOC_CC","label":"Acty-Indep Alloc Temp","type":"string"},{"name":"FUNC_AREA_LONG","label":"Functional Area [ FUNC_AREA_LONG ]","type":"string"},{"name":"PERSON_IN_CHARGE_USER","label":"User Responsible","type":"string"},{"name":"LOGSYSTEM","label":"Logical System","type":"string"},{"name":"ACTY_DEP_TEMPLATE_SK","label":"Templ : Act Stat Key Figure [ ACTY_DEP_TEMPLATE_SK ]","type":"string"},{"name":"ACTY_INDEP_TEMPLATE_SK","label":"Templ : Act Stat Key Figure [ ACTY_INDEP_TEMPLATE_SK ]","type":"string"}],"name":"COSTCENTERLIST","attributes":{"child_type":"object"},"label":"List of Cost Centers to be Created [ COSTCENTERLIST ]","type":"array.object"},{"children":[{"name":"STRUCTURE","label":"BAPI table extension struct","type":"string"},{"name":"VALUEPART1","label":"Data [ VALUEPART1 ]","type":"string"},{"name":"VALUEPART2","label":"Data [ VALUEPART2 ]","type":"string"},{"name":"VALUEPART3","label":"Data [ VALUEPART3 ]","type":"string"},{"name":"VALUEPART4","label":"Data [ VALUEPART4 ]","type":"string"}],"name":"EXTENSIONIN","attributes":{"child_type":"object"},"label":"Reference Structure for BAPI Parameters EXTENSIONIN/EXTENSIONOUT [ EXTENSIONIN ]","type":"array.object"},{"children":[{"name":"STRUCTURE","label":"BAPI table extension struct","type":"string"},{"name":"VALUEPART1","label":"Data [ VALUEPART1 ]","type":"string"},{"name":"VALUEPART2","label":"Data [ VALUEPART2 ]","type":"string"},{"name":"VALUEPART3","label":"Data [ VALUEPART3 ]","type":"string"},{"name":"VALUEPART4","label":"Data [ VALUEPART4 ]","type":"string"}],"name":"EXTENSIONOUT","attributes":{"child_type":"object"},"label":"Reference Structure for BAPI Parameters EXTENSIONIN/EXTENSIONOUT [ EXTENSIONOUT ]","type":"array.object"},{"children":[{"name":"TYPE","label":"Message type","type":"string"},{"name":"ID","label":"Message Class","type":"string"},{"name":"NUMBER","label":"Message number","type":"string"},{"name":"MESSAGE","label":"Message text","type":"string"},{"name":"LOG_NO","label":"Log number","type":"string"},{"name":"LOG_MSG_NO","label":"Message serial no","type":"string"},{"name":"MESSAGE_V1","label":"Message Variable [ MESSAGE_V1 ]","type":"string"},{"name":"MESSAGE_V2","label":"Message Variable [ MESSAGE_V2 ]","type":"string"},{"name":"MESSAGE_V3","label":"Message Variable [ MESSAGE_V3 ]","type":"string"},{"name":"MESSAGE_V4","label":"Message Variable [ MESSAGE_V4 ]","type":"string"},{"name":"PARAMETER","label":"Parameter Name","type":"string"},{"name":"ROW","label":"Lines in parameter","type":"integer"},{"name":"FIELD","label":"Field name","type":"string"},{"name":"SYSTEM","label":"Logical system (source of message)","type":"string"}],"name":"RETURN","attributes":{"child_type":"object"},"label":"Return Parameters, Especially Errors [ RETURN ]","type":"array.object"}],"type":"object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"ec3feb55-c033-40de-b020-c5065f65edc0"}}</value>
+    <variable display_value="">078053f3c7043010678d208c95c26045</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>c5108354c7e07010678d208c95c26019</document_key>
+    <order>3</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>d9108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <value>CONTROLLINGAREA=Sample Controlling Area</value>
+    <variable display_value="">878053f3c7043010678d208c95c26037</variable>
+  </sys_variable_value>
+  <sys_element_mapping action="delete_multiple" query="id=c5108354c7e07010678d208c95c26019"/>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>conn_alias</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>d5108354c7e07010678d208c95c2601b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>dynamic_hidden_input_output</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>15108354c7e07010678d208c95c2601b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>import_and_changing_tab_inputs</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>5d108354c7e07010678d208c95c2601b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>rfc</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>99108354c7e07010678d208c95c2601b</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value/>
+  </sys_element_mapping>
+  <sys_element_mapping action="INSERT_OR_UPDATE">
+    <field>tables_tab_inputs</field>
+    <id>c5108354c7e07010678d208c95c26019</id>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:41:01</sys_created_on>
+    <sys_id>11108354c7e07010678d208c95c2601c</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:41:01</sys_updated_on>
+    <table>var__m_sys_hub_action_input_878053f3c7043010678d208c95c26025</table>
+    <value>COSTCENTERLIST={{1edfa524-6c9d-4bed-a03a-87370ce05bd7.output.COSTCENTERLIST}}</value>
+  </sys_element_mapping>
+  <sys_hub_action_instance action="INSERT_OR_UPDATE">
+    <action_inputs/>
+    <action_type display_value="Create Table Field Object">b3971c0cc7943010678d208c95c260af</action_type>
+    <action_type_parent/>
+    <comment/>
+    <compiled_snapshot/>
+    <display_text/>
+    <flow display_value="Create Cost Center">37f150d4c7a07010678d208c95c260bb</flow>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>ccde7214c7e07010678d208c95c26075</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:40:58</sys_updated_on>
+    <ui_id>1edfa524-6c9d-4bed-a03a-87370ce05bd7</ui_id>
+  </sys_hub_action_instance>
+  <sys_variable_value action="delete_multiple" query="document_key=ccde7214c7e07010678d208c95c26075"/>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>5</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>0cde7214c7e07010678d208c95c26079</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:40:58</sys_updated_on>
+    <value>{"children":[{"children":[{"name":"COSTCENTER","label":"Cost Center","type":"string"},{"name":"VALID_FROM","label":"Valid From","type":"date"},{"name":"VALID_TO","label":"Valid To","type":"date"},{"name":"PERSON_IN_CHARGE","label":"Person Responsible","type":"string"},{"name":"DEPARTMENT","label":"Department","type":"string"},{"name":"COSTCENTER_TYPE","label":"Cost Center Category","type":"string"},{"name":"COSTCTR_HIER_GRP","label":"Hierarchy Area","type":"string"},{"name":"COMP_CODE","label":"Company Code","type":"string"},{"name":"BUS_AREA","label":"Business Area","type":"string"},{"name":"CURRENCY","label":"Currency","type":"string"},{"name":"CURRENCY_ISO","label":"ISO code currency","type":"string"},{"name":"PROFIT_CTR","label":"Profit Center","type":"string"},{"name":"RECORD_QUANTITY","label":"Record Quantity","type":"string"},{"name":"LOCK_IND_ACTUAL_PRIMARY_COSTS","label":"Actual primary costs","type":"string"},{"name":"LOCK_IND_PLAN_PRIMARY_COSTS","label":"Plan primary costs","type":"string"},{"name":"LOCK_IND_ACT_SECONDARY_COSTS","label":"Actual secondary costs","type":"string"},{"name":"LOCK_IND_PLAN_SECONDARY_COSTS","label":"Plan secondary costs","type":"string"},{"name":"LOCK_IND_ACTUAL_REVENUES","label":"Actual revenues","type":"string"},{"name":"LOCK_IND_PLAN_REVENUES","label":"Plan revenues","type":"string"},{"name":"LOCK_IND_COMMITMENT_UPDATE","label":"Commitment update","type":"string"},{"name":"CONDITION_TABLE_USAGE","label":"Usage","type":"string"},{"name":"APPLICATION","label":"Application","type":"string"},{"name":"CSTG_SHEET","label":"Costing Sheet","type":"string"},{"name":"ACTY_INDEP_TEMPLATE","label":"Acty-Indep FormPlng Temp","type":"string"},{"name":"ACTY_DEP_TEMPLATE","label":"Acty-Dep Form Plng Temp","type":"string"},{"name":"ADDR_TITLE","label":"Title","type":"string"},{"name":"ADDR_NAME1","label":"Name [ ADDR_NAME1 ]","type":"string"},{"name":"ADDR_NAME2","label":"Name 2","type":"string"},{"name":"ADDR_NAME3","label":"Name 3","type":"string"},{"name":"ADDR_NAME4","label":"Name 4","type":"string"},{"name":"ADDR_STREET","label":"Street","type":"string"},{"name":"ADDR_CITY","label":"City","type":"string"},{"name":"ADDR_DISTRICT","label":"District","type":"string"},{"name":"ADDR_COUNTRY","label":"Country Key","type":"string"},{"name":"ADDR_COUNTRY_ISO","label":"Country ISO","type":"string"},{"name":"ADDR_TAXJURCODE","label":"Tax Jurisdiction","type":"string"},{"name":"ADDR_PO_BOX","label":"PO Box","type":"string"},{"name":"ADDR_POSTL_CODE","label":"Postal Code","type":"string"},{"name":"ADDR_POBX_PCD","label":"P O Box Postal Code","type":"string"},{"name":"ADDR_REGION","label":"Region","type":"string"},{"name":"TELCO_LANGU","label":"Language Key","type":"string"},{"name":"TELCO_LANGU_ISO","label":"Lang (ISO 639)","type":"string"},{"name":"TELCO_TELEPHONE","label":"Telephone 1","type":"string"},{"name":"TELCO_TELEPHONE2","label":"Telephone 2","type":"string"},{"name":"TELCO_TELEBOX","label":"Telebox number","type":"string"},{"name":"TELCO_TELEX","label":"Telex number","type":"string"},{"name":"TELCO_FAX_NUMBER","label":"Fax Number","type":"string"},{"name":"TELCO_TELETEX","label":"Teletex number","type":"string"},{"name":"TELCO_PRINTER","label":"Printer destination","type":"string"},{"name":"TELCO_DATA_LINE","label":"Data line","type":"string"},{"name":"JV_VENTURE","label":"Joint venture","type":"string"},{"name":"JV_REC_IND","label":"Recovery Indicator","type":"string"},{"name":"JV_EQUITY_TYP","label":"Equity type","type":"string"},{"name":"JV_OTYPE","label":"Joint Venture Object Type","type":"string"},{"name":"JV_JIBCL","label":"JIB/JIBE Class","type":"string"},{"name":"JV_JIBSA","label":"JIB/JIBE Subclass A","type":"string"},{"name":"NAME","label":"Name [ NAME ]","type":"string"},{"name":"DESCRIPT","label":"Description","type":"string"},{"name":"FUNC_AREA","label":"Functional Area [ FUNC_AREA ]","type":"string"},{"name":"ACTY_DEP_TEMPLATE_ALLOC_CC","label":"Acty-Dep Alloc Template","type":"string"},{"name":"ACTY_INDEP_TEMPLATE_ALLOC_CC","label":"Acty-Indep Alloc Temp","type":"string"},{"name":"FUNC_AREA_LONG","label":"Functional Area [ FUNC_AREA_LONG ]","type":"string"},{"name":"PERSON_IN_CHARGE_USER","label":"User Responsible","type":"string"},{"name":"LOGSYSTEM","label":"Logical System","type":"string"},{"name":"ACTY_DEP_TEMPLATE_SK","label":"Templ : Act Stat Key Figure [ ACTY_DEP_TEMPLATE_SK ]","type":"string"},{"name":"ACTY_INDEP_TEMPLATE_SK","label":"Templ : Act Stat Key Figure [ ACTY_INDEP_TEMPLATE_SK ]","type":"string"}],"name":"COSTCENTERLIST","attributes":{"child_type":"object"},"label":"List of Cost Centers to be Created [ COSTCENTERLIST ]","type":"array.object"}],"type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cd17bd7f-4ce9-4860-b892-3b02d5f2a7f4"}}</value>
+    <variable display_value="">48a71c0cc7943010678d208c95c260dc</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>2</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>0cde7214c7e07010678d208c95c26086</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>0822d8d4c7a07010678d208c95c26083</value>
+    <variable display_value="">b7971c0cc7943010678d208c95c260c5</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>4</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>48de7214c7e07010678d208c95c26086</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>COSTCENTER=Sample Cost Center Number^VALID_FROM=2021-05-31^VALID_TO=2021-06-08^PERSON_IN_CHARGE=Sample Incharge Name^DEPARTMENT=Sample Department Name^COSTCENTER_TYPE=Sample Cost Center Category^COSTCTR_HIER_GRP=Sample Cost Center Hierrarchy Area^COMP_CODE=Sample Company Code^CURRENCY=Sample Currency^CURRENCY_ISO=Sample Currency^PROFIT_CTR=Sample Profit Counter^NAME=Sample Name^DESCRIPT=Sample Description^FUNC_AREA=Sample Function Area^FUNC_AREA_LONG=Sample Function Area</value>
+    <variable display_value="">c0a71c0cc7943010678d208c95c260d5</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>1</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>ccde7214c7e07010678d208c95c26079</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>d0578871dbad8010ea4494d9db9619d9</value>
+    <variable display_value="">77971c0cc7943010678d208c95c260b0</variable>
+  </sys_variable_value>
+  <sys_variable_value action="INSERT_OR_UPDATE">
+    <document>sys_hub_action_instance</document>
+    <document_key>ccde7214c7e07010678d208c95c26075</document_key>
+    <order>3</order>
+    <sys_class_name>sys_variable_value</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-06-01 04:35:28</sys_created_on>
+    <sys_id>ccde7214c7e07010678d208c95c26086</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-06-01 04:35:28</sys_updated_on>
+    <value>COSTCENTERLIST</value>
+    <variable display_value="">c4a71c0cc7943010678d208c95c260cd</variable>
+  </sys_variable_value>
+</record_update>

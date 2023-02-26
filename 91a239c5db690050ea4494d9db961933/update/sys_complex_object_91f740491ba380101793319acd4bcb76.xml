@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+  <sys_complex_object action="INSERT_OR_UPDATE">
+    <label/>
+    <name>FDddf7404922a380108473872f5ab2fe75</name>
+    <namespace>FlowDesigner</namespace>
+    <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+    <serialized_content>{"FlowDesigner:FDddf7404922a380108473872f5ab2fe75":{"$COCollectionField":[{"item":{"STLOC_LOW":"String","STLOC_LOW.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"From storage location [STLOC_LOW]\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"OPTION":"String","OPTION.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Selection operator [OPTION]\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"STLOC_HIGH":"String","STLOC_HIGH.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"To storage location [STLOC_HIGH]\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"SIGN":"String","SIGN.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Inclusive/exclusive [SIGN]\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Storage Location Range Criteria\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiUniqueId\":\"bbb3637d-6c80-40f2-834c-f80c289cdfd4\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDddf7404922a380108473872f5ab2fe75\",\"child_label\":\"item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"e4ad56ef-d0a1-4823-9258-770b3f2c6107\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDddf7404922a380108473872f5ab2fe75.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Storage Location Range Criteria\",\"mandatory\":\"false\",\"child_name\":\"item\",\"uiUniqueId\":\"bbb3637d-6c80-40f2-834c-f80c289cdfd4\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDddf7404922a380108473872f5ab2fe75\",\"child_label\":\"item\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"e4ad56ef-d0a1-4823-9258-770b3f2c6107\"}"}}</serialized_content>
+    <sys_class_name>sys_complex_object</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-03-12 13:46:54</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>91f740491ba380101793319acd4bcb76</sys_id>
+    <sys_mod_count>50</sys_mod_count>
+    <sys_name>FDddf7404922a380108473872f5ab2fe75</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_update_name>sys_complex_object_91f740491ba380101793319acd4bcb76</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-15 12:57:14</sys_updated_on>
+    <type>complex_object_collection</type>
+  </sys_complex_object>
+</record_update>

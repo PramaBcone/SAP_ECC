@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+  <sys_user_role action="INSERT_OR_UPDATE">
+    <assignable_by/>
+    <can_delegate>true</can_delegate>
+    <description>User with this role has access to read data from SAP ECC RFCs Table &amp; Module.</description>
+    <elevated_privilege>false</elevated_privilege>
+    <grantable>true</grantable>
+    <includes_roles/>
+    <name>sn_sap_ecc_rfc_spo.SAP_ECC_RFC_Spoke_Read</name>
+    <requires_subscription>-1</requires_subscription>
+    <scoped_admin>false</scoped_admin>
+    <snbe>false</snbe>
+    <suffix>SAP_ECC_RFC_Spoke_Read</suffix>
+    <sys_class_name>sys_user_role</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-09-28 10:28:47</sys_created_on>
+    <sys_id>d2040d3253723010dcd6ddeeff7b1261</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>sn_sap_ecc_rfc_spo.SAP_ECC_RFC_Spoke_Read</sys_name>
+    <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_update_name>sys_user_role_d2040d3253723010dcd6ddeeff7b1261</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-09-28 10:28:47</sys_updated_on>
+  </sys_user_role>
+</record_update>

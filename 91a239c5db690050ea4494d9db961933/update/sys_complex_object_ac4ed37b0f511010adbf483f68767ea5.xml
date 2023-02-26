@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+  <sys_complex_object action="INSERT_OR_UPDATE">
+    <label/>
+    <name>FDe84ed37bdc5110101d58afe3dcda75a5</name>
+    <namespace>FlowDesigner</namespace>
+    <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+    <serialized_content>{"FlowDesigner:FDe84ed37bdc5110101d58afe3dcda75a5":{"FIS_PERIOD":"String","FIS_PERIOD.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Posting period\",\"mandatory\":\"true\",\"order\":\"11\",\"max_length\":\"0\"}"},"DOC_TYPE":"String","DOC_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document type\",\"mandatory\":\"true\",\"order\":\"12\",\"max_length\":\"0\"}"},"HEADER_TXT":"String","HEADER_TXT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Header Text\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\"}"},"OBJ_TYPE":"String","OBJ_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference procedure\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"FISC_YEAR":"String","FISC_YEAR.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Fiscal Year\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\"}"},"BUS_ACT":"String","BUS_ACT.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Business Transaction\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"USERNAME":"String","USERNAME.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"User Name\",\"mandatory\":\"true\",\"order\":\"5\",\"max_length\":\"0\"}"},"OBJ_KEY":"String","OBJ_KEY.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Object key\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"PSTNG_DATE":"String","PSTNG_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Posting Date\",\"mandatory\":\"true\",\"order\":\"9\",\"max_length\":\"10\"}"},"COMP_CODE":"String","COMP_CODE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Company Code\",\"mandatory\":\"true\",\"order\":\"7\",\"max_length\":\"0\"}"},"DOC_DATE":"String","DOC_DATE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"YYYY-MM-DD\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Document Date\",\"mandatory\":\"true\",\"order\":\"8\",\"max_length\":\"10\"}"},"OBJ_SYS":"String","OBJ_SYS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Log system source\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"}},"FlowDesigner:FDe84ed37bdc5110101d58afe3dcda75a5.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDe84ed37bdc5110101d58afe3dcda75a5\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"Document Header\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"65000\",\"uiUniqueId\":\"ca1afcab-c24f-4a17-b10d-b4d7940da59b\"}"}}</serialized_content>
+    <sys_class_name>sys_complex_object</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-16 18:16:23</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>ac4ed37b0f511010adbf483f68767ea5</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>FDe84ed37bdc5110101d58afe3dcda75a5</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_update_name>sys_complex_object_ac4ed37b0f511010adbf483f68767ea5</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-16 18:16:23</sys_updated_on>
+    <type>complex_object_schema</type>
+  </sys_complex_object>
+</record_update>

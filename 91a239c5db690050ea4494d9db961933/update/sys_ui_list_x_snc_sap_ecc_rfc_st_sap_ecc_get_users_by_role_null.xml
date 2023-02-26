@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>agr_name</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>4b452803db4590500fbb3764e2961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>change_dat</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>cf452803db4590500fbb3764e2961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>change_tim</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>43452803db4590500fbb3764e296193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>change_tst</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>c3452803db4590500fbb3764e296193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>col_flag</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>47452803db4590500fbb3764e296193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>exclude</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>c7452803db4590500fbb3764e296193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>from_dat</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>4b452803db4590500fbb3764e296193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>mandt</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>cb452803db4590500fbb3764e296193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>org_flag</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>4f452803db4590500fbb3764e296193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>to_dat</element>
+            <list_id display_value="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" element="NULL" name="sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">43452803db4590500fbb3764e2961938</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_id>cf452803db4590500fbb3764e296193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-06-01 10:37:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>43452803db4590500fbb3764e2961938</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role</sys_name>
+            <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+            <sys_update_name>sys_ui_list_sn_sap_ecc_rfc_spo_st_sap_ecc_get_users_by_role_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-06-01 10:37:08</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

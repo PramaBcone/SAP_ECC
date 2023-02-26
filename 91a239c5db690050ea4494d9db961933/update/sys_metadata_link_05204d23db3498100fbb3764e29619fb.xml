@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5b4e279fdb3098100fbb3764e2961973</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_sap_ecc_rfc_spo_sap_rfc_list">
+    <sn_sap_ecc_rfc_spo_sap_rfc_list action="INSERT_OR_UPDATE">
+        <application_component>MISC</application_component>
+        <enabled>true</enabled>
+        <name>/VIRSA/RE_BAPI_GET_ROLE_USERS</name>
+        <operation_type>read</operation_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 09:44:28</sys_created_on>
+        <sys_id>5b4e279fdb3098100fbb3764e2961973</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 09:44:28</sys_updated_on>
+        <ui_label>MISC - /VIRSA/RE_BAPI_GET_ROLE_USERS</ui_label>
+    </sn_sap_ecc_rfc_spo_sap_rfc_list>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-21 15:35:41</sys_created_on>
+        <sys_id>05204d23db3498100fbb3764e29619fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MISC - /VIRSA/RE_BAPI_GET_ROLE_USERS</sys_name>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_metadata_link_05204d23db3498100fbb3764e29619fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-21 15:35:41</sys_updated_on>
+        <tablename>sn_sap_ecc_rfc_spo_sap_rfc_list</tablename>
+    </sys_metadata_link>
+</record_update>

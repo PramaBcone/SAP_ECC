@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+  <sys_complex_object action="INSERT_OR_UPDATE">
+    <label/>
+    <name>FD11afcbb12d151410534d3bc3c6369924</name>
+    <namespace>FlowDesigner</namespace>
+    <scope_name>91a239c5db690050ea4494d9db961933</scope_name>
+    <serialized_content>{"FlowDesigner:FD11afcbb12d151410534d3bc3c6369924":{"OBJ_TYPE":"String","OBJ_TYPE.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Reference procedure\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\"}"},"OBJ_KEY_R":"String","OBJ_KEY_R.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Cancel: object key\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\"}"},"OBJ_SYS":"String","OBJ_SYS.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Log. system source\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\"}"}},"FlowDesigner:FD11afcbb12d151410534d3bc3c6369924.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Reference Information for Reversal in Accounting\",\"mandatory\":\"false\",\"uiUniqueId\":\"cd4b1927-ff45-4685-9143-886d972f1dd1\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD11afcbb12d151410534d3bc3c6369924\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}}</serialized_content>
+    <sys_class_name>sys_complex_object</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-06-10 12:04:41</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>d1afcbb11b151410d2cf7669cc4bcb24</sys_id>
+    <sys_mod_count>9</sys_mod_count>
+    <sys_name>FD11afcbb12d151410534d3bc3c6369924</sys_name>
+    <sys_overrides/>
+    <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+    <sys_update_name>sys_complex_object_d1afcbb11b151410d2cf7669cc4bcb24</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-06-16 19:03:50</sys_updated_on>
+    <type>complex_object_schema</type>
+  </sys_complex_object>
+</record_update>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2c6937cedbeb44102929df6b5e9619a4</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_sap_ecc_rfc_spo_sap_rfc_list">
+    <sn_sap_ecc_rfc_spo_sap_rfc_list action="INSERT_OR_UPDATE">
+        <application_component>Financial accounting</application_component>
+        <enabled>true</enabled>
+        <name>BAPI_AR_ACC_GETKEYDATEBALANCE</name>
+        <operation_type>read</operation_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:55:53</sys_created_on>
+        <sys_id>2c6937cedbeb44102929df6b5e9619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:55:53</sys_updated_on>
+        <ui_label>Financial accounting - BAPI_AR_ACC_GETKEYDATEBALANCE</ui_label>
+    </sn_sap_ecc_rfc_spo_sap_rfc_list>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 18:22:38</sys_created_on>
+        <sys_id>976d69dedbeb0810d98c54e3dc9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Financial accounting - BAPI_AR_ACC_GETKEYDATEBALANCE</sys_name>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name>sys_metadata_link_976d69dedbeb0810d98c54e3dc9619b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 18:22:38</sys_updated_on>
+        <tablename>sn_sap_ecc_rfc_spo_sap_rfc_list</tablename>
+    </sys_metadata_link>
+</record_update>
