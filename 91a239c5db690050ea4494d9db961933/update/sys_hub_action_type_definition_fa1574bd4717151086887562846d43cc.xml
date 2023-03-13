@@ -31,22 +31,24 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Vendors&lt;/strong&gt; - Array of objects containing these fields:
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Bank Details&lt;/strong&gt; - Objects containing these fields:
+&lt;li&gt;&lt;strong&gt;Bank Details&lt;/strong&gt; - Objects containing these fields:&amp;nbsp;
 &lt;ul&gt;
-&lt;li&gt;Collection Authorization&lt;/li&gt;
 &lt;li&gt;Bank Control Key&lt;/li&gt;
-&lt;li&gt;Date [ KOBIS ]&lt;/li&gt;
-&lt;li&gt;Reference Details&lt;/li&gt;
-&lt;li&gt;Bank Key&lt;/li&gt;
-&lt;li&gt;Client [ MANDT ]&lt;/li&gt;
-&lt;li&gt;Account Name&lt;/li&gt;
 &lt;li&gt;Bank Account&lt;/li&gt;
-&lt;li&gt;Bank Country [ BANKS ]&lt;/li&gt;
-&lt;li&gt;Date [ KOVON ]&lt;/li&gt;
-&lt;li&gt;Account&amp;nbsp;Holder&lt;/li&gt;
+&lt;li&gt;Bank Name&lt;/li&gt;
+&lt;li&gt;Bank Key&lt;/li&gt;
+&lt;li&gt;Bank Country&lt;/li&gt;
 &lt;li&gt;Vendor [ LIFNR ]&lt;/li&gt;
-&lt;li&gt;Status Bank Details&lt;/li&gt;
+&lt;li&gt;Collection Authorization&lt;/li&gt;
+&lt;li&gt;Reference Details&lt;/li&gt;
+&lt;li&gt;Valid from&lt;/li&gt;
+&lt;li&gt;Valid to&lt;/li&gt;
+&lt;li&gt;Account Holder&lt;/li&gt;
 &lt;li&gt;Part Bank Type&lt;/li&gt;
+&lt;li&gt;International Bank Country Key&lt;/li&gt;
+&lt;li&gt;International Bank Key&lt;/li&gt;
+&lt;li&gt;SWIFT/BIC for International Payments&lt;/li&gt;
+&lt;li&gt;International Bank Account Number&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Suppliers&lt;/strong&gt; - Objects containing these fields:
@@ -62,7 +64,7 @@
 &lt;li&gt;RIC Number&lt;/li&gt;
 &lt;li&gt;RG Issuing Date&lt;/li&gt;
 &lt;li&gt;RG Number&lt;/li&gt;
-&lt;li&gt;Last Review (external)&lt;/li&gt;
+&lt;li&gt;Last Review&lt;/li&gt;
 &lt;li&gt;Registered for Social Insurance&lt;/li&gt;
 &lt;li&gt;Region (State, Provenance, Country)&lt;/li&gt;
 &lt;li&gt;Validity Date of Certification&lt;/li&gt;
@@ -72,9 +74,9 @@
 &lt;li&gt;First Name&lt;/li&gt;
 &lt;li&gt;Title&lt;/li&gt;
 &lt;li&gt;Street: No longer used from Release 4.6B&lt;/li&gt;
-&lt;li&gt;PSON3&lt;/li&gt;
-&lt;li&gt;PSON2&lt;/li&gt;
 &lt;li&gt;PSON1&lt;/li&gt;
+&lt;li&gt;PSON2&lt;/li&gt;
+&lt;li&gt;PSON3&lt;/li&gt;
 &lt;li&gt;Subledger Account Pre-processing Procedure&lt;/li&gt;
 &lt;li&gt;House Number: Is no longer used from Release 4.6B&lt;/li&gt;
 &lt;li&gt;Processor Group&lt;/li&gt;
@@ -85,17 +87,17 @@
 &lt;li&gt;Factory Calendar Key&lt;/li&gt;
 &lt;li&gt;PO Box City&lt;/li&gt;
 &lt;li&gt;PO Box&lt;/li&gt;
-&lt;li&gt;District [ ORT02 ]&lt;/li&gt;
 &lt;li&gt;District [ ORT01 ]&lt;/li&gt;
+&lt;li&gt;District [ ORT02 ]&lt;/li&gt;
 &lt;li&gt;Central Deletion Block for Master Record&lt;/li&gt;
-&lt;li&gt;NAME4&lt;/li&gt;
-&lt;li&gt;NAME3&lt;/li&gt;
-&lt;li&gt;NAME2&lt;/li&gt;
 &lt;li&gt;NAME1&lt;/li&gt;
+&lt;li&gt;NAME2&lt;/li&gt;
+&lt;li&gt;NAME3&lt;/li&gt;
+&lt;li&gt;NAME4&lt;/li&gt;
 &lt;li&gt;Micro Company Indicator&lt;/li&gt;
-&lt;li&gt;Search Term for Match Code Search [ MCOD3 ]&lt;/li&gt;
-&lt;li&gt;Search Term for Match Code Search [ MCOD2 ]&lt;/li&gt;
 &lt;li&gt;Search Term for Match Code Search [ MCOD1 ]&lt;/li&gt;
+&lt;li&gt;Search Term for Match Code Search [ MCOD2 ]&lt;/li&gt;
+&lt;li&gt;Search Term for Match Code Search [ MCOD3 ]&lt;/li&gt;
 &lt;li&gt;Client&lt;/li&gt;
 &lt;li&gt;Transportation Zone to or from which the Goods are Delivered&lt;/li&gt;
 &lt;li&gt;Indicator: Vendor Subrange Relevant&lt;/li&gt;
@@ -125,8 +127,8 @@
 &lt;li&gt;Account Number of the Master Record with Fiscal Address&lt;/li&gt;
 &lt;li&gt;Issued By&lt;/li&gt;
 &lt;li&gt;POR Subscriber Number&lt;/li&gt;
-&lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
-&lt;li&gt;Date on which the Record was Created&lt;/li&gt;
+&lt;li&gt;Created by&lt;/li&gt;
+&lt;li&gt;Created on&lt;/li&gt;
 &lt;li&gt;External Manufacturer Code Name or Number&lt;/li&gt;
 &lt;li&gt;Status of Data Transfer into Subsequent Release&lt;/li&gt;
 &lt;li&gt;Instruction Key for Data Medium Exchange&lt;/li&gt;
@@ -144,8 +146,8 @@
 &lt;li&gt;Check Digit for the International Location Number&lt;/li&gt;
 &lt;li&gt;Industry Key&lt;/li&gt;
 &lt;li&gt;Authorization Group&lt;/li&gt;
-&lt;li&gt;International Location Number [ Part 2 ]&lt;/li&gt;
 &lt;li&gt;International Location Number [ Part 1 ]&lt;/li&gt;
+&lt;li&gt;International Location Number [ Part 2 ]&lt;/li&gt;
 &lt;li&gt;Train Station&lt;/li&gt;
 &lt;li&gt;Active Code for Social Insurance&lt;/li&gt;
 &lt;li&gt;Agency Location Code&lt;/li&gt;
@@ -155,6 +157,9 @@
 &lt;li&gt;Language Key&lt;/li&gt;
 &lt;li&gt;Tax Number 1&lt;/li&gt;
 &lt;li&gt;Tax Number 2&lt;/li&gt;
+&lt;li&gt;Tax Number 3&lt;/li&gt;
+&lt;li&gt;Tax Number 4&lt;/li&gt;
+&lt;li&gt;Tax Number 5&lt;/li&gt;
 &lt;li&gt;Indicator: Business Partner Subject to Equalization Tax?&lt;/li&gt;
 &lt;li&gt;Liable for VAT&lt;/li&gt;
 &lt;li&gt;Telebox Number&lt;/li&gt;
@@ -169,15 +174,12 @@
 &lt;li&gt;VAT Registration Number&lt;/li&gt;
 &lt;li&gt;Natural Person&lt;/li&gt;
 &lt;li&gt;Function that will be Blocked&lt;/li&gt;
-&lt;li&gt;Plant (Own or External)&lt;/li&gt;
+&lt;li&gt;Plant&lt;/li&gt;
 &lt;li&gt;Indicator: Plant Level Relevant&lt;/li&gt;
 &lt;li&gt;Tax Jurisdiction&lt;/li&gt;
 &lt;li&gt;Payment Block&lt;/li&gt;
 &lt;li&gt;Indicator: Alternative Payee Using Account Number&lt;/li&gt;
 &lt;li&gt;Tax Number Type&lt;/li&gt;
-&lt;li&gt;Tax Number 3&lt;/li&gt;
-&lt;li&gt;Tax Number 4&lt;/li&gt;
-&lt;li&gt;Tax Number 5&lt;/li&gt;
 &lt;li&gt;Tax Base in Percentage&lt;/li&gt;
 &lt;li&gt;Shipment: Statistics Group, Transportation Service Agent&lt;/li&gt;
 &lt;li&gt;Time of Last Change Confirmation&lt;/li&gt;
@@ -198,8 +200,8 @@
 &lt;ul&gt;
 &lt;li&gt;Default Partner Information&lt;/li&gt;
 &lt;li&gt;Purchasing Organization&lt;/li&gt;
-&lt;li&gt;Date on which Record was Created&lt;/li&gt;
-&lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
+&lt;li&gt;Created on&lt;/li&gt;
+&lt;li&gt;Created by&lt;/li&gt;
 &lt;li&gt;Vendor Information&lt;/li&gt;
 &lt;li&gt;Account Number of Vendor or Creditor&lt;/li&gt;
 &lt;li&gt;Vendor Subrange Information&lt;/li&gt;
@@ -208,7 +210,7 @@
 &lt;li&gt;Partner Function Information&lt;/li&gt;
 &lt;li&gt;Partner Counter Information&lt;/li&gt;
 &lt;li&gt;Personnel Number&lt;/li&gt;
-&lt;li&gt;Plant (Own or External)&lt;/li&gt;
+&lt;li&gt;Plant&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Company Codes&lt;/strong&gt; - Objects containing these fields:
@@ -229,8 +231,8 @@
 &lt;li&gt;Business Purpose Completed Flag&lt;/li&gt;
 &lt;li&gt;Date of the Last Interest Calculation Run&lt;/li&gt;
 &lt;li&gt;Our Account Number with the Vendor&lt;/li&gt;
-&lt;li&gt;Date on which the Record was Created&lt;/li&gt;
-&lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
+&lt;li&gt;Created on&lt;/li&gt;
+&lt;li&gt;Created by&lt;/li&gt;
 &lt;li&gt;Planning Group&lt;/li&gt;
 &lt;li&gt;Release Approval Group&lt;/li&gt;
 &lt;li&gt;Vendor in Execution&lt;/li&gt;
@@ -254,7 +256,6 @@
 &lt;li&gt;Minority Indicators&lt;/li&gt;
 &lt;li&gt;Deletion Block for Master Record (Company Code Level)&lt;/li&gt;
 &lt;li&gt;Personnel Number&lt;/li&gt;
-&lt;li&gt;Prepayment Relevance (Vendor Master)&lt;/li&gt;
 &lt;li&gt;Withholding Tax Country Key&lt;/li&gt;
 &lt;li&gt;Authority for Exemption from Withholding Tax&lt;/li&gt;
 &lt;li&gt;Vendor Recipient Type&lt;/li&gt;
@@ -263,8 +264,8 @@
 &lt;li&gt;Certificate Number of the Withholding Tax Exemption&lt;/li&gt;
 &lt;li&gt;Check Flag for Double Invoices or Credit Memos&lt;/li&gt;
 &lt;li&gt;Central Posting Flag&lt;/li&gt;
-&lt;li&gt;Accounting Clerk's Telephone Number at Business Partner&lt;/li&gt;
-&lt;li&gt;Accounting Clerk's Fax Number at the Customer/Vendor&lt;/li&gt;
+&lt;li&gt;Accounting Clerk Telephone Number at Business Partner&lt;/li&gt;
+&lt;li&gt;Accounting Clerk Fax Number at the Customer/Vendor&lt;/li&gt;
 &lt;li&gt;Tolerance Group: Invoice Verification&lt;/li&gt;
 &lt;li&gt;Tolerance Group for the Business Partner/G/L Account&lt;/li&gt;
 &lt;li&gt;Date on which the Changes were Confirmed&lt;/li&gt;
@@ -273,11 +274,11 @@
 &lt;li&gt;Interest Calculation Indicator&lt;/li&gt;
 &lt;li&gt;Bill of Exchange Limit (In Local Currency)&lt;/li&gt;
 &lt;li&gt;Indicator for Periodic Account Statements&lt;/li&gt;
-&lt;li&gt;Indicator: Local Processing?&lt;/li&gt;
+&lt;li&gt;Indicator: Local Processing&lt;/li&gt;
 &lt;li&gt;Indicator: Send Payment Advices by EDI&lt;/li&gt;
 &lt;li&gt;Indicator: Alternative Payee Using Account Number&lt;/li&gt;
-&lt;li&gt;Indicator: Pay all Items Separately?&lt;/li&gt;
-&lt;li&gt;Indicator: Clearing between Customer and Vendor?&lt;/li&gt;
+&lt;li&gt;Indicator: Pay all Items Separately&lt;/li&gt;
+&lt;li&gt;Indicator: Clearing between Customer and Vendor&lt;/li&gt;
 &lt;li&gt;Block Key for Payment&lt;/li&gt;
 &lt;li&gt;Ledger Management Expiration Date&lt;/li&gt;
 &lt;li&gt;Key for Payment Grouping&lt;/li&gt;
@@ -292,7 +293,7 @@
 &lt;li&gt;Key for Sorting According to Assignment Numbers&lt;/li&gt;
 &lt;li&gt;List of Respected Payment Methods&lt;/li&gt;
 &lt;li&gt;Date of the Last Interest Calculation Run&lt;/li&gt;
-&lt;li&gt;Prepayment Relevance (Vendor Master)&lt;/li&gt;
+&lt;li&gt;Prepayment Relevance (Vendor)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Purchasing Organizations&lt;/strong&gt; - Objects containing these fields:
@@ -308,10 +309,10 @@
 &lt;li&gt;Our Account Number with the Vendor&lt;/li&gt;
 &lt;li&gt;Purchasing Group&lt;/li&gt;
 &lt;li&gt;Purchasing Organization&lt;/li&gt;
-&lt;li&gt;Date on which Record was Created&lt;/li&gt;
-&lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
+&lt;li&gt;Created on&lt;/li&gt;
+&lt;li&gt;Created by&lt;/li&gt;
 &lt;li&gt;Mode of Transport for Foreign Trade&lt;/li&gt;
-&lt;li&gt;Customer / Vendor ID&lt;/li&gt;
+&lt;li&gt;Customer/Vendor ID&lt;/li&gt;
 &lt;li&gt;VAS Determination Mode&lt;/li&gt;
 &lt;li&gt;Incoterms [ Part 1 ]&lt;/li&gt;
 &lt;li&gt;Incoterms [ Part 2 ]&lt;/li&gt;
@@ -328,7 +329,7 @@
 &lt;li&gt;Order Entry by Vendor&lt;/li&gt;
 &lt;li&gt;Account Number of Vendor or Creditor&lt;/li&gt;
 &lt;li&gt;Price Marking Vendor&lt;/li&gt;
-&lt;li&gt;Rack Jobbing: Vendor&lt;/li&gt;
+&lt;li&gt;Rack Jobbing Vendor&lt;/li&gt;
 &lt;li&gt;Central Deletion Flag for Master Record&lt;/li&gt;
 &lt;li&gt;Client&lt;/li&gt;
 &lt;li&gt;Unit of Measure Group&lt;/li&gt;
@@ -338,12 +339,12 @@
 &lt;li&gt;Indicator whether Discount in Kind Granted&lt;/li&gt;
 &lt;li&gt;Profile for Transferring Material Data via IDoc PROACT&lt;/li&gt;
 &lt;li&gt;Planned Delivery in Time&lt;/li&gt;
-&lt;li&gt;Indicator: Relevance to Price Determination (Vendor Hierarchy)&lt;/li&gt;
+&lt;li&gt;Indicator: Relevance to Price Determination (Vendor)&lt;/li&gt;
 &lt;li&gt;Rounding Profile&lt;/li&gt;
 &lt;li&gt;Vendor Sort Criterion for Materials&lt;/li&gt;
 &lt;li&gt;Centrally Imposed Purchasing Block&lt;/li&gt;
 &lt;li&gt;Staging Time in Days&lt;/li&gt;
-&lt;li&gt;Vendor's Telephone Number&lt;/li&gt;
+&lt;li&gt;Vendor Telephone Number&lt;/li&gt;
 &lt;li&gt;Transportation Chain&lt;/li&gt;
 &lt;li&gt;Comparison/Agreement of Business Volumes Necessary&lt;/li&gt;
 &lt;li&gt;Vendor RMA Number Required&lt;/li&gt;
@@ -356,7 +357,7 @@
 &lt;li&gt;Revaluation Allowed&lt;/li&gt;
 &lt;li&gt;Customs Office: Office of Exit/Entry for Foreign Trade&lt;/li&gt;
 &lt;li&gt;Terms of Payment Key&lt;/li&gt;
-&lt;li&gt;Vendor's Account Number&lt;/li&gt;
+&lt;li&gt;Vendor Account Number&lt;/li&gt;
 &lt;li&gt;Order Acknowledgment Requirement&lt;/li&gt;
 &lt;li&gt;Automatic Evaluated Receipt Settlement for Return Items&lt;/li&gt;
 &lt;/ul&gt;
@@ -371,11 +372,11 @@
 &lt;li&gt;No or empty response received from SAP ECC - RFC.&lt;/li&gt;
 &lt;li&gt;Encountered an error. Check log for more details.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;To use this action, the corresponding SAP ECC - RFC connection and credential must be created and associated with the SAP_ECC Connection &amp;amp; Credential alias. &lt;a href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias" target="_blank"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To use this action, the corresponding SAP ECC - RFC connection and credential must be created and associated with the SAP ECC Connection &amp;amp; Credential alias. &lt;a href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias" target="_blank"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information" target="_blank"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>false</ih_action>
         <internal_name>look_up_vendors</internal_name>
-        <label_cache>[{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.initial_load}}","label":"action➛Initial Load","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"222fa6dd-8226-482a-b846-19dda3ed37e4"}},{"name":"{{action.row_skip}}","label":"action➛Row Skip","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"48c054b5-877b-4f10-a7d7-34e114063a99"}},{"name":"{{action.row_count}}","label":"action➛Row Count","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"d364f3a8-8a88-4577-966a-0377bc24b70f"}},{"name":"{{action.company_code_criteria}}","label":"action➛Company Code Criteria","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD1b6d2ae951bbd1108bf753aef08f80fa","child_label":"Items","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"d7fb4f6d-e50f-4610-b5e1-e245f86dd173","uiUniqueId":"04c53349-a875-498d-8cc8-6c431e2cf6d9"}},{"name":"{{action.load_complete}}","label":"action➛Load Complete","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"7456a9d7-5b4b-4003-987a-8486888636d6"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].cred_id}}","label":"step➛Pre Processing➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"f529754a-a570-42e4-8914-6d510cd6b60a"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].conn_host}}","label":"step➛Pre Processing➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5cc0be6b-0d4d-4205-ad44-1e3b391575dc"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].conn_params}}","label":"step➛Pre Processing➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"3c13b7f2-337a-4b78-a966-4ec0357abc2e"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"f56190d1-ea56-44f8-a033-27ff4f638533"}},{"name":"{{step[890e63d8-ed2c-46c2-b5e6-fec5eb68c4b2].status}}","label":"step➛Look up Vendors➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"45bf8b10-2cff-4a40-9bc6-be2319858c35"}},{"name":"{{step[890e63d8-ed2c-46c2-b5e6-fec5eb68c4b2].response}}","label":"step➛Look up Vendors➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"809d5d23-9698-4a0c-b8e6-137c0addad27"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_VENDOR}}","label":"step➛Post Processing➛Vendor Details","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD4525b4bde717151090ed3d4c2e83fbc9","child_label":"Vendor","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Vendor","child_uiUniqueId":"a5030b1b-5334-4d8e-ae99-a0a6fd1db8d2","uiUniqueId":"45c81460-0709-4d7d-877f-a082659cd98d"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_TOTAL_ROWS}}","label":"step➛Post Processing➛Total Rows","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","child_label":"ET_TOTAL_ROWS_child0","child_type_label":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","child_type":"integer","child_name":"et_total_rows_child0","child_uiUniqueId":"2daeca49-b4fe-48f1-bd70-79a7465ce5f4","uiUniqueId":"95a10090-df20-40bf-9443-533cb973fdad"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].status}}","label":"step➛Post Processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5b09f5cc-7422-41df-bc81-5650d3dc8b06"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].error}}","label":"step➛Post Processing➛Error","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8e63a1fb-3a58-424d-9955-849b93b9cc16"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_VENDOR.Vendor.LFM1.Purchasing_Organizations.BLIND}}","label":"step➛Post Processing➛Vendor Details➛Vendor➛Purchasing Organizations➛Purchasing Organization➛Indicator: Document Index Compilation Active for Purchase Orders","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.initial_load}}","label":"action➛Initial Load","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"222fa6dd-8226-482a-b846-19dda3ed37e4"}},{"name":"{{action.row_skip}}","label":"action➛Row Skip","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"48c054b5-877b-4f10-a7d7-34e114063a99"}},{"name":"{{action.row_count}}","label":"action➛Row Count","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"d364f3a8-8a88-4577-966a-0377bc24b70f"}},{"name":"{{action.company_code_criteria}}","label":"action➛Company Code Criteria","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD1b6d2ae951bbd1108bf753aef08f80fa","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"d7fb4f6d-e50f-4610-b5e1-e245f86dd173","uiUniqueId":"04c53349-a875-498d-8cc8-6c431e2cf6d9"}},{"name":"{{action.load_complete}}","label":"action➛Load Complete","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"7456a9d7-5b4b-4003-987a-8486888636d6"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].cred_id}}","label":"step➛Pre Processing➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"f529754a-a570-42e4-8914-6d510cd6b60a"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].conn_host}}","label":"step➛Pre Processing➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5cc0be6b-0d4d-4205-ad44-1e3b391575dc"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].conn_params}}","label":"step➛Pre Processing➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"3c13b7f2-337a-4b78-a966-4ec0357abc2e"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"f56190d1-ea56-44f8-a033-27ff4f638533"}},{"name":"{{step[890e63d8-ed2c-46c2-b5e6-fec5eb68c4b2].status}}","label":"step➛Look up Vendors➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"45bf8b10-2cff-4a40-9bc6-be2319858c35"}},{"name":"{{step[890e63d8-ed2c-46c2-b5e6-fec5eb68c4b2].response}}","label":"step➛Look up Vendors➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"809d5d23-9698-4a0c-b8e6-137c0addad27"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_VENDOR}}","label":"step➛Post Processing➛Vendor Details","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD4525b4bde717151090ed3d4c2e83fbc9","child_label":"Vendor","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Vendor","child_uiUniqueId":"a5030b1b-5334-4d8e-ae99-a0a6fd1db8d2","uiUniqueId":"45c81460-0709-4d7d-877f-a082659cd98d"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_TOTAL_ROWS}}","label":"step➛Post Processing➛Total Rows","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","child_label":"ET_TOTAL_ROWS_child0","child_type_label":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","child_type":"integer","child_name":"et_total_rows_child0","child_uiUniqueId":"2daeca49-b4fe-48f1-bd70-79a7465ce5f4","uiUniqueId":"95a10090-df20-40bf-9443-533cb973fdad"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].status}}","label":"step➛Post Processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5b09f5cc-7422-41df-bc81-5650d3dc8b06"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].error}}","label":"step➛Post Processing➛Error","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8e63a1fb-3a58-424d-9955-849b93b9cc16"}}]</label_cache>
         <master_snapshot>06757cbd4717151086887562846d43ee</master_snapshot>
         <name>Look up Vendors</name>
         <natlang/>
@@ -388,15 +389,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fa1574bd4717151086887562846d43cc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Look up Vendors</sys_name>
         <sys_overrides/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_fa1574bd4717151086887562846d43cc</sys_update_name>
-        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-02-02 11:36:04</sys_updated_on>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-03-05 14:37:32</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -466,10 +467,10 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:53</sys_created_on>
         <sys_id>f125f4bd4717151086887562846d4315</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 14:30:19</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD9d25b4bd3e1715108b3aec81f49f1de6":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD9d25b4bd3e1715108b3aec81f49f1de6.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"cb373e98-1422-44a7-8d74-21bedb28763b\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9d25b4bd3e1715108b3aec81f49f1de6\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-03-05 14:37:26</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD9d25b4bd3e1715108b3aec81f49f1de6":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD9d25b4bd3e1715108b3aec81f49f1de6.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"cb373e98-1422-44a7-8d74-21bedb28763b\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9d25b4bd3e1715108b3aec81f49f1de6\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">1125b4bd4717151086887562846d43eb</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=fa1574bd4717151086887562846d43cc"/>
@@ -494,6 +495,18 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>prama</sys_updated_by>
         <sys_updated_on>2023-01-16 09:53:49</sys_updated_on>
+        <table>var__m_sys_hub_action_output_fa1574bd4717151086887562846d43cc</table>
+        <value>{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].error}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>fa1574bd4717151086887562846d43cc</id>
+        <sys_created_by>Prama</sys_created_by>
+        <sys_created_on>2023-03-02 18:50:50</sys_created_on>
+        <sys_id>c88238924791e110e07dc4f3836d4303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:50:50</sys_updated_on>
         <table>var__m_sys_hub_action_output_fa1574bd4717151086887562846d43cc</table>
         <value>{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].error}}</value>
     </sys_element_mapping>
@@ -587,10 +600,10 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:46</sys_created_on>
         <sys_id>1425b4bd4717151086887562846d4341</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
-        <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 14:30:17</sys_updated_on>
+        <sys_updated_by>prama</sys_updated_by>
+        <sys_updated_on>2023-02-23 06:12:48</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1425b4bd4717151086887562846d4341"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -643,9 +656,9 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:47</sys_created_on>
         <sys_id>e825b4bd4717151086887562846d438a</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-04 07:56:57</sys_updated_on>
+        <sys_updated_on>2023-02-23 06:12:48</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 	try {
@@ -659,10 +672,10 @@
 		outputs.cred_id = SapEccUtil.getCredentialIdFromConnection(connId);
 		var inputPayload = {};
       	
-      	//filter company code
+      	//Filter company code
         var comp = SapEccUtil.filterArrayObjects(inputs.company_code);
 
-      	//payload
+      	//Payload
       	var inp_load = SapEccUtil.getInitialLoad(inputs.initial_load);
       	var load_complete = SapEccUtil.getLoadComplete(inputs.load_complete, inputs.row_skip, inputs.row_count);
 		inputPayload['IV_INITIAL_LOAD'] = inp_load;
@@ -1018,14 +1031,14 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:46</sys_created_on>
         <sys_id>9825b4bd4717151086887562846d4344</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 15:22:23</sys_updated_on>
+        <sys_updated_on>2023-03-05 14:37:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1099,14 +1112,14 @@
         <sys_created_by>prama</sys_created_by>
         <sys_created_on>2022-12-16 06:18:17</sys_created_on>
         <sys_id>9f6d6a2d97bbd110215b35471153afbe</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 15:22:23</sys_updated_on>
+        <sys_updated_on>2023-03-05 14:37:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1620,7 +1633,7 @@
         <sys_created_on>2022-11-21 19:39:47</sys_created_on>
         <sys_id>6825b4bd4717151086887562846d4386</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Payload</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -1643,7 +1656,7 @@
         <sys_created_on>2022-11-21 19:39:47</sys_created_on>
         <sys_id>e025b4bd4717151086887562846d4363</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Credential ID</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -1666,7 +1679,7 @@
         <sys_created_on>2022-11-21 19:39:47</sys_created_on>
         <sys_id>e025b4bd4717151086887562846d436a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Connection Parameters</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -1689,7 +1702,7 @@
         <sys_created_on>2022-11-21 19:39:47</sys_created_on>
         <sys_id>e825b4bd4717151086887562846d4366</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Connection Host</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -2272,14 +2285,14 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:49</sys_created_on>
         <sys_id>8925b4bd4717151086887562846d43cb</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>mayank</sys_updated_by>
-        <sys_updated_on>2023-01-05 07:03:07</sys_updated_on>
+        <sys_updated_by>prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:11:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2306,7 +2319,7 @@
         <sys_created_on>2022-12-14 04:31:01</sys_created_on>
         <sys_id>2cb1880997bb5110215b35471153af3d</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Total Rows</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -2329,7 +2342,7 @@
         <sys_created_on>2022-12-08 05:15:41</sys_created_on>
         <sys_id>646255834763d910cb762430a46d4305</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -2351,14 +2364,14 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:50</sys_created_on>
         <sys_id>c925b4bd4717151086887562846d43db</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Vendor Details</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>mayank</sys_updated_by>
-        <sys_updated_on>2023-01-05 07:03:08</sys_updated_on>
+        <sys_updated_by>prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:11:44</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2375,7 +2388,7 @@
         <sys_created_on>2023-01-16 09:53:44</sys_created_on>
         <sys_id>e108432f97142110215b35471153af6b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Error</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -2403,10 +2416,10 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:48</sys_created_on>
         <sys_id>e825b4bd4717151086887562846d438f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2022-12-14 04:28:39</sys_updated_on>
+        <sys_updated_on>2023-02-23 06:12:49</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e825b4bd4717151086887562846d438f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2417,11 +2430,10 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:49</sys_created_on>
         <sys_id>3c25b4bd4717151086887562846d43ad</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2022-12-14 04:28:39</sys_updated_on>
+        <sys_updated_on>2023-02-23 06:12:49</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-  //comments
   try {
     var credProvFactory = Packages.com.snc.commons.credentials.CredentialsProviderFactory;
     var credProv = credProvFactory.getCredentialsProvider();
@@ -3220,7 +3232,7 @@
         <sys_created_on>2022-11-21 19:39:48</sys_created_on>
         <sys_id>f025b4bd4717151086887562846d43a5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Response</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -3243,7 +3255,7 @@
         <sys_created_on>2022-11-21 19:39:49</sys_created_on>
         <sys_id>f825b4bd4717151086887562846d43a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -3505,7 +3517,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Items,child_name=item,child_type=object,child_type_label=Object,child_uiUniqueId=d7fb4f6d-e50f-4610-b5e1-e245f86dd173,co_type_name=FD1b6d2ae951bbd1108bf753aef08f80fa,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=04c53349-a875-498d-8cc8-6c431e2cf6d9</attributes>
+        <attributes>child_label=Item,child_name=item,child_type=object,child_type_label=Object,child_uiUniqueId=d7fb4f6d-e50f-4610-b5e1-e245f86dd173,co_type_name=FD1b6d2ae951bbd1108bf753aef08f80fa,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=04c53349-a875-498d-8cc8-6c431e2cf6d9</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -3563,14 +3575,14 @@
         <sys_created_by>prama</sys_created_by>
         <sys_created_on>2022-12-16 06:18:17</sys_created_on>
         <sys_id>976d6a2d97bbd110215b35471153afac</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 12:24:18</sys_updated_on>
+        <sys_updated_on>2023-03-02 18:11:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3747,7 +3759,7 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c025b4bd4717151086887562846d432f"/>
-    <sys_hub_action_output action="delete_multiple" query="model=fa1574bd4717151086887562846d43cc^sys_idNOT IN1125b4bd4717151086887562846d43eb,1ce2dd834763d910cb762430a46d4372,6925f4bd4717151086887562846d4302,7d25f4bd4717151086887562846d430c,e925b4bd4717151086887562846d43ef,e925f4bd4717151086887562846d4308,f508432f97142110215b35471153af85"/>
+    <sys_hub_action_output action="delete_multiple" query="model=fa1574bd4717151086887562846d43cc^sys_idNOT IN1125b4bd4717151086887562846d43eb,1ce2dd834763d910cb762430a46d4372,6925f4bd4717151086887562846d4302,7d25f4bd4717151086887562846d430c,c882f4924791e110e07dc4f3836d43f5,e925b4bd4717151086887562846d43ef,e925f4bd4717151086887562846d4308"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4067,14 +4079,14 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:52</sys_created_on>
         <sys_id>7d25f4bd4717151086887562846d430c</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>mayank</sys_updated_by>
-        <sys_updated_on>2023-01-05 07:03:08</sys_updated_on>
+        <sys_updated_by>prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:11:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4088,6 +4100,91 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7d25f4bd4717151086887562846d430c"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=7d25f4bd4717151086887562846d430c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=6f4254fe-ad82-43a6-a85c-8b18538e5833</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Vendors">fa1574bd4717151086887562846d43cc</model>
+        <model_id>fa1574bd4717151086887562846d43cc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_fa1574bd4717151086887562846d43cc</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Prama</sys_created_by>
+        <sys_created_on>2023-03-02 18:50:50</sys_created_on>
+        <sys_id>c882f4924791e110e07dc4f3836d43f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:50:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c882f4924791e110e07dc4f3836d43f5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c882f4924791e110e07dc4f3836d43f5"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4258,91 +4355,6 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e925f4bd4717151086887562846d4308"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e925f4bd4717151086887562846d4308"/>
-    <sys_hub_action_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=be64a5b5-a132-4e60-8d42-8fcca7ed7e18</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>error</element>
-        <element_prototype/>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_link/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Error</label>
-        <mandatory>false</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Look up Vendors">fa1574bd4717151086887562846d43cc</model>
-        <model_id>fa1574bd4717151086887562846d43cc</model_id>
-        <model_table>sys_hub_action_type_definition</model_table>
-        <name>var__m_sys_hub_action_output_fa1574bd4717151086887562846d43cc</name>
-        <next_element/>
-        <order>7</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>prama</sys_created_by>
-        <sys_created_on>2023-01-16 09:53:44</sys_created_on>
-        <sys_id>f508432f97142110215b35471153af85</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-18 17:22:40</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_action_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f508432f97142110215b35471153af85"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=f508432f97142110215b35471153af85"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=fa1574bd4717151086887562846d43cc"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=fa1574bd4717151086887562846d43cc^sys_idNOT IN7525f4bd4717151086887562846d4318"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
@@ -4369,7 +4381,7 @@
         <sys_created_on>2022-11-21 19:39:45</sys_created_on>
         <sys_id>0825b4bd4717151086887562846d432e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Connection Alias</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4391,14 +4403,14 @@
         <sys_created_by>prama</sys_created_by>
         <sys_created_on>2022-12-16 06:18:17</sys_created_on>
         <sys_id>1f6d6a2d97bbd110215b35471153afb0</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Company Code Criteria</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-16 09:55:39</sys_updated_on>
+        <sys_updated_on>2023-03-02 18:11:43</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4415,7 +4427,7 @@
         <sys_created_on>2023-01-03 07:02:37</sys_created_on>
         <sys_id>683423d3878021101dff337e0ebb35b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Load Complete</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4438,7 +4450,7 @@
         <sys_created_on>2022-11-21 19:39:46</sys_created_on>
         <sys_id>8825b4bd4717151086887562846d4332</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Initial Load</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4461,7 +4473,7 @@
         <sys_created_on>2022-11-21 19:39:46</sys_created_on>
         <sys_id>9825b4bd4717151086887562846d433e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Row Count</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4484,7 +4496,7 @@
         <sys_created_on>2022-12-12 08:57:15</sys_created_on>
         <sys_id>f07bae9087f31150a3e3cbb4dabb351b</sys_id>
         <sys_mod_count>4</sys_mod_count>
-        <sys_name>Row Skip</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4495,7 +4507,7 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_fa1574bd4717151086887562846d43cc"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_fa1574bd4717151086887562846d43cc^sys_idNOT IN2125b4bd4717151086887562846d43ef,2125f4bd4717151086887562846d4308,7d25f4bd4717151086887562846d4310,ad25f4bd4717151086887562846d4301,b125f4bd4717151086887562846d430c,d0e2dd834763d910cb762430a46d43ac,f508432f97142110215b35471153af89"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_fa1574bd4717151086887562846d43cc^sys_idNOT IN2125b4bd4717151086887562846d43ef,2125f4bd4717151086887562846d4308,7d25f4bd4717151086887562846d4310,8082f4924791e110e07dc4f3836d43f9,ad25f4bd4717151086887562846d4301,b125f4bd4717151086887562846d430c,d0e2dd834763d910cb762430a46d43ac"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
         <help/>
@@ -4509,7 +4521,7 @@
         <sys_created_on>2022-11-21 19:39:51</sys_created_on>
         <sys_id>2125b4bd4717151086887562846d43ef</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Action Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4532,7 +4544,7 @@
         <sys_created_on>2022-11-21 19:39:52</sys_created_on>
         <sys_id>2125f4bd4717151086887562846d4308</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Don't Treat as Error</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4554,14 +4566,37 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:39:52</sys_created_on>
         <sys_id>7d25f4bd4717151086887562846d4310</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Vendor Details</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-04 07:56:58</sys_updated_on>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-02-23 05:00:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>Error Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_fa1574bd4717151086887562846d43cc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Prama</sys_created_by>
+        <sys_created_on>2023-03-02 18:50:50</sys_created_on>
+        <sys_id>8082f4924791e110e07dc4f3836d43f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:50:50</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4578,7 +4613,7 @@
         <sys_created_on>2022-11-21 19:39:51</sys_created_on>
         <sys_id>ad25f4bd4717151086887562846d4301</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Don't Treat as Error</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4601,7 +4636,7 @@
         <sys_created_on>2022-11-21 19:39:52</sys_created_on>
         <sys_id>b125f4bd4717151086887562846d430c</sys_id>
         <sys_mod_count>2</sys_mod_count>
-        <sys_name>Total Rows</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -4624,36 +4659,13 @@
         <sys_created_on>2022-12-08 05:17:52</sys_created_on>
         <sys_id>d0e2dd834763d910cb762430a46d43ac</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Prama</sys_updated_by>
         <sys_updated_on>2022-12-08 05:17:52</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>error</element>
-        <help/>
-        <hint/>
-        <label>Error</label>
-        <language>en</language>
-        <name>var__m_sys_hub_action_output_fa1574bd4717151086887562846d43cc</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>prama</sys_created_by>
-        <sys_created_on>2023-01-16 09:53:44</sys_created_on>
-        <sys_id>f508432f97142110215b35471153af89</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Error</sys_name>
-        <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-18 17:22:40</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -4704,17 +4716,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Look up Vendors">fa1574bd4717151086887562846d43cc</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"2f9570fd4717151086887562846d4383","name":"plan","plan_signature":null}}</plan>
-        <snapshot>aabc223047b0a510e07dc4f3836d4314</snapshot>
+        <snapshot>b645d38f47d9a510f8cfb777746d4335</snapshot>
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:41:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f9570fd4717151086887562846d4383</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 15:22:39</sys_updated_on>
+        <sys_updated_on>2023-03-05 14:37:35</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -4747,22 +4759,24 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Vendors&lt;/strong&gt; - Array of objects containing these fields:
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Bank Details&lt;/strong&gt; - Objects containing these fields:
+&lt;li&gt;&lt;strong&gt;Bank Details&lt;/strong&gt; - Objects containing these fields:&amp;nbsp;
 &lt;ul&gt;
-&lt;li&gt;Collection Authorization&lt;/li&gt;
 &lt;li&gt;Bank Control Key&lt;/li&gt;
-&lt;li&gt;Date [ KOBIS ]&lt;/li&gt;
-&lt;li&gt;Reference Details&lt;/li&gt;
-&lt;li&gt;Bank Key&lt;/li&gt;
-&lt;li&gt;Client [ MANDT ]&lt;/li&gt;
-&lt;li&gt;Account Name&lt;/li&gt;
 &lt;li&gt;Bank Account&lt;/li&gt;
-&lt;li&gt;Bank Country [ BANKS ]&lt;/li&gt;
-&lt;li&gt;Date [ KOVON ]&lt;/li&gt;
-&lt;li&gt;Account&amp;nbsp;Holder&lt;/li&gt;
+&lt;li&gt;Bank Name&lt;/li&gt;
+&lt;li&gt;Bank Key&lt;/li&gt;
+&lt;li&gt;Bank Country&lt;/li&gt;
 &lt;li&gt;Vendor [ LIFNR ]&lt;/li&gt;
-&lt;li&gt;Status Bank Details&lt;/li&gt;
+&lt;li&gt;Collection Authorization&lt;/li&gt;
+&lt;li&gt;Reference Details&lt;/li&gt;
+&lt;li&gt;Valid from&lt;/li&gt;
+&lt;li&gt;Valid to&lt;/li&gt;
+&lt;li&gt;Account Holder&lt;/li&gt;
 &lt;li&gt;Part Bank Type&lt;/li&gt;
+&lt;li&gt;International Bank Country Key&lt;/li&gt;
+&lt;li&gt;International Bank Key&lt;/li&gt;
+&lt;li&gt;SWIFT/BIC for International Payments&lt;/li&gt;
+&lt;li&gt;International Bank Account Number&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Suppliers&lt;/strong&gt; - Objects containing these fields:
@@ -4778,7 +4792,7 @@
 &lt;li&gt;RIC Number&lt;/li&gt;
 &lt;li&gt;RG Issuing Date&lt;/li&gt;
 &lt;li&gt;RG Number&lt;/li&gt;
-&lt;li&gt;Last Review (external)&lt;/li&gt;
+&lt;li&gt;Last Review&lt;/li&gt;
 &lt;li&gt;Registered for Social Insurance&lt;/li&gt;
 &lt;li&gt;Region (State, Provenance, Country)&lt;/li&gt;
 &lt;li&gt;Validity Date of Certification&lt;/li&gt;
@@ -4788,9 +4802,9 @@
 &lt;li&gt;First Name&lt;/li&gt;
 &lt;li&gt;Title&lt;/li&gt;
 &lt;li&gt;Street: No longer used from Release 4.6B&lt;/li&gt;
-&lt;li&gt;PSON3&lt;/li&gt;
-&lt;li&gt;PSON2&lt;/li&gt;
 &lt;li&gt;PSON1&lt;/li&gt;
+&lt;li&gt;PSON2&lt;/li&gt;
+&lt;li&gt;PSON3&lt;/li&gt;
 &lt;li&gt;Subledger Account Pre-processing Procedure&lt;/li&gt;
 &lt;li&gt;House Number: Is no longer used from Release 4.6B&lt;/li&gt;
 &lt;li&gt;Processor Group&lt;/li&gt;
@@ -4801,17 +4815,17 @@
 &lt;li&gt;Factory Calendar Key&lt;/li&gt;
 &lt;li&gt;PO Box City&lt;/li&gt;
 &lt;li&gt;PO Box&lt;/li&gt;
-&lt;li&gt;District [ ORT02 ]&lt;/li&gt;
 &lt;li&gt;District [ ORT01 ]&lt;/li&gt;
+&lt;li&gt;District [ ORT02 ]&lt;/li&gt;
 &lt;li&gt;Central Deletion Block for Master Record&lt;/li&gt;
-&lt;li&gt;NAME4&lt;/li&gt;
-&lt;li&gt;NAME3&lt;/li&gt;
-&lt;li&gt;NAME2&lt;/li&gt;
 &lt;li&gt;NAME1&lt;/li&gt;
+&lt;li&gt;NAME2&lt;/li&gt;
+&lt;li&gt;NAME3&lt;/li&gt;
+&lt;li&gt;NAME4&lt;/li&gt;
 &lt;li&gt;Micro Company Indicator&lt;/li&gt;
-&lt;li&gt;Search Term for Match Code Search [ MCOD3 ]&lt;/li&gt;
-&lt;li&gt;Search Term for Match Code Search [ MCOD2 ]&lt;/li&gt;
 &lt;li&gt;Search Term for Match Code Search [ MCOD1 ]&lt;/li&gt;
+&lt;li&gt;Search Term for Match Code Search [ MCOD2 ]&lt;/li&gt;
+&lt;li&gt;Search Term for Match Code Search [ MCOD3 ]&lt;/li&gt;
 &lt;li&gt;Client&lt;/li&gt;
 &lt;li&gt;Transportation Zone to or from which the Goods are Delivered&lt;/li&gt;
 &lt;li&gt;Indicator: Vendor Subrange Relevant&lt;/li&gt;
@@ -4841,8 +4855,8 @@
 &lt;li&gt;Account Number of the Master Record with Fiscal Address&lt;/li&gt;
 &lt;li&gt;Issued By&lt;/li&gt;
 &lt;li&gt;POR Subscriber Number&lt;/li&gt;
-&lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
-&lt;li&gt;Date on which the Record was Created&lt;/li&gt;
+&lt;li&gt;Created by&lt;/li&gt;
+&lt;li&gt;Created on&lt;/li&gt;
 &lt;li&gt;External Manufacturer Code Name or Number&lt;/li&gt;
 &lt;li&gt;Status of Data Transfer into Subsequent Release&lt;/li&gt;
 &lt;li&gt;Instruction Key for Data Medium Exchange&lt;/li&gt;
@@ -4860,8 +4874,8 @@
 &lt;li&gt;Check Digit for the International Location Number&lt;/li&gt;
 &lt;li&gt;Industry Key&lt;/li&gt;
 &lt;li&gt;Authorization Group&lt;/li&gt;
-&lt;li&gt;International Location Number [ Part 2 ]&lt;/li&gt;
 &lt;li&gt;International Location Number [ Part 1 ]&lt;/li&gt;
+&lt;li&gt;International Location Number [ Part 2 ]&lt;/li&gt;
 &lt;li&gt;Train Station&lt;/li&gt;
 &lt;li&gt;Active Code for Social Insurance&lt;/li&gt;
 &lt;li&gt;Agency Location Code&lt;/li&gt;
@@ -4871,6 +4885,9 @@
 &lt;li&gt;Language Key&lt;/li&gt;
 &lt;li&gt;Tax Number 1&lt;/li&gt;
 &lt;li&gt;Tax Number 2&lt;/li&gt;
+&lt;li&gt;Tax Number 3&lt;/li&gt;
+&lt;li&gt;Tax Number 4&lt;/li&gt;
+&lt;li&gt;Tax Number 5&lt;/li&gt;
 &lt;li&gt;Indicator: Business Partner Subject to Equalization Tax?&lt;/li&gt;
 &lt;li&gt;Liable for VAT&lt;/li&gt;
 &lt;li&gt;Telebox Number&lt;/li&gt;
@@ -4885,15 +4902,12 @@
 &lt;li&gt;VAT Registration Number&lt;/li&gt;
 &lt;li&gt;Natural Person&lt;/li&gt;
 &lt;li&gt;Function that will be Blocked&lt;/li&gt;
-&lt;li&gt;Plant (Own or External)&lt;/li&gt;
+&lt;li&gt;Plant&lt;/li&gt;
 &lt;li&gt;Indicator: Plant Level Relevant&lt;/li&gt;
 &lt;li&gt;Tax Jurisdiction&lt;/li&gt;
 &lt;li&gt;Payment Block&lt;/li&gt;
 &lt;li&gt;Indicator: Alternative Payee Using Account Number&lt;/li&gt;
 &lt;li&gt;Tax Number Type&lt;/li&gt;
-&lt;li&gt;Tax Number 3&lt;/li&gt;
-&lt;li&gt;Tax Number 4&lt;/li&gt;
-&lt;li&gt;Tax Number 5&lt;/li&gt;
 &lt;li&gt;Tax Base in Percentage&lt;/li&gt;
 &lt;li&gt;Shipment: Statistics Group, Transportation Service Agent&lt;/li&gt;
 &lt;li&gt;Time of Last Change Confirmation&lt;/li&gt;
@@ -4914,8 +4928,8 @@
 &lt;ul&gt;
 &lt;li&gt;Default Partner Information&lt;/li&gt;
 &lt;li&gt;Purchasing Organization&lt;/li&gt;
-&lt;li&gt;Date on which Record was Created&lt;/li&gt;
-&lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
+&lt;li&gt;Created on&lt;/li&gt;
+&lt;li&gt;Created by&lt;/li&gt;
 &lt;li&gt;Vendor Information&lt;/li&gt;
 &lt;li&gt;Account Number of Vendor or Creditor&lt;/li&gt;
 &lt;li&gt;Vendor Subrange Information&lt;/li&gt;
@@ -4924,7 +4938,7 @@
 &lt;li&gt;Partner Function Information&lt;/li&gt;
 &lt;li&gt;Partner Counter Information&lt;/li&gt;
 &lt;li&gt;Personnel Number&lt;/li&gt;
-&lt;li&gt;Plant (Own or External)&lt;/li&gt;
+&lt;li&gt;Plant&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Company Codes&lt;/strong&gt; - Objects containing these fields:
@@ -4945,8 +4959,8 @@
 &lt;li&gt;Business Purpose Completed Flag&lt;/li&gt;
 &lt;li&gt;Date of the Last Interest Calculation Run&lt;/li&gt;
 &lt;li&gt;Our Account Number with the Vendor&lt;/li&gt;
-&lt;li&gt;Date on which the Record was Created&lt;/li&gt;
-&lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
+&lt;li&gt;Created on&lt;/li&gt;
+&lt;li&gt;Created by&lt;/li&gt;
 &lt;li&gt;Planning Group&lt;/li&gt;
 &lt;li&gt;Release Approval Group&lt;/li&gt;
 &lt;li&gt;Vendor in Execution&lt;/li&gt;
@@ -4970,7 +4984,6 @@
 &lt;li&gt;Minority Indicators&lt;/li&gt;
 &lt;li&gt;Deletion Block for Master Record (Company Code Level)&lt;/li&gt;
 &lt;li&gt;Personnel Number&lt;/li&gt;
-&lt;li&gt;Prepayment Relevance (Vendor Master)&lt;/li&gt;
 &lt;li&gt;Withholding Tax Country Key&lt;/li&gt;
 &lt;li&gt;Authority for Exemption from Withholding Tax&lt;/li&gt;
 &lt;li&gt;Vendor Recipient Type&lt;/li&gt;
@@ -4979,8 +4992,8 @@
 &lt;li&gt;Certificate Number of the Withholding Tax Exemption&lt;/li&gt;
 &lt;li&gt;Check Flag for Double Invoices or Credit Memos&lt;/li&gt;
 &lt;li&gt;Central Posting Flag&lt;/li&gt;
-&lt;li&gt;Accounting Clerk's Telephone Number at Business Partner&lt;/li&gt;
-&lt;li&gt;Accounting Clerk's Fax Number at the Customer/Vendor&lt;/li&gt;
+&lt;li&gt;Accounting Clerk Telephone Number at Business Partner&lt;/li&gt;
+&lt;li&gt;Accounting Clerk Fax Number at the Customer/Vendor&lt;/li&gt;
 &lt;li&gt;Tolerance Group: Invoice Verification&lt;/li&gt;
 &lt;li&gt;Tolerance Group for the Business Partner/G/L Account&lt;/li&gt;
 &lt;li&gt;Date on which the Changes were Confirmed&lt;/li&gt;
@@ -4989,11 +5002,11 @@
 &lt;li&gt;Interest Calculation Indicator&lt;/li&gt;
 &lt;li&gt;Bill of Exchange Limit (In Local Currency)&lt;/li&gt;
 &lt;li&gt;Indicator for Periodic Account Statements&lt;/li&gt;
-&lt;li&gt;Indicator: Local Processing?&lt;/li&gt;
+&lt;li&gt;Indicator: Local Processing&lt;/li&gt;
 &lt;li&gt;Indicator: Send Payment Advices by EDI&lt;/li&gt;
 &lt;li&gt;Indicator: Alternative Payee Using Account Number&lt;/li&gt;
-&lt;li&gt;Indicator: Pay all Items Separately?&lt;/li&gt;
-&lt;li&gt;Indicator: Clearing between Customer and Vendor?&lt;/li&gt;
+&lt;li&gt;Indicator: Pay all Items Separately&lt;/li&gt;
+&lt;li&gt;Indicator: Clearing between Customer and Vendor&lt;/li&gt;
 &lt;li&gt;Block Key for Payment&lt;/li&gt;
 &lt;li&gt;Ledger Management Expiration Date&lt;/li&gt;
 &lt;li&gt;Key for Payment Grouping&lt;/li&gt;
@@ -5008,7 +5021,7 @@
 &lt;li&gt;Key for Sorting According to Assignment Numbers&lt;/li&gt;
 &lt;li&gt;List of Respected Payment Methods&lt;/li&gt;
 &lt;li&gt;Date of the Last Interest Calculation Run&lt;/li&gt;
-&lt;li&gt;Prepayment Relevance (Vendor Master)&lt;/li&gt;
+&lt;li&gt;Prepayment Relevance (Vendor)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Purchasing Organizations&lt;/strong&gt; - Objects containing these fields:
@@ -5024,10 +5037,10 @@
 &lt;li&gt;Our Account Number with the Vendor&lt;/li&gt;
 &lt;li&gt;Purchasing Group&lt;/li&gt;
 &lt;li&gt;Purchasing Organization&lt;/li&gt;
-&lt;li&gt;Date on which Record was Created&lt;/li&gt;
-&lt;li&gt;Name of Person who Created the Object&lt;/li&gt;
+&lt;li&gt;Created on&lt;/li&gt;
+&lt;li&gt;Created by&lt;/li&gt;
 &lt;li&gt;Mode of Transport for Foreign Trade&lt;/li&gt;
-&lt;li&gt;Customer / Vendor ID&lt;/li&gt;
+&lt;li&gt;Customer/Vendor ID&lt;/li&gt;
 &lt;li&gt;VAS Determination Mode&lt;/li&gt;
 &lt;li&gt;Incoterms [ Part 1 ]&lt;/li&gt;
 &lt;li&gt;Incoterms [ Part 2 ]&lt;/li&gt;
@@ -5044,7 +5057,7 @@
 &lt;li&gt;Order Entry by Vendor&lt;/li&gt;
 &lt;li&gt;Account Number of Vendor or Creditor&lt;/li&gt;
 &lt;li&gt;Price Marking Vendor&lt;/li&gt;
-&lt;li&gt;Rack Jobbing: Vendor&lt;/li&gt;
+&lt;li&gt;Rack Jobbing Vendor&lt;/li&gt;
 &lt;li&gt;Central Deletion Flag for Master Record&lt;/li&gt;
 &lt;li&gt;Client&lt;/li&gt;
 &lt;li&gt;Unit of Measure Group&lt;/li&gt;
@@ -5054,12 +5067,12 @@
 &lt;li&gt;Indicator whether Discount in Kind Granted&lt;/li&gt;
 &lt;li&gt;Profile for Transferring Material Data via IDoc PROACT&lt;/li&gt;
 &lt;li&gt;Planned Delivery in Time&lt;/li&gt;
-&lt;li&gt;Indicator: Relevance to Price Determination (Vendor Hierarchy)&lt;/li&gt;
+&lt;li&gt;Indicator: Relevance to Price Determination (Vendor)&lt;/li&gt;
 &lt;li&gt;Rounding Profile&lt;/li&gt;
 &lt;li&gt;Vendor Sort Criterion for Materials&lt;/li&gt;
 &lt;li&gt;Centrally Imposed Purchasing Block&lt;/li&gt;
 &lt;li&gt;Staging Time in Days&lt;/li&gt;
-&lt;li&gt;Vendor's Telephone Number&lt;/li&gt;
+&lt;li&gt;Vendor Telephone Number&lt;/li&gt;
 &lt;li&gt;Transportation Chain&lt;/li&gt;
 &lt;li&gt;Comparison/Agreement of Business Volumes Necessary&lt;/li&gt;
 &lt;li&gt;Vendor RMA Number Required&lt;/li&gt;
@@ -5072,7 +5085,7 @@
 &lt;li&gt;Revaluation Allowed&lt;/li&gt;
 &lt;li&gt;Customs Office: Office of Exit/Entry for Foreign Trade&lt;/li&gt;
 &lt;li&gt;Terms of Payment Key&lt;/li&gt;
-&lt;li&gt;Vendor's Account Number&lt;/li&gt;
+&lt;li&gt;Vendor Account Number&lt;/li&gt;
 &lt;li&gt;Order Acknowledgment Requirement&lt;/li&gt;
 &lt;li&gt;Automatic Evaluated Receipt Settlement for Return Items&lt;/li&gt;
 &lt;/ul&gt;
@@ -5087,10 +5100,10 @@
 &lt;li&gt;No or empty response received from SAP ECC - RFC.&lt;/li&gt;
 &lt;li&gt;Encountered an error. Check log for more details.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;To use this action, the corresponding SAP ECC - RFC connection and credential must be created and associated with the SAP_ECC Connection &amp;amp; Credential alias. &lt;a href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias" target="_blank"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To use this action, the corresponding SAP ECC - RFC connection and credential must be created and associated with the SAP ECC Connection &amp;amp; Credential alias. &lt;a href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias" target="_blank"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information" target="_blank"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>look_up_vendors</internal_name>
-        <label_cache>[{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.initial_load}}","label":"action➛Initial Load","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"222fa6dd-8226-482a-b846-19dda3ed37e4"}},{"name":"{{action.row_skip}}","label":"action➛Row Skip","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"48c054b5-877b-4f10-a7d7-34e114063a99"}},{"name":"{{action.row_count}}","label":"action➛Row Count","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"d364f3a8-8a88-4577-966a-0377bc24b70f"}},{"name":"{{action.company_code_criteria}}","label":"action➛Company Code Criteria","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD1b6d2ae951bbd1108bf753aef08f80fa","child_label":"Items","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"d7fb4f6d-e50f-4610-b5e1-e245f86dd173","uiUniqueId":"04c53349-a875-498d-8cc8-6c431e2cf6d9"}},{"name":"{{action.load_complete}}","label":"action➛Load Complete","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"7456a9d7-5b4b-4003-987a-8486888636d6"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].cred_id}}","label":"step➛Pre Processing➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"f529754a-a570-42e4-8914-6d510cd6b60a"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].conn_host}}","label":"step➛Pre Processing➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5cc0be6b-0d4d-4205-ad44-1e3b391575dc"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].conn_params}}","label":"step➛Pre Processing➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"3c13b7f2-337a-4b78-a966-4ec0357abc2e"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"f56190d1-ea56-44f8-a033-27ff4f638533"}},{"name":"{{step[890e63d8-ed2c-46c2-b5e6-fec5eb68c4b2].status}}","label":"step➛Look up Vendors➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"45bf8b10-2cff-4a40-9bc6-be2319858c35"}},{"name":"{{step[890e63d8-ed2c-46c2-b5e6-fec5eb68c4b2].response}}","label":"step➛Look up Vendors➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"809d5d23-9698-4a0c-b8e6-137c0addad27"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_VENDOR}}","label":"step➛Post Processing➛Vendor Details","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD4525b4bde717151090ed3d4c2e83fbc9","child_label":"Vendor","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Vendor","child_uiUniqueId":"a5030b1b-5334-4d8e-ae99-a0a6fd1db8d2","uiUniqueId":"45c81460-0709-4d7d-877f-a082659cd98d"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_TOTAL_ROWS}}","label":"step➛Post Processing➛Total Rows","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","child_label":"ET_TOTAL_ROWS_child0","child_type_label":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","child_type":"integer","child_name":"et_total_rows_child0","child_uiUniqueId":"2daeca49-b4fe-48f1-bd70-79a7465ce5f4","uiUniqueId":"95a10090-df20-40bf-9443-533cb973fdad"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].status}}","label":"step➛Post Processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5b09f5cc-7422-41df-bc81-5650d3dc8b06"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].error}}","label":"step➛Post Processing➛Error","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8e63a1fb-3a58-424d-9955-849b93b9cc16"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_VENDOR.Vendor.LFM1.Purchasing_Organizations.BLIND}}","label":"step➛Post Processing➛Vendor Details➛Vendor➛Purchasing Organizations➛Purchasing Organization➛Indicator: Document Index Compilation Active for Purchase Orders","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.initial_load}}","label":"action➛Initial Load","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"222fa6dd-8226-482a-b846-19dda3ed37e4"}},{"name":"{{action.row_skip}}","label":"action➛Row Skip","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"48c054b5-877b-4f10-a7d7-34e114063a99"}},{"name":"{{action.row_count}}","label":"action➛Row Count","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"d364f3a8-8a88-4577-966a-0377bc24b70f"}},{"name":"{{action.company_code_criteria}}","label":"action➛Company Code Criteria","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD1b6d2ae951bbd1108bf753aef08f80fa","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"d7fb4f6d-e50f-4610-b5e1-e245f86dd173","uiUniqueId":"04c53349-a875-498d-8cc8-6c431e2cf6d9"}},{"name":"{{action.load_complete}}","label":"action➛Load Complete","type":"action","ref":"","reference_display":"","base_type":"boolean","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","uiUniqueId":"7456a9d7-5b4b-4003-987a-8486888636d6"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].cred_id}}","label":"step➛Pre Processing➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"f529754a-a570-42e4-8914-6d510cd6b60a"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].conn_host}}","label":"step➛Pre Processing➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5cc0be6b-0d4d-4205-ad44-1e3b391575dc"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].conn_params}}","label":"step➛Pre Processing➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"3c13b7f2-337a-4b78-a966-4ec0357abc2e"}},{"name":"{{step[bd2fe4f8-018b-4e96-a541-b9311689fe05].payload}}","label":"step➛Pre Processing➛Payload","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"f56190d1-ea56-44f8-a033-27ff4f638533"}},{"name":"{{step[890e63d8-ed2c-46c2-b5e6-fec5eb68c4b2].status}}","label":"step➛Look up Vendors➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"45bf8b10-2cff-4a40-9bc6-be2319858c35"}},{"name":"{{step[890e63d8-ed2c-46c2-b5e6-fec5eb68c4b2].response}}","label":"step➛Look up Vendors➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"809d5d23-9698-4a0c-b8e6-137c0addad27"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_VENDOR}}","label":"step➛Post Processing➛Vendor Details","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD4525b4bde717151090ed3d4c2e83fbc9","child_label":"Vendor","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Vendor","child_uiUniqueId":"a5030b1b-5334-4d8e-ae99-a0a6fd1db8d2","uiUniqueId":"45c81460-0709-4d7d-877f-a082659cd98d"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].ET_TOTAL_ROWS}}","label":"step➛Post Processing➛Total Rows","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","child_label":"ET_TOTAL_ROWS_child0","child_type_label":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","child_type":"integer","child_name":"et_total_rows_child0","child_uiUniqueId":"2daeca49-b4fe-48f1-bd70-79a7465ce5f4","uiUniqueId":"95a10090-df20-40bf-9443-533cb973fdad"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].status}}","label":"step➛Post Processing➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5b09f5cc-7422-41df-bc81-5650d3dc8b06"}},{"name":"{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].error}}","label":"step➛Post Processing➛Error","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8e63a1fb-3a58-424d-9955-849b93b9cc16"}}]</label_cache>
         <master>true</master>
         <name>Look up Vendors</name>
         <natlang/>
@@ -5103,7 +5116,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>06757cbd4717151086887562846d43ee</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -5111,7 +5124,7 @@
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-02 05:01:08</sys_updated_on>
+        <sys_updated_on>2023-03-05 14:37:29</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -5153,10 +5166,10 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:41:39</sys_created_on>
         <sys_id>7385fcbd4717151086887562846d43e0</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 14:30:31</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD7342574ee92319106e3efba0ccac7a5f":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD7342574ee92319106e3efba0ccac7a5f.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"cb373e98-1422-44a7-8d74-21bedb28763b\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD7342574ee92319106e3efba0ccac7a5f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-03-05 14:37:32</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD7342574ee92319106e3efba0ccac7a5f":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD7342574ee92319106e3efba0ccac7a5f.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"cb373e98-1422-44a7-8d74-21bedb28763b\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD7342574ee92319106e3efba0ccac7a5f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">7e85fcbd4717151086887562846d4391</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5209,6 +5222,18 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>prama</sys_updated_by>
         <sys_updated_on>2023-01-16 09:56:26</sys_updated_on>
+        <table>var__m_sys_hub_action_output_06757cbd4717151086887562846d43ee</table>
+        <value>{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].error}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>06757cbd4717151086887562846d43ee</id>
+        <sys_created_by>Prama</sys_created_by>
+        <sys_created_on>2023-03-02 18:50:57</sys_created_on>
+        <sys_id>a18278924791e110e07dc4f3836d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:50:57</sys_updated_on>
         <table>var__m_sys_hub_action_output_06757cbd4717151086887562846d43ee</table>
         <value>{{step[81502d49-e5c6-4df9-8c68-b4815170ddbe].error}}</value>
     </sys_element_mapping>
@@ -5303,10 +5328,10 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:41:28</sys_created_on>
         <sys_id>4d85bcbd4717151086887562846d43f9</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2022-12-14 09:46:35</sys_updated_on>
+        <sys_updated_on>2023-02-23 06:18:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4d85bcbd4717151086887562846d43f9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5317,11 +5342,10 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:41:31</sys_created_on>
         <sys_id>3d85fcbd4717151086887562846d4317</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2022-12-14 09:46:35</sys_updated_on>
+        <sys_updated_on>2023-02-23 06:18:30</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-  //comments
   try {
     var credProvFactory = Packages.com.snc.commons.credentials.CredentialsProviderFactory;
     var credProv = credProvFactory.getCredentialsProvider();
@@ -6120,7 +6144,7 @@
         <sys_created_on>2022-11-21 19:41:29</sys_created_on>
         <sys_id>e185fcbd4717151086887562846d430f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Response</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -6143,7 +6167,7 @@
         <sys_created_on>2022-11-21 19:41:30</sys_created_on>
         <sys_id>e985fcbd4717151086887562846d4312</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -6760,7 +6784,7 @@
         <sys_created_on>2022-12-08 05:22:03</sys_created_on>
         <sys_id>b9d315074763d910cb762430a46d43c7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -6783,7 +6807,7 @@
         <sys_created_on>2023-01-16 09:56:22</sys_created_on>
         <sys_id>cca84f2f97142110215b35471153af81</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Error</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -6806,7 +6830,7 @@
         <sys_created_on>2022-12-14 09:46:36</sys_created_on>
         <sys_id>d7e901c197bf5110215b35471153afc9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Total Rows</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -6829,7 +6853,7 @@
         <sys_created_on>2022-11-21 19:41:34</sys_created_on>
         <sys_id>e285fcbd4717151086887562846d4377</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Vendor Details</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -6856,10 +6880,10 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:41:23</sys_created_on>
         <sys_id>b375bcbd4717151086887562846d439f</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
-        <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 14:30:28</sys_updated_on>
+        <sys_updated_by>prama</sys_updated_by>
+        <sys_updated_on>2023-02-23 06:18:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b375bcbd4717151086887562846d439f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6870,9 +6894,9 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:41:27</sys_created_on>
         <sys_id>3085bcbd4717151086887562846d43dc</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-04 03:22:12</sys_updated_on>
+        <sys_updated_on>2023-02-23 06:18:30</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
 	try {
@@ -6886,10 +6910,10 @@
 		outputs.cred_id = SapEccUtil.getCredentialIdFromConnection(connId);
 		var inputPayload = {};
       	
-      	//filter company code
+      	//Filter company code
         var comp = SapEccUtil.filterArrayObjects(inputs.company_code);
 
-      	//payload
+      	//Payload
       	var inp_load = SapEccUtil.getInitialLoad(inputs.initial_load);
       	var load_complete = SapEccUtil.getLoadComplete(inputs.load_complete, inputs.row_skip, inputs.row_count);
 		inputPayload['IV_INITIAL_LOAD'] = inp_load;
@@ -7287,14 +7311,14 @@
         <sys_created_by>prama</sys_created_by>
         <sys_created_on>2022-12-16 10:50:23</sys_created_on>
         <sys_id>51bbe3ad977fd110215b35471153af1c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 15:22:31</sys_updated_on>
+        <sys_updated_on>2023-03-05 14:37:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -7368,14 +7392,14 @@
         <sys_created_by>Prama</sys_created_by>
         <sys_created_on>2022-11-21 19:41:23</sys_created_on>
         <sys_id>8485bcbd4717151086887562846d43a2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Prama</sys_updated_by>
-        <sys_updated_on>2023-02-01 15:22:31</sys_updated_on>
+        <sys_updated_on>2023-03-05 14:37:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -7889,7 +7913,7 @@
         <sys_created_on>2022-11-21 19:41:26</sys_created_on>
         <sys_id>b485bcbd4717151086887562846d43d4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Connection Parameters</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -7912,7 +7936,7 @@
         <sys_created_on>2022-11-21 19:41:27</sys_created_on>
         <sys_id>bc85bcbd4717151086887562846d43d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Payload</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -7935,7 +7959,7 @@
         <sys_created_on>2022-11-21 19:41:26</sys_created_on>
         <sys_id>e485bcbd4717151086887562846d43c4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Connection Host</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -7958,7 +7982,7 @@
         <sys_created_on>2022-11-21 19:41:25</sys_created_on>
         <sys_id>ec85bcbd4717151086887562846d43c0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Credential ID</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -7973,7 +7997,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=Items,child_name=item,child_type=object,child_type_label=Object,child_uiUniqueId=d7fb4f6d-e50f-4610-b5e1-e245f86dd173,co_type_name=FD8dbbe3ad6e7fd11058358c348480e500,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=04c53349-a875-498d-8cc8-6c431e2cf6d9</attributes>
+        <attributes>child_label=Item,child_name=item,child_type=object,child_type_label=Object,child_uiUniqueId=d7fb4f6d-e50f-4610-b5e1-e245f86dd173,co_type_name=FD8dbbe3ad6e7fd11058358c348480e500,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=04c53349-a875-498d-8cc8-6c431e2cf6d9</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -8031,14 +8055,14 @@
         <sys_created_by>prama</sys_created_by>
         <sys_created_on>2022-12-16 10:50:23</sys_created_on>
         <sys_id>0dbbe3ad977fd110215b35471153af08</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-16 09:56:21</sys_updated_on>
+        <sys_updated_on>2023-03-02 18:11:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -8462,7 +8486,7 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a775bcbd4717151086887562846d4336"/>
-    <sys_hub_action_output action="delete_multiple" query="model=06757cbd4717151086887562846d43ee^sys_idNOT IN39d315074763d910cb762430a46d43f0,4785fcbd4717151086887562846d4396,5385fcbd4717151086887562846d43bb,7e85fcbd4717151086887562846d4391,8385fcbd4717151086887562846d43b5,9f85fcbd4717151086887562846d43d7,d0a84f2f97142110215b35471153af9b"/>
+    <sys_hub_action_output action="delete_multiple" query="model=06757cbd4717151086887562846d43ee^sys_idNOT IN39d315074763d910cb762430a46d43f0,4785fcbd4717151086887562846d4396,5385fcbd4717151086887562846d43bb,7e85fcbd4717151086887562846d4391,8385fcbd4717151086887562846d43b5,9f85fcbd4717151086887562846d43d7,e18278924791e110e07dc4f3836d435e"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -8977,7 +9001,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=be64a5b5-a132-4e60-8d42-8fcca7ed7e18</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=6f4254fe-ad82-43a6-a85c-8b18538e5833</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -9001,7 +9025,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>error</element>
+        <element>error_message</element>
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
@@ -9011,7 +9035,7 @@
         <hint/>
         <internal_link/>
         <internal_type display_value="String">string</internal_type>
-        <label>Error</label>
+        <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
         <model display_value="Look up Vendors">06757cbd4717151086887562846d43ee</model>
@@ -9034,17 +9058,17 @@
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_hub_action_output</sys_class_name>
-        <sys_created_by>prama</sys_created_by>
-        <sys_created_on>2023-01-16 09:56:22</sys_created_on>
-        <sys_id>d0a84f2f97142110215b35471153af9b</sys_id>
+        <sys_created_by>Prama</sys_created_by>
+        <sys_created_on>2023-03-02 18:50:56</sys_created_on>
+        <sys_id>e18278924791e110e07dc4f3836d435e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-16 09:56:22</sys_updated_on>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:50:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -9056,8 +9080,8 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d0a84f2f97142110215b35471153af9b"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=d0a84f2f97142110215b35471153af9b"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e18278924791e110e07dc4f3836d435e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e18278924791e110e07dc4f3836d435e"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=06757cbd4717151086887562846d43ee"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=06757cbd4717151086887562846d43ee^sys_idNOT INf385fcbd4717151086887562846d43e3"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
@@ -9084,7 +9108,7 @@
         <sys_created_on>2022-12-16 10:50:23</sys_created_on>
         <sys_id>15bbe3ad977fd110215b35471153af0f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Company Code Criteria</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9107,7 +9131,7 @@
         <sys_created_on>2022-11-21 19:41:23</sys_created_on>
         <sys_id>3b75bcbd4717151086887562846d439c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Row Count</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9130,7 +9154,7 @@
         <sys_created_on>2023-01-04 03:15:01</sys_created_on>
         <sys_id>50b97fa397cc2110215b35471153afd5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Load Complete</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9153,7 +9177,7 @@
         <sys_created_on>2022-12-14 09:46:34</sys_created_on>
         <sys_id>72e901c197bf5110215b35471153af5a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Row Skip</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9176,7 +9200,7 @@
         <sys_created_on>2022-11-21 19:41:22</sys_created_on>
         <sys_id>eb75bcbd4717151086887562846d4335</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Connection Alias</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9199,7 +9223,7 @@
         <sys_created_on>2022-11-21 19:41:22</sys_created_on>
         <sys_id>fb75bcbd4717151086887562846d4339</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Initial Load</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9210,7 +9234,7 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_06757cbd4717151086887562846d43ee"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_06757cbd4717151086887562846d43ee^sys_idNOT IN5785fcbd4717151086887562846d43be,5ca84f2f97142110215b35471153af9e,75d315074763d910cb762430a46d43f7,8b85fcbd4717151086887562846d4395,9785fcbd4717151086887562846d43ba,c785fcbd4717151086887562846d43b4,eb85fcbd4717151086887562846d43db"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_06757cbd4717151086887562846d43ee^sys_idNOT IN5785fcbd4717151086887562846d43be,698278924791e110e07dc4f3836d4361,75d315074763d910cb762430a46d43f7,8b85fcbd4717151086887562846d4395,9785fcbd4717151086887562846d43ba,c785fcbd4717151086887562846d43b4,eb85fcbd4717151086887562846d43db"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>total_rows</element>
         <help/>
@@ -9224,7 +9248,7 @@
         <sys_created_on>2022-11-21 19:41:37</sys_created_on>
         <sys_id>5785fcbd4717151086887562846d43be</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Total Rows</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9235,25 +9259,25 @@
         <url_target/>
     </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>error</element>
+        <element>error_message</element>
         <help/>
         <hint/>
-        <label>Error</label>
+        <label>Error Message</label>
         <language>en</language>
         <name>var__m_sys_hub_action_output_06757cbd4717151086887562846d43ee</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>prama</sys_created_by>
-        <sys_created_on>2023-01-16 09:56:22</sys_created_on>
-        <sys_id>5ca84f2f97142110215b35471153af9e</sys_id>
+        <sys_created_by>Prama</sys_created_by>
+        <sys_created_on>2023-03-02 18:50:57</sys_created_on>
+        <sys_id>698278924791e110e07dc4f3836d4361</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Error</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>prama</sys_updated_by>
-        <sys_updated_on>2023-01-16 09:56:22</sys_updated_on>
+        <sys_updated_by>Prama</sys_updated_by>
+        <sys_updated_on>2023-03-02 18:50:57</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -9270,7 +9294,7 @@
         <sys_created_on>2022-12-08 05:22:04</sys_created_on>
         <sys_id>75d315074763d910cb762430a46d43f7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9293,7 +9317,7 @@
         <sys_created_on>2022-11-21 19:41:36</sys_created_on>
         <sys_id>8b85fcbd4717151086887562846d4395</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Action Status</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9316,7 +9340,7 @@
         <sys_created_on>2022-11-21 19:41:37</sys_created_on>
         <sys_id>9785fcbd4717151086887562846d43ba</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Don't Treat as Error</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9339,7 +9363,7 @@
         <sys_created_on>2022-11-21 19:41:36</sys_created_on>
         <sys_id>c785fcbd4717151086887562846d43b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Don't Treat as Error</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9362,7 +9386,7 @@
         <sys_created_on>2022-11-21 19:41:38</sys_created_on>
         <sys_id>eb85fcbd4717151086887562846d43db</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Vendor Details</sys_name>
+        <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
@@ -9418,6 +9442,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>fa1574bd4717151086887562846d43cc</sys_id>
         <latest_snapshot>06757cbd4717151086887562846d43ee</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021__patch9a-12-12-2022_01-04-2023_0931.zip</compiler_build>
+        <compiler_build>glide-sandiego-12-22-2021__patch9b-01-18-2023_01-31-2023_1707.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

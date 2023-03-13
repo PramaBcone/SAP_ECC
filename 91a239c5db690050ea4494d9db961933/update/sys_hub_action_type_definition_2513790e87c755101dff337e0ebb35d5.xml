@@ -433,6 +433,18 @@
 &lt;li&gt;Net Value&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Service Lines Account Assignment Distribution&lt;/strong&gt; - List of objects containing these fields:
+&lt;ul&gt;
+&lt;li&gt;Package number&lt;/li&gt;
+&lt;li&gt;Line Number&lt;/li&gt;
+&lt;li&gt;Sequential Number of Account Assignment Specification: Service Line&lt;/li&gt;
+&lt;li&gt;Percentage for Account Assignment Value Distribution&lt;/li&gt;
+&lt;li&gt;Sequential Number of Account Assignment&lt;/li&gt;
+&lt;li&gt;Quantity with Sign&lt;/li&gt;
+&lt;li&gt;Net Value of Item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Last Document Adoption Price - &lt;/strong&gt;Option to select if last document price is adopted.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Additional Fields&lt;/strong&gt; - Additional fields or values you want to add to the details. These fields are retrieved dynamically from SAP ECC - RFC.&lt;/li&gt;
@@ -453,7 +465,7 @@
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information" target="_blank"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>false</ih_action>
         <internal_name>update_purchase_order_v2</internal_name>
-        <label_cache>[{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.POHEADER}}","label":"action➛PO Header","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD7d2941f9610f1510429f3fd1f7a43a55","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"f89e3c82-7d1f-446d-a45b-114311fd5e41"}},{"name":"{{action.POITEM}}","label":"action➛Purchase Order Items","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDba0c417d550f151044ac633932116c6d","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"b932f6ff-1fa9-4a46-a3f5-8b1d08c67ce0","uiUniqueId":"eac4f9be-99aa-48b3-a53a-69aa4c314bf8"}},{"name":"{{action.additional_input}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"f3dcedae-6487-429b-9ade-385bcb780782"}},{"name":"{{action.POACCOUNT}}","label":"action➛PO Accounts","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD870c417d120f1510dedc91ab1294956f","child_label":"Account","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"442dc447-3935-4433-bed3-c9ab0a197361","uiUniqueId":"8a2376a6-2205-4d5b-8d49-1deff1ed187b"}},{"name":"{{action.select_bapi}}","label":"action➛Select BAPI","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Standard BAPI","value":"BAPI_PO_CREATE1","order":0.0},{"label":"Custom BAPI","value":"ZSN_BAPI_PO_CREATE","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5bacbbb9-4275-4be8-8ef9-2166ddaeb468"}},{"name":"{{action.POADDRDELIVERY}}","label":"action➛Inward Delivery Addresses","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD1180c2d850d3d910b926ffe151148881","child_label":"Addresses For Inward Delivery","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Item","child_uiUniqueId":"f927c49d-afc7-47a5-bac4-b35919d1df1c","uiUniqueId":"bd07d4ca-caa3-45d5-9d77-a7e68504c21f"}},{"name":"{{action.POLIMITS}}","label":"action➛PO Limits","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDe8c84a008790a110020aba9df8b362f2","child_label":"PO Limit","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"3086b833-2ccf-414c-a798-29f3892d88a4","uiUniqueId":"745d484b-efb3-4a9b-8fd5-af4937baabd6"}},{"name":"{{action.POSCHEDULE}}","label":"action➛PO Schedule","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDdf40e288a57825100c89125449d03c72","child_label":"Schedule","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"65719199-695b-41bc-8fb4-d69fdc5177e0","uiUniqueId":"724e141e-4941-4d41-9568-75fea49f2d7b"}},{"name":"{{action.POSERVICES}}","label":"action➛PO Service Lines","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD883496c8c990a11040c07d628f177a4a","child_label":"Service Line","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"1a2a07da-8f8a-48ab-bf19-6c096f4c2b59","uiUniqueId":"00036509-3249-401e-98c2-96a8446d3257"}},{"name":"{{action.no_price_from_po}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Yes","value":"null","order":0.0},{"label":"No","value":"X","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"f3fec9ff-7577-4f37-92b1-74343d946e8d"}},{"name":"{{action.adoption_of_price_from_last_document}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.NO_PRICE_FROM_PO}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Yes","value":"null","order":0.0},{"label":"No","value":"X","order":1.0}],"attributes":{"uiTypeLabel":"Choice","child_label":"Adoption of Price from Last Document_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","child_type":"object","child_name":"adoption_of_price_from_last_document_child0","child_uiUniqueId":"824cbce6-2f80-45e0-b26d-9736f5fa60ac","uiUniqueId":"54304811-9f13-4a2b-aa31-d613c69ee4cd"}},{"name":"{{action.PURCHASEORDER}}","label":"action➛Purchase Order Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6b1b6d1c-87fa-423c-b843-73b1c3d636bd"}},{"name":"{{action.Adoption_of_Price_from_Last_Document}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POADDRDELIVERY.Item}}","label":"action➛Inward Delivery Addresses➛Inward Delivery Address","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.service_lines_account_assignment_distribution}}","label":"action➛Service Lines Account Assignment Distribution","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES}}","label":"action➛Service Lines Account Assignment Distribution","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item}}","label":"action➛Service Lines Account Assignment Distribution➛Item","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5cc2db69-daa6-4cf9-8088-cd54c6ef2cc0"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"99186eff-3a98-42b8-ae14-f2840cbffdfa"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"9cbf1e3e-1a33-465b-86dd-520ab0718fd8"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a78acd6a-42a9-4670-8178-167934ae98ba"}},{"name":"{{step[b2837568-3ed2-4588-bf28-88da6475bccc].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"129782fc-b87c-45dc-816b-dd8ead5eb6d1"}},{"name":"{{step[b2837568-3ed2-4588-bf28-88da6475bccc].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0ba5063e-23d2-4c64-bd66-08c4b51d8406"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"f482af34-2174-4e0f-b0e8-45c09e30120d"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"417fd019-7104-4926-b13e-984344c0b01a"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8726571f-2e61-4180-8426-812dabd16c6d"}}]</label_cache>
+        <label_cache>[{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.POHEADER}}","label":"action➛PO Header","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD7d2941f9610f1510429f3fd1f7a43a55","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"f89e3c82-7d1f-446d-a45b-114311fd5e41"}},{"name":"{{action.POITEM}}","label":"action➛Purchase Order Items","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDba0c417d550f151044ac633932116c6d","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"b932f6ff-1fa9-4a46-a3f5-8b1d08c67ce0","uiUniqueId":"eac4f9be-99aa-48b3-a53a-69aa4c314bf8"}},{"name":"{{action.additional_input}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"f3dcedae-6487-429b-9ade-385bcb780782"}},{"name":"{{action.POACCOUNT}}","label":"action➛PO Accounts","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD870c417d120f1510dedc91ab1294956f","child_label":"Account","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"442dc447-3935-4433-bed3-c9ab0a197361","uiUniqueId":"8a2376a6-2205-4d5b-8d49-1deff1ed187b"}},{"name":"{{action.select_bapi}}","label":"action➛Select BAPI","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Standard BAPI","value":"BAPI_PO_CREATE1","order":0.0},{"label":"Custom BAPI","value":"ZSN_BAPI_PO_CREATE","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5bacbbb9-4275-4be8-8ef9-2166ddaeb468"}},{"name":"{{action.POADDRDELIVERY}}","label":"action➛Addresses For Inward Delivery","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD14db311847d3d91032bf9a48263af8c6","child_label":"Addresses For Inward Delivery","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Item","child_uiUniqueId":"9edc3787-b011-4446-9394-8729a5e603a5","uiUniqueId":"502f54dd-4c5e-4811-9d5b-dcf91bb4d861"}},{"name":"{{action.POLIMITS}}","label":"action➛PO Limits","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDe8c84a008790a110020aba9df8b362f2","child_label":"PO Limit","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"3086b833-2ccf-414c-a798-29f3892d88a4","uiUniqueId":"745d484b-efb3-4a9b-8fd5-af4937baabd6"}},{"name":"{{action.POSCHEDULE}}","label":"action➛PO Schedule","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDdf40e288a57825100c89125449d03c72","child_label":"Schedule","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"65719199-695b-41bc-8fb4-d69fdc5177e0","uiUniqueId":"724e141e-4941-4d41-9568-75fea49f2d7b"}},{"name":"{{action.POSERVICES}}","label":"action➛PO Service Lines","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD883496c8c990a11040c07d628f177a4a","child_label":"Service Line","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"1a2a07da-8f8a-48ab-bf19-6c096f4c2b59","uiUniqueId":"00036509-3249-401e-98c2-96a8446d3257"}},{"name":"{{action.no_price_from_po}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Yes","value":"null","order":0.0},{"label":"No","value":"X","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"f3fec9ff-7577-4f37-92b1-74343d946e8d"}},{"name":"{{action.adoption_of_price_from_last_document}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.NO_PRICE_FROM_PO}}","label":"action➛Last Document Adoption Price","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Yes","value":"null","order":0.0},{"label":"No","value":"X","order":1.0}],"attributes":{"uiTypeLabel":"Choice","child_label":"Adoption of Price from Last Document_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","child_type":"object","child_name":"adoption_of_price_from_last_document_child0","child_uiUniqueId":"824cbce6-2f80-45e0-b26d-9736f5fa60ac","uiUniqueId":"54304811-9f13-4a2b-aa31-d613c69ee4cd"}},{"name":"{{action.PURCHASEORDER}}","label":"action➛Purchase Order Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6b1b6d1c-87fa-423c-b843-73b1c3d636bd"}},{"name":"{{action.Adoption_of_Price_from_Last_Document}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.INVOICEDOCNUMBER}}","label":"action➛Invoice Document Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"544af701-ee5d-43e0-995f-a98ef4eecadf"}},{"name":"{{action.FISCALYEAR}}","label":"action➛Fiscal Year","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ebdfa43c-aa2d-4175-a78a-c54480f01c29"}},{"name":"{{action.REASONREVERSAL}}","label":"action➛Reversal Reason","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0f34466d-e0d3-4564-9661-5f7ffa344ee2"}},{"name":"{{action.POSTINGDATE}}","label":"action➛Reversal Document Posting Date","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"28fd94d2-69cb-4a43-b7f3-a4bd785101c4"}},{"name":"{{action.additional_fields}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"dc3eeef1-c8e1-4226-b9c1-a4238294d6a6"}},{"name":"{{action.MATERIALDOCUMENT}}","label":"action➛Material Document Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"3d70ca51-b153-4994-b268-f8b91a1c2db1"}},{"name":"{{action.MATDOCUMENTYEAR}}","label":"action➛Material Document Year","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5d96a52e-f326-4c1e-a6f5-aee46d00abdd"}},{"name":"{{action.GOODSMVT_PSTNG_DATE}}","label":"action➛Posting Date","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ea8f4ccd-d55b-4e4b-9baf-c2e17bb3a893"}},{"name":"{{action.GOODSMVT_PR_URNAME}}","label":"action➛User Name for Printing Goods Receipt/Issue Slip","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"aac246a4-05e3-4a54-9eea-e67063ff87ad"}},{"name":"{{action.GOODSMVT_ITEM}}","label":"action➛Material Document Item","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDc4bfcbae6f3f9510988ddfb33daa473a","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"ITEM","child_uiUniqueId":"cc6df530-a62a-44e4-bfa7-b8a274bb30ef","uiUniqueId":"ffee8e59-613e-4594-b7da-5a476b1ccb91"}},{"name":"{{action.POADDRDELIVERY.Item}}","label":"action➛Inward Delivery Addresses➛Inward Delivery Address","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.service_lines_account_assignment_distribution}}","label":"action➛Service Lines Account Assignment Distribution","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.POSRVACCESSVALUES}}","label":"action➛Service Lines Account Assignment Distribution➛POSRVACCESSVALUES","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES}}","label":"action➛Service Lines Account Assignment Distribution","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item}}","label":"action➛Service Lines Account Assignment Distribution➛Item","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Package_number}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Package number","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.item_child2}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Item_child2","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Line_Number}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Line Number","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Seq_Number_of_Acc_Assignment_Specification_Service_Line}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Seq. Number of Acc. Assignment Specification: Service Line","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Percentage_for_Account_Assignment_Value_Distribution}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Percentage for Account Assignment Value Distribution","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Sequential_Number_of_Account_Assignment}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Sequential Number of Account Assignment","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Quantity_with_Sign}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Quantity with Sign","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Net_Value_of_Item}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Net Value of Item","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.NET_VALUE}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Net Value of Item","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.QUANTITY}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Quantity with Sign","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.SERIAL_NO}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Sequential Number of Account Assignment","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.PERCENTAGE}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Percentage for Account Assignment Value Distribution","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.SERNO_LINE}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Sequential Number of Account Assignment Specification: Service Line","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.LINE_NO}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Line Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.PCKG_NO}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Package number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5cc2db69-daa6-4cf9-8088-cd54c6ef2cc0"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"99186eff-3a98-42b8-ae14-f2840cbffdfa"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"9cbf1e3e-1a33-465b-86dd-520ab0718fd8"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a78acd6a-42a9-4670-8178-167934ae98ba"}},{"name":"{{step[b2837568-3ed2-4588-bf28-88da6475bccc].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"129782fc-b87c-45dc-816b-dd8ead5eb6d1"}},{"name":"{{step[b2837568-3ed2-4588-bf28-88da6475bccc].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0ba5063e-23d2-4c64-bd66-08c4b51d8406"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"f482af34-2174-4e0f-b0e8-45c09e30120d"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"417fd019-7104-4926-b13e-984344c0b01a"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8726571f-2e61-4180-8426-812dabd16c6d"}},{"name":"{{step[ada9e480-8300-4d56-ae64-5a5b9161869f].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"31a112e4-0e19-42c8-837d-07a662464c3c"}},{"name":"{{step[ada9e480-8300-4d56-ae64-5a5b9161869f].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a82108e7-967f-4d90-bc24-7d09f5987286"}},{"name":"{{step[ada9e480-8300-4d56-ae64-5a5b9161869f].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"2d72035d-a8cf-4946-80b4-6a228427f987"}},{"name":"{{step[ada9e480-8300-4d56-ae64-5a5b9161869f].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"fcd76a7b-0cc5-4609-b261-d39dfe40cbba"}},{"name":"{{step[8eaf1cb8-6af6-472a-9edb-97dcc0696c3e].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a97f2593-1a78-43ca-b0eb-da86517a78ad"}},{"name":"{{step[8eaf1cb8-6af6-472a-9edb-97dcc0696c3e].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"23cfbc9c-096b-4c64-9fb4-fd9043586851"}},{"name":"{{step[ee5a552a-9a15-4b07-855b-d9a4b5e0297a].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"05c68db7-f5f8-4190-a42d-406149f28f39"}},{"name":"{{step[ee5a552a-9a15-4b07-855b-d9a4b5e0297a].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"17f425cb-64be-4b0b-9eb4-178c31936e0b"}},{"name":"{{step[ee5a552a-9a15-4b07-855b-d9a4b5e0297a].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1b8e14a5-a18d-4126-91d5-98da8e3baa16"}}]</label_cache>
         <master_snapshot>b7fb4f2b87c759101dff337e0ebb3597</master_snapshot>
         <name>Update Purchase Order</name>
         <natlang/>
@@ -466,7 +478,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2513790e87c755101dff337e0ebb35d5</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>Update Purchase Order</sys_name>
         <sys_overrides/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
@@ -474,7 +486,7 @@
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_2513790e87c755101dff337e0ebb35d5</sys_update_name>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:11</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:35</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -488,9 +500,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-10 08:33:23</sys_created_on>
         <sys_id>2b13f90e87c755101dff337e0ebb3506</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:00</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:43:57</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FD9713b90ed9c75510757c44d3179e9dd9":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD9713b90ed9c75510757c44d3179e9dd9.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"820972a2-92c1-416f-a831-4734e18cd5fb\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9713b90ed9c75510757c44d3179e9dd9\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">1b13b90e87c755101dff337e0ebb35db</variable>
     </sys_variable_value>
@@ -1173,10 +1185,10 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-10 08:33:19</sys_created_on>
         <sys_id>9a13b90e87c755101dff337e0ebb3524</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:58</sys_updated_on>
+        <sys_updated_on>2023-03-03 12:37:57</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9a13b90e87c755101dff337e0ebb3524"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1187,9 +1199,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-10 08:33:20</sys_created_on>
         <sys_id>7213b90e87c755101dff337e0ebb3575</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:58</sys_updated_on>
+        <sys_updated_on>2023-03-03 12:37:57</sys_updated_on>
         <value>(function execute(inputs, outputs) {
     try {
         var inputs = SapEccUtil.trimInputs(inputs);
@@ -1297,7 +1309,7 @@
             payload['PURCHASEORDER'] = inputs.PurchaseOrder;
             payload['POHEADER'] = inputs.header;
             payload['POHEADERX'] = inputs.POHEADERX;
-            payload['NO_PRICE_FROM_PO'] = inputs.PriceAdoption;
+            payload['NO_PRICE_FROM_PO'] = inputs.PriceAdoption == "null" ? " " : "X";
             if (inputs.PurchaseOrderItems.length != 0) {
                 payload['POITEM'] = inputs.PurchaseOrderItems;
                 payload['POITEMX'] = inputs.POITEMX;
@@ -1326,7 +1338,7 @@
             payload['IV_PURCHASEORDER'] = inputs.PurchaseOrder;
             payload['IV_POHEADER'] = inputs.header;
             payload['IV_POHEADERX'] = inputs.POHEADERX;
-            payload['IV_NO_PRICE_FROM_PO'] = inputs.PriceAdoption;
+            payload['IV_NO_PRICE_FROM_PO'] = inputs.PriceAdoption == "null" ? " " : "X";
             if (inputs.PurchaseOrderItems.length != 0) {
                 payload['IT_POITEM'] = inputs.PurchaseOrderItems;
                 payload['IT_POITEMX'] = inputs.POITEMX;
@@ -1932,14 +1944,14 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-10 08:33:19</sys_created_on>
         <sys_id>2a13b90e87c755101dff337e0ebb3545</sys_id>
-        <sys_mod_count>68</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:57</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2360,7 +2372,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2394,7 +2406,7 @@
         <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
-        <max_length>65000</max_length>
+        <max_length>8000</max_length>
         <model display_value="Get connection &amp; prepare input Json">9a13b90e87c755101dff337e0ebb3524</model>
         <model_id>9a13b90e87c755101dff337e0ebb3524</model_id>
         <model_table>sys_hub_step_instance</model_table>
@@ -2418,14 +2430,14 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2023-02-21 06:26:58</sys_created_on>
         <sys_id>b3e17f0b474d2110e07dc4f3836d430d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:58</sys_updated_on>
+        <sys_updated_on>2023-03-03 12:37:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3773,14 +3785,14 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-10 08:33:21</sys_created_on>
         <sys_id>fe13b90e87c755101dff337e0ebb3594</sys_id>
-        <sys_mod_count>68</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:59</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:28</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4586,9 +4598,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-10 08:33:18</sys_created_on>
         <sys_id>1613b90e87c755101dff337e0ebb351c</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:57</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:27</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1613b90e87c755101dff337e0ebb351c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4738,7 +4750,7 @@
         <help/>
         <hint/>
         <internal_type display_value="Choice">choice</internal_type>
-        <label>Adoption of Price from Last Document</label>
+        <label>Last Document Adoption Price</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
         <model display_value="Update Purchase Order">2513790e87c755101dff337e0ebb35d5</model>
@@ -4764,14 +4776,14 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2023-02-07 09:12:00</sys_created_on>
         <sys_id>b07114fe47b42d10f8cfb777746d43f4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:57</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:43:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -4955,9 +4967,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-10 08:33:18</sys_created_on>
         <sys_id>8613b90e87c755101dff337e0ebb3513</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:57</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:27</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8613b90e87c755101dff337e0ebb3513"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5497,9 +5509,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-10 08:33:23</sys_created_on>
         <sys_id>9713b90e87c755101dff337e0ebb35f1</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>73</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:26:59</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:28</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9713b90e87c755101dff337e0ebb35f1"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5742,7 +5754,7 @@
         <element>NO_PRICE_FROM_PO</element>
         <help/>
         <hint/>
-        <label>Adoption of Price from Last Document</label>
+        <label>Last Document Adoption Price</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_2513790e87c755101dff337e0ebb35d5</name>
         <plural/>
@@ -5750,14 +5762,14 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2023-02-07 09:12:01</sys_created_on>
         <sys_id>097114fe47b42d10f8cfb777746d43fb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-07 09:12:01</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:43:55</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -6037,8 +6049,48 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_2513790e87c755101dff337e0ebb35d5^sys_idNOT IN56a2d83247f42d10f8cfb777746d4314,6fe13f0b474d2110e07dc4f3836d43e8,d3f6583647f42d10f8cfb777746d430d,f2f38a61478d6550f8cfb777746d4300,817114fe47b42d10f8cfb777746d43f8,60c11cfe47b42d10f8cfb777746d43be,bc7114fe47b42d10f8cfb777746d43f6,e293314e87c755101dff337e0ebb35e7,2293314e87c755101dff337e0ebb35e9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_2513790e87c755101dff337e0ebb35d5^sys_idNOT IN20d660a2475de110e07dc4f3836d43be,2150c71747552110f8cfb777746d43a1,56a2d83247f42d10f8cfb777746d4314,5bb6ec62475de110e07dc4f3836d4389,6fe13f0b474d2110e07dc4f3836d43e8,b530071747552110f8cfb777746d4303,d3f6583647f42d10f8cfb777746d430d,f2f38a61478d6550f8cfb777746d4300,817114fe47b42d10f8cfb777746d43f8,60c11cfe47b42d10f8cfb777746d43be,bc7114fe47b42d10f8cfb777746d43f6,e293314e87c755101dff337e0ebb35e7,2293314e87c755101dff337e0ebb35e9"/>
     <sys_choice field="NO_PRICE_FROM_PO" table="var__m_sys_hub_action_input_2513790e87c755101dff337e0ebb35d5">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>NO_PRICE_FROM_PO</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_2513790e87c755101dff337e0ebb35d5</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2023-03-03 12:38:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>20d660a2475de110e07dc4f3836d43be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2023-03-03 12:38:17</sys_updated_on>
+            <value>null</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>NO_PRICE_FROM_PO</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_2513790e87c755101dff337e0ebb35d5</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2023-03-06 07:44:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2150c71747552110f8cfb777746d43a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2023-03-06 07:44:27</sys_updated_on>
+            <value>null</value>
+        </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>NO_PRICE_FROM_PO</element>
@@ -6070,6 +6122,26 @@
             <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2023-03-03 12:37:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5bb6ec62475de110e07dc4f3836d4389</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2023-03-03 12:37:56</sys_updated_on>
+            <value>null</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>NO_PRICE_FROM_PO</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_2513790e87c755101dff337e0ebb35d5</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>akash</sys_created_by>
             <sys_created_on>2023-02-21 06:26:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
@@ -6077,6 +6149,26 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>akash</sys_updated_by>
             <sys_updated_on>2023-02-21 06:26:57</sys_updated_on>
+            <value>null</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>NO_PRICE_FROM_PO</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_2513790e87c755101dff337e0ebb35d5</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2023-03-06 07:43:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b530071747552110f8cfb777746d4303</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2023-03-06 07:43:55</sys_updated_on>
             <value>null</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -6385,17 +6477,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Update Purchase Order">2513790e87c755101dff337e0ebb35d5</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"9a0ccf2b87c759101dff337e0ebb35e6","name":"plan","plan_signature":null}}</plan>
-        <snapshot>32f1ff0b474d2110e07dc4f3836d4326</snapshot>
+        <snapshot>2f504b1747552110f8cfb777746d43bf</snapshot>
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 06:52:46</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9a0ccf2b87c759101dff337e0ebb35e6</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:16</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:39</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -6830,6 +6922,18 @@
 &lt;li&gt;Net Value&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Service Lines Account Assignment Distribution&lt;/strong&gt; - List of objects containing these fields:
+&lt;ul&gt;
+&lt;li&gt;Package number&lt;/li&gt;
+&lt;li&gt;Line Number&lt;/li&gt;
+&lt;li&gt;Sequential Number of Account Assignment Specification: Service Line&lt;/li&gt;
+&lt;li&gt;Percentage for Account Assignment Value Distribution&lt;/li&gt;
+&lt;li&gt;Sequential Number of Account Assignment&lt;/li&gt;
+&lt;li&gt;Quantity with Sign&lt;/li&gt;
+&lt;li&gt;Net Value of Item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Last Document Adoption Price - &lt;/strong&gt;Option to select if last document price is adopted.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Additional Fields&lt;/strong&gt; - Additional fields or values you want to add to the details. These fields are retrieved dynamically from SAP ECC - RFC.&lt;/li&gt;
@@ -6849,7 +6953,7 @@
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information" target="_blank"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>update_purchase_order</internal_name>
-        <label_cache>[{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.POHEADER}}","label":"action➛PO Header","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD7d2941f9610f1510429f3fd1f7a43a55","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"f89e3c82-7d1f-446d-a45b-114311fd5e41"}},{"name":"{{action.POITEM}}","label":"action➛Purchase Order Items","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDba0c417d550f151044ac633932116c6d","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"b932f6ff-1fa9-4a46-a3f5-8b1d08c67ce0","uiUniqueId":"eac4f9be-99aa-48b3-a53a-69aa4c314bf8"}},{"name":"{{action.additional_input}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"f3dcedae-6487-429b-9ade-385bcb780782"}},{"name":"{{action.POACCOUNT}}","label":"action➛PO Accounts","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD870c417d120f1510dedc91ab1294956f","child_label":"Account","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"442dc447-3935-4433-bed3-c9ab0a197361","uiUniqueId":"8a2376a6-2205-4d5b-8d49-1deff1ed187b"}},{"name":"{{action.select_bapi}}","label":"action➛Select BAPI","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Standard BAPI","value":"BAPI_PO_CREATE1","order":0.0},{"label":"Custom BAPI","value":"ZSN_BAPI_PO_CREATE","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5bacbbb9-4275-4be8-8ef9-2166ddaeb468"}},{"name":"{{action.POADDRDELIVERY}}","label":"action➛Inward Delivery Addresses","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD1180c2d850d3d910b926ffe151148881","child_label":"Addresses For Inward Delivery","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Item","child_uiUniqueId":"f927c49d-afc7-47a5-bac4-b35919d1df1c","uiUniqueId":"bd07d4ca-caa3-45d5-9d77-a7e68504c21f"}},{"name":"{{action.POLIMITS}}","label":"action➛PO Limits","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDe8c84a008790a110020aba9df8b362f2","child_label":"PO Limit","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"3086b833-2ccf-414c-a798-29f3892d88a4","uiUniqueId":"745d484b-efb3-4a9b-8fd5-af4937baabd6"}},{"name":"{{action.POSCHEDULE}}","label":"action➛PO Schedule","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDdf40e288a57825100c89125449d03c72","child_label":"Schedule","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"65719199-695b-41bc-8fb4-d69fdc5177e0","uiUniqueId":"724e141e-4941-4d41-9568-75fea49f2d7b"}},{"name":"{{action.POSERVICES}}","label":"action➛PO Service Lines","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD883496c8c990a11040c07d628f177a4a","child_label":"Service Line","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"1a2a07da-8f8a-48ab-bf19-6c096f4c2b59","uiUniqueId":"00036509-3249-401e-98c2-96a8446d3257"}},{"name":"{{action.no_price_from_po}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Yes","value":"null","order":0.0},{"label":"No","value":"X","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"f3fec9ff-7577-4f37-92b1-74343d946e8d"}},{"name":"{{action.adoption_of_price_from_last_document}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.NO_PRICE_FROM_PO}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Yes","value":"null","order":0.0},{"label":"No","value":"X","order":1.0}],"attributes":{"uiTypeLabel":"Choice","child_label":"Adoption of Price from Last Document_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","child_type":"object","child_name":"adoption_of_price_from_last_document_child0","child_uiUniqueId":"824cbce6-2f80-45e0-b26d-9736f5fa60ac","uiUniqueId":"54304811-9f13-4a2b-aa31-d613c69ee4cd"}},{"name":"{{action.PURCHASEORDER}}","label":"action➛Purchase Order Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6b1b6d1c-87fa-423c-b843-73b1c3d636bd"}},{"name":"{{action.Adoption_of_Price_from_Last_Document}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POADDRDELIVERY.Item}}","label":"action➛Inward Delivery Addresses➛Inward Delivery Address","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.service_lines_account_assignment_distribution}}","label":"action➛Service Lines Account Assignment Distribution","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES}}","label":"action➛Service Lines Account Assignment Distribution","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item}}","label":"action➛Service Lines Account Assignment Distribution➛Item","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5cc2db69-daa6-4cf9-8088-cd54c6ef2cc0"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"99186eff-3a98-42b8-ae14-f2840cbffdfa"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"9cbf1e3e-1a33-465b-86dd-520ab0718fd8"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a78acd6a-42a9-4670-8178-167934ae98ba"}},{"name":"{{step[b2837568-3ed2-4588-bf28-88da6475bccc].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"129782fc-b87c-45dc-816b-dd8ead5eb6d1"}},{"name":"{{step[b2837568-3ed2-4588-bf28-88da6475bccc].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0ba5063e-23d2-4c64-bd66-08c4b51d8406"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"f482af34-2174-4e0f-b0e8-45c09e30120d"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"417fd019-7104-4926-b13e-984344c0b01a"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8726571f-2e61-4180-8426-812dabd16c6d"}}]</label_cache>
+        <label_cache>[{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.POHEADER}}","label":"action➛PO Header","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD7d2941f9610f1510429f3fd1f7a43a55","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"f89e3c82-7d1f-446d-a45b-114311fd5e41"}},{"name":"{{action.POITEM}}","label":"action➛Purchase Order Items","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDba0c417d550f151044ac633932116c6d","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"b932f6ff-1fa9-4a46-a3f5-8b1d08c67ce0","uiUniqueId":"eac4f9be-99aa-48b3-a53a-69aa4c314bf8"}},{"name":"{{action.additional_input}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"f3dcedae-6487-429b-9ade-385bcb780782"}},{"name":"{{action.POACCOUNT}}","label":"action➛PO Accounts","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD870c417d120f1510dedc91ab1294956f","child_label":"Account","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"442dc447-3935-4433-bed3-c9ab0a197361","uiUniqueId":"8a2376a6-2205-4d5b-8d49-1deff1ed187b"}},{"name":"{{action.select_bapi}}","label":"action➛Select BAPI","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Standard BAPI","value":"BAPI_PO_CREATE1","order":0.0},{"label":"Custom BAPI","value":"ZSN_BAPI_PO_CREATE","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5bacbbb9-4275-4be8-8ef9-2166ddaeb468"}},{"name":"{{action.POADDRDELIVERY}}","label":"action➛Addresses For Inward Delivery","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD14db311847d3d91032bf9a48263af8c6","child_label":"Addresses For Inward Delivery","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Item","child_uiUniqueId":"9edc3787-b011-4446-9394-8729a5e603a5","uiUniqueId":"502f54dd-4c5e-4811-9d5b-dcf91bb4d861"}},{"name":"{{action.POLIMITS}}","label":"action➛PO Limits","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDe8c84a008790a110020aba9df8b362f2","child_label":"PO Limit","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"3086b833-2ccf-414c-a798-29f3892d88a4","uiUniqueId":"745d484b-efb3-4a9b-8fd5-af4937baabd6"}},{"name":"{{action.POSCHEDULE}}","label":"action➛PO Schedule","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDdf40e288a57825100c89125449d03c72","child_label":"Schedule","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"65719199-695b-41bc-8fb4-d69fdc5177e0","uiUniqueId":"724e141e-4941-4d41-9568-75fea49f2d7b"}},{"name":"{{action.POSERVICES}}","label":"action➛PO Service Lines","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FD883496c8c990a11040c07d628f177a4a","child_label":"Service Line","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"item","child_uiUniqueId":"1a2a07da-8f8a-48ab-bf19-6c096f4c2b59","uiUniqueId":"00036509-3249-401e-98c2-96a8446d3257"}},{"name":"{{action.no_price_from_po}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Yes","value":"null","order":0.0},{"label":"No","value":"X","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"f3fec9ff-7577-4f37-92b1-74343d946e8d"}},{"name":"{{action.adoption_of_price_from_last_document}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.NO_PRICE_FROM_PO}}","label":"action➛Last Document Adoption Price","type":"action","ref":"","reference_display":"","base_type":"choice","parent_table_name":"","column_name":"","choices":[{"label":"Yes","value":"null","order":0.0},{"label":"No","value":"X","order":1.0}],"attributes":{"uiTypeLabel":"Choice","child_label":"Adoption of Price from Last Document_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","child_type":"object","child_name":"adoption_of_price_from_last_document_child0","child_uiUniqueId":"824cbce6-2f80-45e0-b26d-9736f5fa60ac","uiUniqueId":"54304811-9f13-4a2b-aa31-d613c69ee4cd"}},{"name":"{{action.PURCHASEORDER}}","label":"action➛Purchase Order Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6b1b6d1c-87fa-423c-b843-73b1c3d636bd"}},{"name":"{{action.Adoption_of_Price_from_Last_Document}}","label":"action➛Adoption of Price from Last Document","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.INVOICEDOCNUMBER}}","label":"action➛Invoice Document Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"544af701-ee5d-43e0-995f-a98ef4eecadf"}},{"name":"{{action.FISCALYEAR}}","label":"action➛Fiscal Year","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ebdfa43c-aa2d-4175-a78a-c54480f01c29"}},{"name":"{{action.REASONREVERSAL}}","label":"action➛Reversal Reason","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0f34466d-e0d3-4564-9661-5f7ffa344ee2"}},{"name":"{{action.POSTINGDATE}}","label":"action➛Reversal Document Posting Date","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"28fd94d2-69cb-4a43-b7f3-a4bd785101c4"}},{"name":"{{action.additional_fields}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"dc3eeef1-c8e1-4226-b9c1-a4238294d6a6"}},{"name":"{{action.MATERIALDOCUMENT}}","label":"action➛Material Document Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"3d70ca51-b153-4994-b268-f8b91a1c2db1"}},{"name":"{{action.MATDOCUMENTYEAR}}","label":"action➛Material Document Year","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5d96a52e-f326-4c1e-a6f5-aee46d00abdd"}},{"name":"{{action.GOODSMVT_PSTNG_DATE}}","label":"action➛Posting Date","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"ea8f4ccd-d55b-4e4b-9baf-c2e17bb3a893"}},{"name":"{{action.GOODSMVT_PR_URNAME}}","label":"action➛User Name for Printing Goods Receipt/Issue Slip","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"aac246a4-05e3-4a54-9eea-e67063ff87ad"}},{"name":"{{action.GOODSMVT_ITEM}}","label":"action➛Material Document Item","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDc4bfcbae6f3f9510988ddfb33daa473a","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"ITEM","child_uiUniqueId":"cc6df530-a62a-44e4-bfa7-b8a274bb30ef","uiUniqueId":"ffee8e59-613e-4594-b7da-5a476b1ccb91"}},{"name":"{{action.POADDRDELIVERY.Item}}","label":"action➛Inward Delivery Addresses➛Inward Delivery Address","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.service_lines_account_assignment_distribution}}","label":"action➛Service Lines Account Assignment Distribution","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.POSRVACCESSVALUES}}","label":"action➛Service Lines Account Assignment Distribution➛POSRVACCESSVALUES","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES}}","label":"action➛Service Lines Account Assignment Distribution","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item}}","label":"action➛Service Lines Account Assignment Distribution➛Item","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Package_number}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Package number","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.item_child2}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Item_child2","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Line_Number}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Line Number","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Seq_Number_of_Acc_Assignment_Specification_Service_Line}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Seq. Number of Acc. Assignment Specification: Service Line","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Percentage_for_Account_Assignment_Value_Distribution}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Percentage for Account Assignment Value Distribution","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Sequential_Number_of_Account_Assignment}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Sequential Number of Account Assignment","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Quantity_with_Sign}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Quantity with Sign","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.Net_Value_of_Item}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Net Value of Item","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.NET_VALUE}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Net Value of Item","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.QUANTITY}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Quantity with Sign","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.SERIAL_NO}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Sequential Number of Account Assignment","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.PERCENTAGE}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Percentage for Account Assignment Value Distribution","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.SERNO_LINE}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Sequential Number of Account Assignment Specification: Service Line","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.LINE_NO}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Line Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.POSRVACCESSVALUES.Item.PCKG_NO}}","label":"action➛Service Lines Account Assignment Distribution➛Item➛Package number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"5cc2db69-daa6-4cf9-8088-cd54c6ef2cc0"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"99186eff-3a98-42b8-ae14-f2840cbffdfa"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"9cbf1e3e-1a33-465b-86dd-520ab0718fd8"}},{"name":"{{step[500fdeae-240a-4593-a1e4-6ecfdf11d720].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a78acd6a-42a9-4670-8178-167934ae98ba"}},{"name":"{{step[b2837568-3ed2-4588-bf28-88da6475bccc].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"129782fc-b87c-45dc-816b-dd8ead5eb6d1"}},{"name":"{{step[b2837568-3ed2-4588-bf28-88da6475bccc].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"0ba5063e-23d2-4c64-bd66-08c4b51d8406"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"f482af34-2174-4e0f-b0e8-45c09e30120d"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"417fd019-7104-4926-b13e-984344c0b01a"}},{"name":"{{step[fad3c5c0-329f-475d-855d-a9fdddf1cd36].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"8726571f-2e61-4180-8426-812dabd16c6d"}},{"name":"{{step[ada9e480-8300-4d56-ae64-5a5b9161869f].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"31a112e4-0e19-42c8-837d-07a662464c3c"}},{"name":"{{step[ada9e480-8300-4d56-ae64-5a5b9161869f].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a82108e7-967f-4d90-bc24-7d09f5987286"}},{"name":"{{step[ada9e480-8300-4d56-ae64-5a5b9161869f].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"2d72035d-a8cf-4946-80b4-6a228427f987"}},{"name":"{{step[ada9e480-8300-4d56-ae64-5a5b9161869f].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"fcd76a7b-0cc5-4609-b261-d39dfe40cbba"}},{"name":"{{step[8eaf1cb8-6af6-472a-9edb-97dcc0696c3e].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a97f2593-1a78-43ca-b0eb-da86517a78ad"}},{"name":"{{step[8eaf1cb8-6af6-472a-9edb-97dcc0696c3e].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"23cfbc9c-096b-4c64-9fb4-fd9043586851"}},{"name":"{{step[ee5a552a-9a15-4b07-855b-d9a4b5e0297a].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"05c68db7-f5f8-4190-a42d-406149f28f39"}},{"name":"{{step[ee5a552a-9a15-4b07-855b-d9a4b5e0297a].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"17f425cb-64be-4b0b-9eb4-178c31936e0b"}},{"name":"{{step[ee5a552a-9a15-4b07-855b-d9a4b5e0297a].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1b8e14a5-a18d-4126-91d5-98da8e3baa16"}}]</label_cache>
         <master>true</master>
         <name>Update Purchase Order</name>
         <natlang/>
@@ -6862,7 +6966,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b7fb4f2b87c759101dff337e0ebb3597</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -6870,7 +6974,7 @@
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:06</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:32</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -6898,9 +7002,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 06:52:41</sys_created_on>
         <sys_id>410ccf2b87c759101dff337e0ebb350e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:10</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:35</sys_updated_on>
         <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"620ae830-f089-4bb7-b87a-596632299baf\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">7c0c8f2b87c759101dff337e0ebb35d7</variable>
     </sys_variable_value>
@@ -8554,10 +8658,10 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 06:52:38</sys_created_on>
         <sys_id>d00c4f2b87c759101dff337e0ebb35f9</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:08</sys_updated_on>
+        <sys_updated_on>2023-03-03 12:38:24</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d00c4f2b87c759101dff337e0ebb35f9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -8582,9 +8686,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 06:52:39</sys_created_on>
         <sys_id>e40c8f2b87c759101dff337e0ebb3541</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:08</sys_updated_on>
+        <sys_updated_on>2023-03-03 12:38:24</sys_updated_on>
         <value>(function execute(inputs, outputs) {
     try {
         var inputs = SapEccUtil.trimInputs(inputs);
@@ -8692,7 +8796,7 @@
             payload['PURCHASEORDER'] = inputs.PurchaseOrder;
             payload['POHEADER'] = inputs.header;
             payload['POHEADERX'] = inputs.POHEADERX;
-            payload['NO_PRICE_FROM_PO'] = inputs.PriceAdoption;
+            payload['NO_PRICE_FROM_PO'] = inputs.PriceAdoption == "null" ? " " : "X";
             if (inputs.PurchaseOrderItems.length != 0) {
                 payload['POITEM'] = inputs.PurchaseOrderItems;
                 payload['POITEMX'] = inputs.POITEMX;
@@ -8721,7 +8825,7 @@
             payload['IV_PURCHASEORDER'] = inputs.PurchaseOrder;
             payload['IV_POHEADER'] = inputs.header;
             payload['IV_POHEADERX'] = inputs.POHEADERX;
-            payload['IV_NO_PRICE_FROM_PO'] = inputs.PriceAdoption;
+            payload['IV_NO_PRICE_FROM_PO'] = inputs.PriceAdoption == "null" ? " " : "X";
             if (inputs.PurchaseOrderItems.length != 0) {
                 payload['IT_POITEM'] = inputs.PurchaseOrderItems;
                 payload['IT_POITEMX'] = inputs.POITEMX;
@@ -9174,7 +9278,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=Array.Object</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -9208,7 +9312,7 @@
         <internal_type display_value="String">string</internal_type>
         <label>serviceLineAccount</label>
         <mandatory>true</mandatory>
-        <max_length>65000</max_length>
+        <max_length>8000</max_length>
         <model display_value="Get connection &amp; prepare input Json">d00c4f2b87c759101dff337e0ebb35f9</model>
         <model_id>d00c4f2b87c759101dff337e0ebb35f9</model_id>
         <model_table>sys_hub_step_instance</model_table>
@@ -9232,14 +9336,14 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2023-02-21 06:27:08</sys_created_on>
         <sys_id>5af1bf0b474d2110e07dc4f3836d43c9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:08</sys_updated_on>
+        <sys_updated_on>2023-03-03 12:38:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -10736,9 +10840,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 06:52:38</sys_created_on>
         <sys_id>d80c4f2b87c759101dff337e0ebb35e9</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:07</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:33</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d80c4f2b87c759101dff337e0ebb35e9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -10970,7 +11074,7 @@
         <help/>
         <hint/>
         <internal_type display_value="Choice">choice</internal_type>
-        <label>Adoption of Price from Last Document</label>
+        <label>Last Document Adoption Price</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
         <model display_value="Update Purchase Order">b7fb4f2b87c759101dff337e0ebb3597</model>
@@ -10996,14 +11100,14 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2023-02-07 09:36:19</sys_created_on>
         <sys_id>7407983647f42d10f8cfb777746d4393</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:07</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -11433,9 +11537,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 06:52:38</sys_created_on>
         <sys_id>100c4f2b87c759101dff337e0ebb35f1</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:07</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:33</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=100c4f2b87c759101dff337e0ebb35f1"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -11893,9 +11997,9 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2022-11-15 06:52:41</sys_created_on>
         <sys_id>050c8f2b87c759101dff337e0ebb35f9</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-21 06:27:10</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:35</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=050c8f2b87c759101dff337e0ebb35f9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -12184,7 +12288,7 @@
         <element>NO_PRICE_FROM_PO</element>
         <help/>
         <hint/>
-        <label>Adoption of Price from Last Document</label>
+        <label>Last Document Adoption Price</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_b7fb4f2b87c759101dff337e0ebb3597</name>
         <plural/>
@@ -12192,14 +12296,14 @@
         <sys_created_by>akash</sys_created_by>
         <sys_created_on>2023-02-07 09:36:19</sys_created_on>
         <sys_id>4507983647f42d10f8cfb777746d439a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>akash</sys_updated_by>
-        <sys_updated_on>2023-02-07 09:36:19</sys_updated_on>
+        <sys_updated_on>2023-03-06 07:44:33</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -12433,7 +12537,7 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b7fb4f2b87c759101dff337e0ebb3597^sys_idNOT IN1004ca61478d6550f8cfb777746d437b,7007983647f42d10f8cfb777746d4396,caf1bf0b474d2110e07dc4f3836d43a2,0907983647f42d10f8cfb777746d4396,4c0c4f2b87c759101dff337e0ebb35ac,080c4f2b87c759101dff337e0ebb35ad"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b7fb4f2b87c759101dff337e0ebb3597^sys_idNOT IN1004ca61478d6550f8cfb777746d437b,5f504b1747552110f8cfb777746d434e,7007983647f42d10f8cfb777746d4396,86d6e0a2475de110e07dc4f3836d437a,caf1bf0b474d2110e07dc4f3836d43a2,0907983647f42d10f8cfb777746d4396,4c0c4f2b87c759101dff337e0ebb35ac,080c4f2b87c759101dff337e0ebb35ad"/>
     <sys_choice field="NO_PRICE_FROM_PO" table="var__m_sys_hub_action_input_b7fb4f2b87c759101dff337e0ebb3597">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -12466,6 +12570,26 @@
             <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2023-03-06 07:44:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f504b1747552110f8cfb777746d434e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2023-03-06 07:44:33</sys_updated_on>
+            <value>null</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>NO_PRICE_FROM_PO</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_b7fb4f2b87c759101dff337e0ebb3597</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>akash</sys_created_by>
             <sys_created_on>2023-02-07 09:36:19</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
@@ -12473,6 +12597,26 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>akash</sys_updated_by>
             <sys_updated_on>2023-02-07 09:36:19</sys_updated_on>
+            <value>null</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>NO_PRICE_FROM_PO</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_b7fb4f2b87c759101dff337e0ebb3597</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>akash</sys_created_by>
+            <sys_created_on>2023-03-03 12:38:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>86d6e0a2475de110e07dc4f3836d437a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>akash</sys_updated_by>
+            <sys_updated_on>2023-03-03 12:38:23</sys_updated_on>
             <value>null</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">

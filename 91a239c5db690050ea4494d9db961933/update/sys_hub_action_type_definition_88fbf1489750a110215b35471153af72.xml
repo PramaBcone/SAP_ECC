@@ -135,7 +135,7 @@
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information" target="_blank"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <ih_action>false</ih_action>
         <internal_name>create_service_goods_receipt</internal_name>
-        <label_cache>[{"name":"{{action.conn_alias}}","label":"action➛Connection Alias","type":"action","ref":"sys_alias","reference_display":"Connection &amp; Credential Aliases","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"f243a2b0-7d7d-42d9-85a0-b57c5500c46c"}},{"name":"{{action.IV_ENTRYSHEETHEADER}}","label":"action➛Header Data of Entry Sheet","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD79f38a8cba50a1109960031705caa6b4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"bc71ab78-a3ba-4a1c-aa64-84875531603d"}},{"name":"{{action.IT_ENTRYSHEETSERVICES}}","label":"action➛Services","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDb1f38a8cba50a110c3d8182561200db7","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Item","child_uiUniqueId":"c392fe0a-bed7-4887-80a0-6cdee3e0c69e","uiUniqueId":"c216c0f2-bd88-4293-a889-0ca930ac4ba7"}},{"name":"{{action.additional_input}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","dynamic":"true","uiUniqueId":"89a16852-6822-4867-8209-45dbb8bdfec4"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"732bc8f3-0e3c-4aa7-b53c-d8a29e80a952"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6c5a61e0-92df-423e-893f-06299cc731ff"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"02a5ab55-fa47-465c-a09e-7b1d7fd90c42"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a9f79b69-6b9c-426d-b2ee-eb276cfca3bd"}},{"name":"{{step[68f8e658-1913-4d8c-be23-d24ab3787104].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d8a3a1c9-e5d8-4b22-9740-59dacccbb261"}},{"name":"{{step[68f8e658-1913-4d8c-be23-d24ab3787104].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"33201770-0280-45f8-95c4-5c167a3e9f37"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"901ef903-8c10-43df-969d-a9f5c30c6928"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"fc2c9fe2-544f-417f-96f0-0eb74abbfec4"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1557d849-abd1-4d3c-9724-d18f1e2f1e3b"}}]</label_cache>
+        <label_cache>[{"name":"{{action.conn_alias}}","label":"action➛Connection Alias","type":"action","ref":"sys_alias","reference_display":"Connection &amp; Credential Aliases","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"f243a2b0-7d7d-42d9-85a0-b57c5500c46c"}},{"name":"{{action.IV_ENTRYSHEETHEADER}}","label":"action➛Header Data of Entry Sheet","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD79f38a8cba50a1109960031705caa6b4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"bc71ab78-a3ba-4a1c-aa64-84875531603d"}},{"name":"{{action.IT_ENTRYSHEETSERVICES}}","label":"action➛Services","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDb1f38a8cba50a110c3d8182561200db7","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Item","child_uiUniqueId":"c392fe0a-bed7-4887-80a0-6cdee3e0c69e","uiUniqueId":"c216c0f2-bd88-4293-a889-0ca930ac4ba7"}},{"name":"{{action.additional_input}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","dynamic":"true","uiUniqueId":"89a16852-6822-4867-8209-45dbb8bdfec4"}},{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.DOC_DATE}}","label":"action➛Header Data of Entry Sheet➛Document Date in Purchasing Document","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.POST_DATE}}","label":"action➛Header Data of Entry Sheet➛Posting Date in Purchasing Document","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.LOCATION}}","label":"action➛Header Data of Entry Sheet➛Location where Service was Performed","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.BEGDATE}}","label":"action➛Header Data of Entry Sheet➛Start Date of Period","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.ENDDATE}}","label":"action➛Header Data of Entry Sheet➛End Date of Period","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.USER_FIELD}}","label":"action➛Header Data of Entry Sheet➛User Field: Service Entry Sheet","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.EXT_NUMBER_LONG}}","label":"action➛Header Data of Entry Sheet➛External Entry Sheet Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.REF_DOC_NO_LONG}}","label":"action➛Header Data of Entry Sheet➛Reference Document Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IT_ENTRYSHEETSERVICES.Item.BIDDER}}","label":"action➛Services➛Item➛Bidder Line","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IT_ENTRYSHEETSERVICES.Item.NET_VALUE}}","label":"action➛Services➛Item➛Net Value","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"732bc8f3-0e3c-4aa7-b53c-d8a29e80a952"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6c5a61e0-92df-423e-893f-06299cc731ff"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"02a5ab55-fa47-465c-a09e-7b1d7fd90c42"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a9f79b69-6b9c-426d-b2ee-eb276cfca3bd"}},{"name":"{{step[68f8e658-1913-4d8c-be23-d24ab3787104].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d8a3a1c9-e5d8-4b22-9740-59dacccbb261"}},{"name":"{{step[68f8e658-1913-4d8c-be23-d24ab3787104].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"33201770-0280-45f8-95c4-5c167a3e9f37"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"901ef903-8c10-43df-969d-a9f5c30c6928"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"fc2c9fe2-544f-417f-96f0-0eb74abbfec4"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1557d849-abd1-4d3c-9724-d18f1e2f1e3b"}}]</label_cache>
         <master_snapshot>31494eb987a065501dff337e0ebb3532</master_snapshot>
         <name>Create Service Goods Receipt</name>
         <natlang/>
@@ -148,7 +148,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>88fbf1489750a110215b35471153af72</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Create Service Goods Receipt</sys_name>
         <sys_overrides/>
         <sys_package display_value="SAP ECC RFC Spoke" source="sn_sap_ecc_rfc_spo">91a239c5db690050ea4494d9db961933</sys_package>
@@ -156,7 +156,7 @@
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_88fbf1489750a110215b35471153af72</sys_update_name>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:56</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -170,10 +170,10 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-05 08:28:28</sys_created_on>
         <sys_id>650b82449790a110215b35471153af42</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:45</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"620ae830-f089-4bb7-b87a-596632299baf\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-03-06 05:00:20</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"620ae830-f089-4bb7-b87a-596632299baf\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">e10b82449790a110215b35471153af33</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -296,10 +296,10 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-05 09:12:34</sys_created_on>
         <sys_id>2b15de0c9790a110215b35471153af80</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:44</sys_updated_on>
+        <sys_updated_on>2023-02-27 12:21:34</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2b15de0c9790a110215b35471153af80"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -406,11 +406,11 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-05 09:12:34</sys_created_on>
         <sys_id>e715de0c9790a110215b35471153afa8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:44</sys_updated_on>
+        <sys_updated_on>2023-02-27 12:21:34</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value>{{action.conn_alias}}</value>
+        <value>{{action.conn_alias.sys_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>conn_host</field>
@@ -516,11 +516,11 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-05 09:12:34</sys_created_on>
         <sys_id>e715de0c9790a110215b35471153afa8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:44</sys_updated_on>
+        <sys_updated_on>2023-02-27 12:21:34</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value>{{action.conn_alias}}</value>
+        <value>{{action.conn_alias.sys_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>conn_host</field>
@@ -1729,10 +1729,10 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-05 09:12:33</sys_created_on>
         <sys_id>d315de0c9790a110215b35471153af39</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:43</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:37:59</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d315de0c9790a110215b35471153af39"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1826,11 +1826,11 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-05 09:12:34</sys_created_on>
         <sys_id>2715de0c9790a110215b35471153af7d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:43</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:37:59</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_d315de0c9790a110215b35471153af39</table>
-        <value>{{action.conn_alias}}</value>
+        <value>{{action.conn_alias.sys_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>header</field>
@@ -1858,93 +1858,12 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d315de0c9790a110215b35471153af39^id=d315de0c9790a110215b35471153af39"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d315de0c9790a110215b35471153af39"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=d315de0c9790a110215b35471153af39^sys_idNOT IN09d337cd4738e510f8cfb777746d4333,5b15de0c9790a110215b35471153af44,91d337cd4738e510f8cfb777746d435b,d715de0c9790a110215b35471153af47"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d315de0c9790a110215b35471153af39^sys_idNOT IN5b15de0c9790a110215b35471153af44,8ea2f3c147512110e07dc4f3836d43a0,91d337cd4738e510f8cfb777746d435b,d715de0c9790a110215b35471153af47"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Record</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>alias_id</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
-        <label/>
-        <mandatory>true</mandatory>
-        <max_length>32</max_length>
-        <model display_value="Get connection &amp; prepare input Json">d315de0c9790a110215b35471153af39</model>
-        <model_id>d315de0c9790a110215b35471153af39</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_d315de0c9790a110215b35471153af39</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference display_value="" name="sys_alias">sys_alias</reference>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>Varun</sys_created_by>
-        <sys_created_on>2023-02-02 15:11:42</sys_created_on>
-        <sys_id>09d337cd4738e510f8cfb777746d4333</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:42</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1978,7 +1897,7 @@
         <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
-        <max_length>65000</max_length>
+        <max_length>8000</max_length>
         <model display_value="Get connection &amp; prepare input Json">d315de0c9790a110215b35471153af39</model>
         <model_id>d315de0c9790a110215b35471153af39</model_id>
         <model_table>sys_hub_step_instance</model_table>
@@ -2002,14 +1921,14 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-05 09:12:33</sys_created_on>
         <sys_id>5b15de0c9790a110215b35471153af44</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:43</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:37:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2025,7 +1944,88 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>alias_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get connection &amp; prepare input Json">d315de0c9790a110215b35471153af39</model>
+        <model_id>d315de0c9790a110215b35471153af39</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d315de0c9790a110215b35471153af39</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Varun</sys_created_by>
+        <sys_created_on>2023-02-27 11:37:59</sys_created_on>
+        <sys_id>8ea2f3c147512110e07dc4f3836d43a0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Varun</sys_updated_by>
+        <sys_updated_on>2023-02-27 12:21:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=template_value,uiTypeLabel=Template Value</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2059,7 +2059,7 @@
         <internal_type display_value="">template_value</internal_type>
         <label/>
         <mandatory>true</mandatory>
-        <max_length>8000</max_length>
+        <max_length>65000</max_length>
         <model display_value="Get connection &amp; prepare input Json">d315de0c9790a110215b35471153af39</model>
         <model_id>d315de0c9790a110215b35471153af39</model_id>
         <model_table>sys_hub_step_instance</model_table>
@@ -2083,14 +2083,14 @@
         <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-02-02 15:11:43</sys_created_on>
         <sys_id>91d337cd4738e510f8cfb777746d435b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:43</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:37:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2106,7 +2106,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2140,7 +2140,7 @@
         <internal_type display_value="String">string</internal_type>
         <label/>
         <mandatory>true</mandatory>
-        <max_length>65000</max_length>
+        <max_length>8000</max_length>
         <model display_value="Get connection &amp; prepare input Json">d315de0c9790a110215b35471153af39</model>
         <model_id>d315de0c9790a110215b35471153af39</model_id>
         <model_table>sys_hub_step_instance</model_table>
@@ -2164,14 +2164,14 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-05 09:12:34</sys_created_on>
         <sys_id>d715de0c9790a110215b35471153af47</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:43</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:37:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2692,9 +2692,9 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-01 09:55:24</sys_created_on>
         <sys_id>56d169bc87bca5101dff337e0ebb35a7</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:41</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:47</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=56d169bc87bca5101dff337e0ebb35a7"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2897,9 +2897,9 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-06 05:26:28</sys_created_on>
         <sys_id>cdfaead887d0e1101dff337e0ebb350d</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:40</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:47</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cdfaead887d0e1101dff337e0ebb350d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3187,9 +3187,9 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-01 09:55:28</sys_created_on>
         <sys_id>0fd1a9bc87bca5101dff337e0ebb3565</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:45</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:48</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0fd1a9bc87bca5101dff337e0ebb3565"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3854,17 +3854,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Create Service Goods Receipt">88fbf1489750a110215b35471153af72</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8f59ceb987a065501dff337e0ebb35be","name":"plan","plan_signature":null}}</plan>
-        <snapshot>e8e3b7cd4738e510f8cfb777746d4353</snapshot>
+        <snapshot>13892a1347152110f8cfb777746d43f2</snapshot>
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:16</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8f59ceb987a065501dff337e0ebb35be</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:12:01</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:57</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -4000,7 +4000,7 @@
 &lt;p&gt;To use this action, the corresponding SAP ECC - RFC connection and credential must be created and associated with the SAP_ECC Connection &amp;amp; Credential alias. &lt;a href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias" target="_blank"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information" target="_blank"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
         <internal_name>create_service_goods_receipt</internal_name>
-        <label_cache>[{"name":"{{action.conn_alias}}","label":"action➛Connection Alias","type":"action","ref":"sys_alias","reference_display":"Connection &amp; Credential Aliases","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"f243a2b0-7d7d-42d9-85a0-b57c5500c46c"}},{"name":"{{action.IV_ENTRYSHEETHEADER}}","label":"action➛Header Data of Entry Sheet","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD79f38a8cba50a1109960031705caa6b4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"bc71ab78-a3ba-4a1c-aa64-84875531603d"}},{"name":"{{action.IT_ENTRYSHEETSERVICES}}","label":"action➛Services","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDb1f38a8cba50a110c3d8182561200db7","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Item","child_uiUniqueId":"c392fe0a-bed7-4887-80a0-6cdee3e0c69e","uiUniqueId":"c216c0f2-bd88-4293-a889-0ca930ac4ba7"}},{"name":"{{action.additional_input}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","dynamic":"true","uiUniqueId":"89a16852-6822-4867-8209-45dbb8bdfec4"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"732bc8f3-0e3c-4aa7-b53c-d8a29e80a952"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6c5a61e0-92df-423e-893f-06299cc731ff"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"02a5ab55-fa47-465c-a09e-7b1d7fd90c42"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a9f79b69-6b9c-426d-b2ee-eb276cfca3bd"}},{"name":"{{step[68f8e658-1913-4d8c-be23-d24ab3787104].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d8a3a1c9-e5d8-4b22-9740-59dacccbb261"}},{"name":"{{step[68f8e658-1913-4d8c-be23-d24ab3787104].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"33201770-0280-45f8-95c4-5c167a3e9f37"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"901ef903-8c10-43df-969d-a9f5c30c6928"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"fc2c9fe2-544f-417f-96f0-0eb74abbfec4"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1557d849-abd1-4d3c-9724-d18f1e2f1e3b"}}]</label_cache>
+        <label_cache>[{"name":"{{action.conn_alias}}","label":"action➛Connection Alias","type":"action","ref":"sys_alias","reference_display":"Connection &amp; Credential Aliases","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"f243a2b0-7d7d-42d9-85a0-b57c5500c46c"}},{"name":"{{action.IV_ENTRYSHEETHEADER}}","label":"action➛Header Data of Entry Sheet","type":"action","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD79f38a8cba50a1109960031705caa6b4","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"bc71ab78-a3ba-4a1c-aa64-84875531603d"}},{"name":"{{action.IT_ENTRYSHEETSERVICES}}","label":"action➛Services","type":"action","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDb1f38a8cba50a110c3d8182561200db7","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"array.object","child_type":"object","child_name":"Item","child_uiUniqueId":"c392fe0a-bed7-4887-80a0-6cdee3e0c69e","uiUniqueId":"c216c0f2-bd88-4293-a889-0ca930ac4ba7"}},{"name":"{{action.additional_input}}","label":"action➛Additional Fields","type":"action","ref":"","reference_display":"","base_type":"dynamic_template","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","dynamic":"true","uiUniqueId":"89a16852-6822-4867-8209-45dbb8bdfec4"}},{"name":"{{action.conn_alias.sys_id}}","label":"action➛Connection Alias➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_alias","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.DOC_DATE}}","label":"action➛Header Data of Entry Sheet➛Document Date in Purchasing Document","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.POST_DATE}}","label":"action➛Header Data of Entry Sheet➛Posting Date in Purchasing Document","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.LOCATION}}","label":"action➛Header Data of Entry Sheet➛Location where Service was Performed","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.BEGDATE}}","label":"action➛Header Data of Entry Sheet➛Start Date of Period","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.ENDDATE}}","label":"action➛Header Data of Entry Sheet➛End Date of Period","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.USER_FIELD}}","label":"action➛Header Data of Entry Sheet➛User Field: Service Entry Sheet","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.EXT_NUMBER_LONG}}","label":"action➛Header Data of Entry Sheet➛External Entry Sheet Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IV_ENTRYSHEETHEADER.REF_DOC_NO_LONG}}","label":"action➛Header Data of Entry Sheet➛Reference Document Number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IT_ENTRYSHEETSERVICES.Item.BIDDER}}","label":"action➛Services➛Item➛Bidder Line","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.IT_ENTRYSHEETSERVICES.Item.NET_VALUE}}","label":"action➛Services➛Item➛Net Value","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].cred_id}}","label":"step➛Get connection &amp; prepare input Json➛Credential ID","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"732bc8f3-0e3c-4aa7-b53c-d8a29e80a952"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].conn_host}}","label":"step➛Get connection &amp; prepare input Json➛Connection Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"6c5a61e0-92df-423e-893f-06299cc731ff"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].conn_params}}","label":"step➛Get connection &amp; prepare input Json➛Connection Parameters","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"02a5ab55-fa47-465c-a09e-7b1d7fd90c42"}},{"name":"{{step[28ca35e9-6563-4a19-81e8-9a38cfbe8620].payload}}","label":"step➛Get connection &amp; prepare input Json➛Payload","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a9f79b69-6b9c-426d-b2ee-eb276cfca3bd"}},{"name":"{{step[68f8e658-1913-4d8c-be23-d24ab3787104].response}}","label":"step➛Ping and Query SAP➛Response","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d8a3a1c9-e5d8-4b22-9740-59dacccbb261"}},{"name":"{{step[68f8e658-1913-4d8c-be23-d24ab3787104].status}}","label":"step➛Ping and Query SAP➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"33201770-0280-45f8-95c4-5c167a3e9f37"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].response}}","label":"step➛Post process response➛Response","type":"step","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"json","uiUniqueId":"901ef903-8c10-43df-969d-a9f5c30c6928"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].status}}","label":"step➛Post process response➛Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"fc2c9fe2-544f-417f-96f0-0eb74abbfec4"}},{"name":"{{step[bb22763c-5c12-4d2e-aed9-09a8b572ccfb].err}}","label":"step➛Post process response➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1557d849-abd1-4d3c-9724-d18f1e2f1e3b"}}]</label_cache>
         <master>true</master>
         <name>Create Service Goods Receipt</name>
         <natlang/>
@@ -4013,7 +4013,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>31494eb987a065501dff337e0ebb3532</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -4021,7 +4021,7 @@
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:52</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:51</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -4049,10 +4049,10 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:07</sys_created_on>
         <sys_id>b4598eb987a065501dff337e0ebb3572</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:56</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"620ae830-f089-4bb7-b87a-596632299baf\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2023-03-06 05:01:23</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"620ae830-f089-4bb7-b87a-596632299baf\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">a8598eb987a065501dff337e0ebb3550</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4161,10 +4161,10 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:04</sys_created_on>
         <sys_id>44594eb987a065501dff337e0ebb35e6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:55</sys_updated_on>
+        <sys_updated_on>2023-02-27 12:21:39</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=44594eb987a065501dff337e0ebb35e6"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -4271,11 +4271,11 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:05</sys_created_on>
         <sys_id>10598eb987a065501dff337e0ebb3506</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:55</sys_updated_on>
+        <sys_updated_on>2023-02-27 12:21:39</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value>{{action.conn_alias}}</value>
+        <value>{{action.conn_alias.sys_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>conn_host</field>
@@ -4381,11 +4381,11 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:05</sys_created_on>
         <sys_id>10598eb987a065501dff337e0ebb3506</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:55</sys_updated_on>
+        <sys_updated_on>2023-02-27 12:21:39</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value>{{action.conn_alias}}</value>
+        <value>{{action.conn_alias.sys_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>conn_host</field>
@@ -5594,10 +5594,10 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:03</sys_created_on>
         <sys_id>f7494eb987a065501dff337e0ebb35b8</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:54</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:38:07</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f7494eb987a065501dff337e0ebb35b8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -5691,11 +5691,11 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:04</sys_created_on>
         <sys_id>00594eb987a065501dff337e0ebb35e3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:54</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:38:07</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_f7494eb987a065501dff337e0ebb35b8</table>
-        <value>{{action.conn_alias}}</value>
+        <value>{{action.conn_alias.sys_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>header</field>
@@ -5723,12 +5723,12 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f7494eb987a065501dff337e0ebb35b8^id=f7494eb987a065501dff337e0ebb35b8"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=f7494eb987a065501dff337e0ebb35b8"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=f7494eb987a065501dff337e0ebb35b8^sys_idNOT INbb494eb987a065501dff337e0ebb35c4,bbd3b7cd4738e510f8cfb777746d4312,fb494eb987a065501dff337e0ebb35c0,ffd377cd4738e510f8cfb777746d43f6"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f7494eb987a065501dff337e0ebb35b8^sys_idNOT INbb494eb987a065501dff337e0ebb35c4,bbd3b7cd4738e510f8cfb777746d4312,fb494eb987a065501dff337e0ebb35c0,fba277c147512110e07dc4f3836d4327"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=Array.Object</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5762,7 +5762,7 @@
         <internal_type display_value="String">string</internal_type>
         <label>services</label>
         <mandatory>true</mandatory>
-        <max_length>65000</max_length>
+        <max_length>8000</max_length>
         <model display_value="Get connection &amp; prepare input Json">f7494eb987a065501dff337e0ebb35b8</model>
         <model_id>f7494eb987a065501dff337e0ebb35b8</model_id>
         <model_table>sys_hub_step_instance</model_table>
@@ -5786,14 +5786,14 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:03</sys_created_on>
         <sys_id>bb494eb987a065501dff337e0ebb35c4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:53</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:38:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5809,7 +5809,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>dynamic=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=template_value</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=template_value,uiTypeLabel=Template Value</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5843,7 +5843,7 @@
         <internal_type display_value="">template_value</internal_type>
         <label>additional_in</label>
         <mandatory>true</mandatory>
-        <max_length>8000</max_length>
+        <max_length>65000</max_length>
         <model display_value="Get connection &amp; prepare input Json">f7494eb987a065501dff337e0ebb35b8</model>
         <model_id>f7494eb987a065501dff337e0ebb35b8</model_id>
         <model_table>sys_hub_step_instance</model_table>
@@ -5867,14 +5867,14 @@
         <sys_created_by>Varun</sys_created_by>
         <sys_created_on>2023-02-02 15:11:54</sys_created_on>
         <sys_id>bbd3b7cd4738e510f8cfb777746d4312</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:54</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:38:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5890,7 +5890,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=Object</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -5924,7 +5924,7 @@
         <internal_type display_value="String">string</internal_type>
         <label>header</label>
         <mandatory>true</mandatory>
-        <max_length>65000</max_length>
+        <max_length>8000</max_length>
         <model display_value="Get connection &amp; prepare input Json">f7494eb987a065501dff337e0ebb35b8</model>
         <model_id>f7494eb987a065501dff337e0ebb35b8</model_id>
         <model_table>sys_hub_step_instance</model_table>
@@ -5948,14 +5948,14 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:03</sys_created_on>
         <sys_id>fb494eb987a065501dff337e0ebb35c0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:53</sys_updated_on>
+        <sys_updated_on>2023-02-27 11:38:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -5971,7 +5971,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Record</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -6002,7 +6002,7 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="">GUID</internal_type>
         <label>alias_id</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
@@ -6015,7 +6015,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sys_alias">sys_alias</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -6027,16 +6027,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>Varun</sys_created_by>
-        <sys_created_on>2023-02-02 15:11:53</sys_created_on>
-        <sys_id>ffd377cd4738e510f8cfb777746d43f6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2023-02-27 11:38:06</sys_created_on>
+        <sys_id>fba277c147512110e07dc4f3836d4327</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SAP ECC RFC Spoke">91a239c5db690050ea4494d9db961933</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:53</sys_updated_on>
+        <sys_updated_on>2023-02-27 12:21:38</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -6721,9 +6721,9 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-01-23 05:06:03</sys_created_on>
         <sys_id>b3494eb987a065501dff337e0ebb35a9</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:53</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b3494eb987a065501dff337e0ebb35a9"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -6844,9 +6844,9 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-02 06:58:11</sys_created_on>
         <sys_id>b7d2460187bce5101dff337e0ebb3589</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:53</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:52</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b7d2460187bce5101dff337e0ebb3589"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7392,9 +7392,9 @@
         <sys_created_by>varun</sys_created_by>
         <sys_created_on>2023-02-02 06:58:14</sys_created_on>
         <sys_id>7ce2860187bce5101dff337e0ebb3536</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_updated_by>Varun</sys_updated_by>
-        <sys_updated_on>2023-02-02 15:11:56</sys_updated_on>
+        <sys_updated_on>2023-03-06 06:04:53</sys_updated_on>
     </sys_hub_action_input_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7ce2860187bce5101dff337e0ebb3536"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -7718,6 +7718,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>88fbf1489750a110215b35471153af72</sys_id>
         <latest_snapshot>31494eb987a065501dff337e0ebb3532</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021__patch9a-12-12-2022_01-04-2023_0931.zip</compiler_build>
+        <compiler_build>glide-sandiego-12-22-2021__patch9b-01-18-2023_01-31-2023_1707.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
